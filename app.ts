@@ -75,21 +75,53 @@
 
 // activar('Jaime', 'batiseñal', 'en la tarde');
 
-let miFuncion = function(a: string) {
-	return a;
+// let miFuncion = function(a: string) {
+// 	return a;
+// };
+
+// let miFuncionF = (a: string) => a;
+
+// let miFuncion2 = function(a: number, b: number) {
+// 	return a + b;
+// };
+
+// let miFuncion2F = (a: number, b: number) => a + b;
+
+// let miFuncion3 = function(nombre: string) {
+// 	nombre = nombre.toUpperCase();
+// 	return nombre;
+// };
+
+// let miFunction3F = (nombre: string) => nombre.toUpperCase;
+
+// let nombre = "Pedro";
+
+// //this no es afectado
+// let hulk = {
+//     nombre: "Hulk",
+//     smach() {
+
+//         setTimeout(() => console.log(this.nombre + " smash!!"), 1500);
+
+//     }
+// }
+
+// hulk.smach();
+
+let avenger = {
+	nombre: 'Steve',
+	clave: 'Capitan america',
+	poder: 'Droga'
 };
 
-let miFuncionF = (a: string) => a;
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
 
-let miFuncion2 = function(a: number, b: number) {
-	return a + b;
-};
+let { nombre, clave, poder } = avenger;
 
-let miFuncion2F = (a: number, b: number) => a + b;
+console.log(nombre, clave, poder);
 
-let miFuncion3 = function(nombre: string) {
-	nombre = nombre.toUpperCase();
-	return nombre;
-};
-
-let miFunction3F = (nombre: string) => nombre.toUpperCase;
+let fruits: string[] = [ 'Apple', 'Orange', 'Banana' ];
+let avengers: string[] = [ 'Thor', 'Steve', 'Tony' ];
+let [ thor, steve, tony ] = avengers;

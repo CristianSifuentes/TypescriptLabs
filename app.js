@@ -55,40 +55,38 @@
 // 	console.log(mensaje);
 // }
 // activar('Jaime', 'batiseñal', 'en la tarde');
-var miFuncion = function (a) {
-    return a;
+// let miFuncion = function(a: string) {
+// 	return a;
+// };
+// let miFuncionF = (a: string) => a;
+// let miFuncion2 = function(a: number, b: number) {
+// 	return a + b;
+// };
+// let miFuncion2F = (a: number, b: number) => a + b;
+// let miFuncion3 = function(nombre: string) {
+// 	nombre = nombre.toUpperCase();
+// 	return nombre;
+// };
+// let miFunction3F = (nombre: string) => nombre.toUpperCase;
+// let nombre = "Pedro";
+// //this no es afectado
+// let hulk = {
+//     nombre: "Hulk",
+//     smach() {
+//         setTimeout(() => console.log(this.nombre + " smash!!"), 1500);
+//     }
+// }
+// hulk.smach();
+var avenger = {
+    nombre: 'Steve',
+    clave: 'Capitan america',
+    poder: 'Droga'
 };
-var miFuncionF = function (a) {
-    return a;
-};
-var miFuncion2 = function (a, b) {
-    return a + b;
-};
-var miFuncion2F = function (a, b) {
-    return a + b;
-};
-var miFuncion3 = function (nombre) {
-    nombre = nombre.toUpperCase();
-    return nombre;
-};
-var miFunction3F = function (nombre) {
-    return nombre.toUpperCase;
-};
-
-
-
-
-
-let nombre = "Pedro";
-
-//this no es afectado
-let hulk = {
-    nombre: "Hulk",
-    smach() {
-
-        setTimeout(() => console.log(this.nombre + " smash!!"), 1500);
-
-    }
-}
-
-hulk.smach();
+// let nombre = avenger.nombre;
+// let clave = avenger.clave;
+// let poder = avenger.poder;
+var nombre = avenger.nombre, clave = avenger.clave, poder = avenger.poder;
+console.log(nombre, clave, poder);
+var fruits = ['Apple', 'Orange', 'Banana'];
+var avengers = ['Thor', 'Steve', 'Tony'];
+var thor = avengers[0], steve = avengers[1], tony = avengers[2];
