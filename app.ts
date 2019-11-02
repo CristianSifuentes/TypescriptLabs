@@ -25,20 +25,38 @@
 // 	const MAYUSCULA = 'NINGUNA';
 // }
 
-let nombre: string = 'string';
-let numero: number = 123;
-let boleano: boolean = true;
-let hoy: Date = new Date();
-hoy = new Date('2022-10-21');
-console.log(hoy);
-let cualquiera: any; //tipo de dato cualquiera, string, number, boolean, date
+// let nombre: string = 'string';
+// let numero: number = 123;
+// let boleano: boolean = true;
+// let hoy: Date = new Date();
+// hoy = new Date('2022-10-21');
+// console.log(hoy);
+// let cualquiera: any; //tipo de dato cualquiera, string, number, boolean, date
 
-let spidername = {
-	nombre: 'juan',
-	edad: 20
-};
+// let spidername = {
+// 	nombre: 'juan',
+// 	edad: 20
+// };
 
-spidername = {
-	nombre: 'mario',
-	edad: 30
-};
+// spidername = {
+// 	nombre: 'mario',
+// 	edad: 30
+// };
+
+function getNombre() {
+	return 'FEr';
+}
+
+let nombre: string = 'Juan';
+let apellidopaterno: string = 'gomez';
+let apellidomaterno: string = 'perez';
+let edad: number = 23;
+
+let x = 'hola' + nombre + ' ' + apellidopaterno + ' ' + apellidomaterno + '(' + edad + ')';
+let texto = `Hola, ${nombre} ${apellidopaterno}`;
+
+let texto2: string = ` ${getNombre()} `;
+
+console.log(x);
+console.log(texto);
+console.log(texto2);

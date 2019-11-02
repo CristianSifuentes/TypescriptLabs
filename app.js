@@ -17,18 +17,31 @@
 // if (true) {
 // 	const MAYUSCULA = 'NINGUNA';
 // }
-var nombre = 'string';
-var numero = 123;
-var boleano = true;
-var hoy = new Date();
-hoy = new Date('2022-10-21');
-console.log(hoy);
-var cualquiera; //tipo de dato cualquiera, string, number, boolean, date
-var spidername = {
-    nombre: 'juan',
-    edad: 20
-};
-spidername = {
-    nombre: 'mario',
-    edad: 30
-};
+// let nombre: string = 'string';
+// let numero: number = 123;
+// let boleano: boolean = true;
+// let hoy: Date = new Date();
+// hoy = new Date('2022-10-21');
+// console.log(hoy);
+// let cualquiera: any; //tipo de dato cualquiera, string, number, boolean, date
+// let spidername = {
+// 	nombre: 'juan',
+// 	edad: 20
+// };
+// spidername = {
+// 	nombre: 'mario',
+// 	edad: 30
+// };
+function getNombre() {
+    return 'FEr';
+}
+var nombre = 'Juan';
+var apellidopaterno = 'gomez';
+var apellidomaterno = 'perez';
+var edad = 23;
+var x = 'hola' + nombre + ' ' + apellidopaterno + ' ' + apellidomaterno + '(' + edad + ')';
+var texto = "Hola, " + nombre + " " + apellidopaterno;
+var texto2 = " " + getNombre() + " ";
+console.log(x);
+console.log(texto);
+console.log(texto2);
