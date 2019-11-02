@@ -108,20 +108,38 @@
 
 // hulk.smach();
 
-let avenger = {
-	nombre: 'Steve',
-	clave: 'Capitan america',
-	poder: 'Droga'
-};
+// let avenger = {
+// 	nombre: 'Steve',
+// 	clave: 'Capitan america',
+// 	poder: 'Droga'
+// };
 
-// let nombre = avenger.nombre;
-// let clave = avenger.clave;
-// let poder = avenger.poder;
+// // let nombre = avenger.nombre;
+// // let clave = avenger.clave;
+// // let poder = avenger.poder;
 
-let { nombre, clave, poder } = avenger;
+// let { nombre, clave, poder } = avenger;
 
-console.log(nombre, clave, poder);
+// console.log(nombre, clave, poder);
 
-let fruits: string[] = [ 'Apple', 'Orange', 'Banana' ];
-let avengers: string[] = [ 'Thor', 'Steve', 'Tony' ];
-let [ thor, steve, tony ] = avengers;
+// let fruits: string[] = [ 'Apple', 'Orange', 'Banana' ];
+// let avengers: string[] = [ 'Thor', 'Steve', 'Tony' ];
+// let [ thor, steve, tony ] = avengers;
+
+//procesos asincronos
+let prom1 = new Promise(function(resolve, reject) {
+	setTimeout(() => {
+		console.log('Promesa terminada');
+		resolve();
+		reject();
+	}, 1500);
+});
+
+prom1.then(
+	function() {
+		console.log('ejecutarme cuando se termine bien!');
+	},
+	function() {
+		console.log('ejecutarme cuando se termine mal!');
+	}
+);
