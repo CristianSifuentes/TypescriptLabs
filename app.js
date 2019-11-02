@@ -45,15 +45,50 @@
 // console.log(x);
 // console.log(texto);
 // console.log(texto2);
-function activar(quien, objeto, momento) {
-    if (objeto === void 0) { objeto = 'batiseñal'; }
-    var mensaje;
-    if (momento) {
-        mensaje = quien + " activ\u00F3 la batise\u00F1al  la " + objeto + " en la " + momento;
+// function activar(quien: string, objeto: string = 'batiseñal', momento?: string) {
+// 	let mensaje: string;
+// 	if (momento) {
+// 		mensaje = `${quien} activó la batiseñal  la ${objeto} en la ${momento}`;
+// 	} else {
+// 		mensaje = `${quien} activó la batiseñal  la ${objeto}`;
+// 	}
+// 	console.log(mensaje);
+// }
+// activar('Jaime', 'batiseñal', 'en la tarde');
+var miFuncion = function (a) {
+    return a;
+};
+var miFuncionF = function (a) {
+    return a;
+};
+var miFuncion2 = function (a, b) {
+    return a + b;
+};
+var miFuncion2F = function (a, b) {
+    return a + b;
+};
+var miFuncion3 = function (nombre) {
+    nombre = nombre.toUpperCase();
+    return nombre;
+};
+var miFunction3F = function (nombre) {
+    return nombre.toUpperCase;
+};
+
+
+
+
+
+let nombre = "Pedro";
+
+//this no es afectado
+let hulk = {
+    nombre: "Hulk",
+    smach() {
+
+        setTimeout(() => console.log(this.nombre + " smash!!"), 1500);
+
     }
-    else {
-        mensaje = quien + " activ\u00F3 la batise\u00F1al  la " + objeto;
-    }
-    console.log(mensaje);
 }
-activar('Jaime', 'batiseñal', 'en la tarde');
+
+hulk.smach();

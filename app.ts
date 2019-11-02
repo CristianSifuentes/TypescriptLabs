@@ -61,16 +61,35 @@
 // console.log(texto);
 // console.log(texto2);
 
-function activar(quien: string, objeto: string = 'batiseñal', momento?: string) {
-	let mensaje: string;
+// function activar(quien: string, objeto: string = 'batiseñal', momento?: string) {
+// 	let mensaje: string;
 
-	if (momento) {
-		mensaje = `${quien} activó la batiseñal  la ${objeto} en la ${momento}`;
-	} else {
-		mensaje = `${quien} activó la batiseñal  la ${objeto}`;
-	}
+// 	if (momento) {
+// 		mensaje = `${quien} activó la batiseñal  la ${objeto} en la ${momento}`;
+// 	} else {
+// 		mensaje = `${quien} activó la batiseñal  la ${objeto}`;
+// 	}
 
-	console.log(mensaje);
-}
+// 	console.log(mensaje);
+// }
 
-activar('Jaime', 'batiseñal', 'en la tarde');
+// activar('Jaime', 'batiseñal', 'en la tarde');
+
+let miFuncion = function(a: string) {
+	return a;
+};
+
+let miFuncionF = (a: string) => a;
+
+let miFuncion2 = function(a: number, b: number) {
+	return a + b;
+};
+
+let miFuncion2F = (a: number, b: number) => a + b;
+
+let miFuncion3 = function(nombre: string) {
+	nombre = nombre.toUpperCase();
+	return nombre;
+};
+
+let miFunction3F = (nombre: string) => nombre.toUpperCase;
