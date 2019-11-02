@@ -32,16 +32,28 @@
 // 	nombre: 'mario',
 // 	edad: 30
 // };
-function getNombre() {
-    return 'FEr';
+// function getNombre() {
+// 	return 'FEr';
+// }
+// let nombre: string = 'Juan';
+// let apellidopaterno: string = 'gomez';
+// let apellidomaterno: string = 'perez';
+// let edad: number = 23;
+// let x = 'hola' + nombre + ' ' + apellidopaterno + ' ' + apellidomaterno + '(' + edad + ')';
+// let texto = `Hola, ${nombre} ${apellidopaterno}`;
+// let texto2: string = ` ${getNombre()} `;
+// console.log(x);
+// console.log(texto);
+// console.log(texto2);
+function activar(quien, objeto, momento) {
+    if (objeto === void 0) { objeto = 'batiseñal'; }
+    var mensaje;
+    if (momento) {
+        mensaje = quien + " activ\u00F3 la batise\u00F1al  la " + objeto + " en la " + momento;
+    }
+    else {
+        mensaje = quien + " activ\u00F3 la batise\u00F1al  la " + objeto;
+    }
+    console.log(mensaje);
 }
-var nombre = 'Juan';
-var apellidopaterno = 'gomez';
-var apellidomaterno = 'perez';
-var edad = 23;
-var x = 'hola' + nombre + ' ' + apellidopaterno + ' ' + apellidomaterno + '(' + edad + ')';
-var texto = "Hola, " + nombre + " " + apellidopaterno;
-var texto2 = " " + getNombre() + " ";
-console.log(x);
-console.log(texto);
-console.log(texto2);
+activar('Jaime', 'batiseñal', 'en la tarde');
