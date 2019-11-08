@@ -127,19 +127,40 @@
 // let [ thor, steve, tony ] = avengers;
 
 //procesos asincronos
-let prom1 = new Promise(function(resolve, reject) {
-	setTimeout(() => {
-		console.log('Promesa terminada');
-		resolve();
-		reject();
-	}, 1500);
-});
+// let prom1 = new Promise(function(resolve, reject) {
+// 	setTimeout(() => {
+// 		console.log('Promesa terminada');
+// 		resolve();
+// 		reject();
+// 	}, 1500);
+// });
 
-prom1.then(
-	function() {
-		console.log('ejecutarme cuando se termine bien!');
-	},
-	function() {
-		console.log('ejecutarme cuando se termine mal!');
-	}
-);
+// prom1.then(
+// 	function() {
+// 		console.log('ejecutarme cuando se termine bien!');
+// 	},
+// 	function() {
+// 		console.log('ejecutarme cuando se termine mal!');
+// 	}
+// );
+
+interface Xmen {
+	nombre: string;
+	poder: string;
+}
+
+function enviarMision(xmen: Xmen) {
+	console.log('Enviando a: ' + xmen.nombre);
+}
+
+function enviarCuartel(xmen: Xmen) {
+	console.log('Enviando a: ' + xmen.nombre);
+}
+
+let wolverine: Xmen = {
+	nombre: 'wolverine',
+	poder: 'regeneracion'
+};
+
+enviarMision(wolverine);
+enviarCuartel(wolverine);
