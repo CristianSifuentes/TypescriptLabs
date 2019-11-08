@@ -144,23 +144,40 @@
 // 	}
 // );
 
-interface Xmen {
-	nombre: string;
-	poder: string;
+// interface Xmen {
+// 	nombre: string;
+// 	poder: string;
+// }
+
+// function enviarMision(xmen: Xmen) {
+// 	console.log('Enviando a: ' + xmen.nombre);
+// }
+
+// function enviarCuartel(xmen: Xmen) {
+// 	console.log('Enviando a: ' + xmen.nombre);
+// }
+
+// let wolverine: Xmen = {
+// 	nombre: 'wolverine',
+// 	poder: 'regeneracion'
+// };
+
+// enviarMision(wolverine);
+// enviarCuartel(wolverine);
+
+class Avenger {
+	nombre: string = 'sin nombre';
+	equipo: string = '';
+	nombreReal: string = '';
+	puedePelear: boolean | undefined;
+	peleasGanadas: number = 0;
+	//funcion que se crea cuando se crea una nueva instancia de este objeto
+	constructor(nombre: string, equipo: string, nombreReal: string) {
+		this.nombre = nombre;
+		this.equipo = equipo;
+		this.nombreReal = nombreReal;
+	}
 }
 
-function enviarMision(xmen: Xmen) {
-	console.log('Enviando a: ' + xmen.nombre);
-}
-
-function enviarCuartel(xmen: Xmen) {
-	console.log('Enviando a: ' + xmen.nombre);
-}
-
-let wolverine: Xmen = {
-	nombre: 'wolverine',
-	poder: 'regeneracion'
-};
-
-enviarMision(wolverine);
-enviarCuartel(wolverine);
+let antman: Avenger = new Avenger('Antman', 'Cap', 'Scott lang');
+console.log(antman);
