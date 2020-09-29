@@ -21,7 +21,7 @@ function returvoid(constant: string = "Value", optional?: string): void {
 
 // }
 
-console.log(returvoid())
+//console.log(returvoid())
 
 
 
@@ -42,10 +42,25 @@ class Video {
     }
 
     getTitle(): string {  return this.title }
+
+    play() { console.log('Playing'); }
+    stop() { console.log('Stoppig') }
 }
+
+
+class YouTubeVideo extends Video {
+
+}
+
 
 let miVideo: Video = new Video('mi title');
 
 miVideo.printTitle();
 miVideo.changeTitle('Change mi title');
 console.log(miVideo.getTitle());
+
+console.log(miVideo.play());
+console.log(miVideo.stop());
+
+
+
