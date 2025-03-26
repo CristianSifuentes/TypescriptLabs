@@ -54,9 +54,34 @@ const multiplyResult: number = multiply(5)
 // console.log({result: number, result2: number2, result3: multiplyResult});
 
 
-//const healCharacter = (character, amount) => {  
-const healCharacter = (character, amount: number) => {
-   character.pv += amount;
+
+interface CharacterX {
+    name: string;
+    hp: number;
+    showHp: () => void;
+
 }
+
+//const healCharacter = (character, amount) => {  
+//const healCharacter: (character: CharacterX, amount: number) => void
+
+const healCharacter = (character: CharacterX , amount: number) => {
+    //Property 'pv' does not exist on type 'CharacterX'.ts(2339)
+    character.hp += amount;
+}
+
+
+const strinderX: CharacterX = {
+    name: 'Strider', 
+    hp: 50, 
+    showHp(){
+        console.log(`life points ${ this.hp}`);
+    }
+}
+
+healCharacter(strinderX, 10);
+
+strinderX.showHp();
+
 
 export {};
