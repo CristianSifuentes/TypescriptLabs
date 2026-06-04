@@ -4,7 +4,8 @@
 1. [Upcoming Features](#1-upcoming-features)
    - [Future Enhancements](#future-enhancements)
 2. [Major Releases & Features](#2-major-releases--features)
-   - [TypeScript 5.x (2023-Present)](#typescript-5x-2023-present)
+   - [TypeScript 6.x (2026-Present)](#typescript-6x-2026-present)
+   - [TypeScript 5.x (2023-2025)](#typescript-5x-2023-2025)
    - [TypeScript 4.x (2020-2022)](#typescript-4x-2020-2022)
    - [TypeScript 3.x (2018-2019)](#typescript-3x-2018-2019)
    - [TypeScript 2.x (2016-2017)](#typescript-2x-2016-2017)
@@ -25,7 +26,13 @@
 
 ## 2. Major Releases & Features
 
-### **TypeScript 5.x (2023-Present)**
+### **TypeScript 6.x (2026-Present)**
+- **ESM-first default targeting**: Stronger defaults for modern runtimes and module resolution.
+- **Legacy ES5 support reduction**: Aligns with current JavaScript shipping environments.
+- **Compiler modernization**: Continued preparation for a future compiler migration and infrastructure improvements.
+- **Ecosystem stabilization**: Focused on performance, compatibility, and polishing newer language features.
+
+### **TypeScript 5.x (2023-2025)**
 - **Standard ECMAScript Decorators**: Full ES decorator support.
 - **`const` Type Parameters**: Immutability enforcement in generics.
 - **`--moduleResolution bundler`**: Enhancements for module bundlers.
