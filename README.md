@@ -10,7 +10,12 @@
    - [TypeScript 3.x (2018-2019)](#typescript-3x-2018-2019)
    - [TypeScript 2.x (2016-2017)](#typescript-2x-2016-2017)
    - [TypeScript 1.x (2014-2015)](#typescript-1x-2014-2015)
-3. [Conclusion](#3-conclusion)
+3. [Deep Knowledge Guide: TypeSpaghetti](#3-deep-knowledge-guide-typespaghetti)
+   - [Basic Characteristics](#basic-characteristics)
+   - [Medium Characteristics](#medium-characteristics)
+   - [Advanced Characteristics](#advanced-characteristics)
+   - [Expert Characteristics](#expert-characteristics)
+4. [Conclusion](#4-conclusion)
 
 
 ## 1. Upcoming Features
@@ -93,7 +98,42 @@
 
 ---
 
-## 3. Conclusion
+## 3. Deep Knowledge Guide: TypeSpaghetti
+
+> **[CristianSifuentes/TypeSpaghetti](https://github.com/CristianSifuentes/TypeSpaghetti)** is a companion repository that untangles TypeScript's type system level by level — from basic annotations to compiler internals — with runnable code samples at every stage.
+
+TypeScript provides a strong foundation for scalable JavaScript applications. By mastering its expert-level features, developers can enhance maintainability, performance, and architecture for enterprise-level software solutions. TypeSpaghetti organizes that mastery path into four progressive tiers:
+
+### Basic Characteristics
+- **Static Typing** and **Type Annotations** to prevent runtime type errors.
+- **Compilation to JavaScript** via `tsc`, with full **ES6+ feature support**.
+- **Basic Type System**: `number`, `string`, `boolean`, `null`, `undefined`, `any`, `void`, arrays, tuples, and enums.
+- **Function Typing** and **Interfaces** as contracts for object shapes.
+
+### Medium Characteristics
+- **Union & Intersection Types** for combining and narrowing shapes.
+- **Optional & Readonly Properties** for safer, more flexible contracts.
+- **Generics** and **Type Inference** for reusable, self-documenting APIs.
+- **Custom-Valued Enums** and **Type Guards** (`value is Type`) for runtime-safe narrowing.
+
+### Advanced Characteristics
+- **Mapped Types** (`{ [K in keyof T]: T[K] }`) and **Conditional Types** for structural transformations.
+- **Discriminated Unions** for exhaustive, type-safe branching.
+- **Decorators** (as used in Angular/NestJS) and **Utility Types** (`Partial`, `Pick`, `Omit`, `Required`).
+- **Generic Constraints**, **Generic Interfaces/Classes**, and constraining parameters with `keyof`.
+
+### Expert Characteristics
+- **Abstract Classes** and advanced object-oriented design.
+- **Deep Type Inference** with `infer`, and **recursive types** (e.g., modeling `JSONValue`).
+- **Module Federation** for micro-frontends and **Compiler Internals** (`tsconfig`, custom transformers).
+- **Type Variance** — covariance and contravariance in function parameters — plus runtime reflection via `typeof`/`instanceof`.
+- **Dependency Injection** patterns for decoupled, testable enterprise architectures.
+
+Explore the full guide, with runnable snippets for every concept above, at **[github.com/CristianSifuentes/TypeSpaghetti](https://github.com/CristianSifuentes/TypeSpaghetti)**.
+
+---
+
+## 4. Conclusion
 TypeScript continues to evolve with a focus on **type safety, performance optimizations, and ECMAScript compatibility**. Understanding these enhancements allows developers to leverage the latest features for scalable, maintainable, and efficient TypeScript applications.
 
 For the latest updates, check the official [TypeScript Roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap).
