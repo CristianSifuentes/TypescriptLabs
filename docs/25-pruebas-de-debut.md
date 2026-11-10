@@ -1629,7 +1629,7 @@ const dato: number = await Promise.resolve(42);
 export var destino = "es2020";
 ```
 
-<a id="imports-not-used-as-values"></a>**`importsNotUsedAsValues`.** Obsoleta en la 5.0 y retirada en la 5.5.
+<a id="imports-not-used-as-values"></a>**`importsNotUsedAsValues`.** Obsoleta en la 5.0 (error salvo con `ignoreDeprecations`) y retirada del todo en la 5.6.
 
 ```ts debut hasta=4.9 opts=importsNotUsedAsValues:error
 export var importaciones = true;
@@ -1999,7 +1999,7 @@ type SinEspacios<T extends string> = T extends ` ${infer Resto}` ? SinEspacios<R
 const limpio: SinEspacios<"                                                                                                    x"> = "x";
 ```
 
-<a id="preserve-value-imports"></a>**`--preserveValueImports`.** Obsoleta en la 5.0 y retirada en la 5.5.
+<a id="preserve-value-imports"></a>**`--preserveValueImports`.** Obsoleta en la 5.0 (error salvo con `ignoreDeprecations`) y retirada del todo en la 5.6.
 
 ```ts debut hasta=4.9 opts=preserveValueImports
 export var importacionesConservadas = true;

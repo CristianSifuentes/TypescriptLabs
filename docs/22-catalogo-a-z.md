@@ -98,8 +98,8 @@
 | [TypeScript 5.2](09-typescript-5.0-5.4-decoradores-y-using.md) | ago-2023 | 7 | 3 | 2 | · | 1 | · | 1 |
 | [TypeScript 5.3](09-typescript-5.0-5.4-decoradores-y-using.md) | nov-2023 | 8 | 5 | 1 | · | · | · | 2 |
 | [TypeScript 5.4](09-typescript-5.0-5.4-decoradores-y-using.md) | mar-2024 | 6 | 3 | · | · | 1 | 1 | 1 |
-| [TypeScript 5.5](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | jun-2024 | 10 | 4 | · | · | 1 | 3 | 2 |
-| [TypeScript 5.6](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | sep-2024 | 8 | 1 | 1 | · | 1 | 3 | 2 |
+| [TypeScript 5.5](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | jun-2024 | 9 | 4 | · | · | 1 | 2 | 2 |
+| [TypeScript 5.6](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | sep-2024 | 9 | 1 | 1 | · | 1 | 4 | 2 |
 | [TypeScript 5.7](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | nov-2024 | 7 | 2 | · | · | 1 | 2 | 2 |
 | [TypeScript 5.8](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | feb-2025 | 6 | 1 | · | · | · | 4 | 1 |
 | [TypeScript 5.9](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | jul-2025 | 6 | · | 1 | · | 1 | 2 | 2 |
@@ -129,8 +129,8 @@ TypeScript casi nunca retira nada, y por eso esta lista es corta. Casi todo lo q
 
 | Característica | Debutó en | Dejó de aceptarse en | Descripción |
 |---|---|---|---|
-| `importsNotUsedAsValues` | [3.8](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | **5.5** | Controlaba la elisión de importaciones; la sustituyó `verbatimModuleSyntax` |
-| `--preserveValueImports` | [4.5](08-typescript-4.5-4.9-esm-y-satisfies.md) | **5.5** | Conservaba importaciones sin uso aparente; la sustituyó `verbatimModuleSyntax` |
+| `importsNotUsedAsValues` | [3.8](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | **5.6** | Controlaba la elisión de importaciones; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax` |
+| `--preserveValueImports` | [4.5](08-typescript-4.5-4.9-esm-y-satisfies.md) | **5.6** | Conservaba importaciones sin uso aparente; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax` |
 | Salida `umd` y `system` | [1.5](02-origenes-y-typescript-1.md) | **7.0** | Formatos de módulo anteriores a ESM; obsoletos en la 6.0 junto con `amd` y `none` |
 | Resolución de módulos `node` | [1.6](02-origenes-y-typescript-1.md) | **7.0** | Imita a Node 10 (hoy `node10`); obsoleta en la 6.0 en favor de `nodenext` y `bundler` |
 | `baseUrl` | [2.0](03-typescript-2.0-2.2-nulos-y-flujo.md) | **7.0** | Raíz de búsqueda de módulos no relativos; obsoleta en la 6.0, porque `paths` ya no la necesita |
@@ -354,7 +354,7 @@ TypeScript casi nunca retira nada, y por eso esta lista es corta. Casi todo lo q
 | Importaciones JSON validadas en `nodenext` | [5.7](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | Módulos | Solo tipos | — | 🟢 | Exigen `with { type: 'json' }` y solo ofrecen la exportación por defecto | — |
 | Importaciones sin tipos | [2.1](03-typescript-2.0-2.2-nulos-y-flujo.md) | Módulos | Solo tipos | — | 🟢 | Un módulo sin declaraciones se importa como `any`, salvo con `noImplicitAny` | — |
 | Importaciones y exportaciones solo de tipo | [3.8](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | Módulos | Solo tipos | — | 🟢 | `import type { T }` y `export type { T }` se borran siempre | [🧪](25-pruebas-de-debut.md#import-type) |
-| `importsNotUsedAsValues` | [3.8](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | Módulos | Opción | — | ⛔ 5.5 | Controlaba la elisión de importaciones; la sustituyó `verbatimModuleSyntax` | [🧪](25-pruebas-de-debut.md#imports-not-used-as-values) |
+| `importsNotUsedAsValues` | [3.8](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | Módulos | Opción | — | ⛔ 5.6 | Controlaba la elisión de importaciones; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax` | [🧪](25-pruebas-de-debut.md#imports-not-used-as-values) |
 | `--incremental` | [3.4](05-typescript-3.0-3.4-proyectos-y-tuplas.md) | Compilador y proyecto | Opción | — | 🟢 | Guarda el grafo del proyecto en `.tsbuildinfo` para compilar más rápido | [🧪](25-pruebas-de-debut.md#incremental) |
 | `--incremental` con `--noEmit` | [4.0](07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md) | Compilador y proyecto | Opción | — | 🟢 | Caché incremental para quien solo comprueba tipos | — |
 | `infer` | [2.8](04-typescript-2.3-2.9-estricto-y-condicionales.md) | Genéricos y nivel de tipos | Solo tipos | — | 🟢 | Captura una parte de un tipo dentro de una condición | [🧪](25-pruebas-de-debut.md#infer) |
@@ -462,7 +462,7 @@ TypeScript casi nunca retira nada, y por eso esta lista es corta. Casi todo lo q
 | Característica | TS | Familia | Exige | ECMAScript | Estado | Descripción | 🧪 |
 |---|---|---|---|---|---|---|:-:|
 | `Object.groupBy` y `Map.groupBy` | [5.4](09-typescript-5.0-5.4-decoradores-y-using.md) | Sintaxis y API de ECMAScript | Biblioteca | ES2024 | 🟢 | Agrupan un iterable por clave | [🧪](25-pruebas-de-debut.md#group-by) |
-| Obsolescencias de la 5.0 | [5.0](09-typescript-5.0-5.4-decoradores-y-using.md) | Compilador y proyecto | Opción | — | 🟢 | `target ES3`, `out`, `charset`, `keyofStringsOnly` y otras: aviso con `ignoreDeprecations: '5.0'` y retirada en la 5.5 | — |
+| Obsolescencias de la 5.0 | [5.0](09-typescript-5.0-5.4-decoradores-y-using.md) | Compilador y proyecto | Opción | — | 🟢 | `target ES3`, `out`, `charset`, `keyofStringsOnly` y otras: error salvo con `ignoreDeprecations: '5.0'` | — |
 | Obsolescencias de la 6.0 | [6.0](11-typescript-6.0-el-puente.md) | Compilador y proyecto | Opción | — | 🟢 | `target es5`, `baseUrl`, `outFile`, `node10`, AMD, UMD y System: error salvo con `ignoreDeprecations: '6.0'` | — |
 | Omisión del análisis de JSDoc | [5.3](09-typescript-5.0-5.4-decoradores-y-using.md) | Compilador y proyecto | Herramienta | — | 🟢 | `tsc` no analiza JSDoc en archivos TypeScript: menos tiempo y menos memoria | — |
 | `Omit` | [3.5](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | Genéricos y nivel de tipos | Solo tipos | — | 🟢 | `Omit<T, K>` quita propiedades de un tipo | [🧪](25-pruebas-de-debut.md#omit) |
@@ -501,7 +501,7 @@ TypeScript casi nunca retira nada, y por eso esta lista es corta. Casi todo lo q
 | Plugins del servicio de lenguaje | [2.3](04-typescript-2.3-2.9-estricto-y-condicionales.md) | JavaScript, JSX y editor | Herramienta | — | 🟢 | Extensiones del editor que amplían el servicio de lenguaje | — |
 | Predicados de tipo inferidos | [5.5](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | Flujo y estrictez | Solo tipos | — | 🟢 | `x => x !== undefined` se infiere como `x is T`: `filter` por fin estrecha | [🧪](25-pruebas-de-debut.md#predicados-inferidos) |
 | `--preserveSymlinks` | [2.5](04-typescript-2.3-2.9-estricto-y-condicionales.md) | Módulos | Opción | — | 🟢 | No resuelve los enlaces simbólicos a su ruta real | [🧪](25-pruebas-de-debut.md#preserve-symlinks) |
-| `--preserveValueImports` | [4.5](08-typescript-4.5-4.9-esm-y-satisfies.md) | Módulos | Opción | — | ⛔ 5.5 | Conservaba importaciones sin uso aparente; la sustituyó `verbatimModuleSyntax` | [🧪](25-pruebas-de-debut.md#preserve-value-imports) |
+| `--preserveValueImports` | [4.5](08-typescript-4.5-4.9-esm-y-satisfies.md) | Módulos | Opción | — | ⛔ 5.6 | Conservaba importaciones sin uso aparente; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax` | [🧪](25-pruebas-de-debut.md#preserve-value-imports) |
 | Promesas siempre verdaderas | [4.3](07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md) | Flujo y estrictez | Solo tipos | — | 🟢 | Error al usar una promesa sin `await` como condición; con una llamada directa, `if (f())`, desde la 4.4 | [🧪](25-pruebas-de-debut.md#promesas-siempre-verdaderas) |
 | Propagación de arreglos más precisa | [3.6](06-typescript-3.5-3.9-encadenamiento-y-aserciones.md) | Sintaxis y API de ECMAScript | Sintaxis ES | — | 🟢 | El auxiliar `__spreadArrays` respeta los huecos al compilar para ES5 | — |
 | Propagación y resto de objetos | [2.1](03-typescript-2.0-2.2-nulos-y-flujo.md) | Sintaxis y API de ECMAScript | Sintaxis ES | ES2018 | 🟢 | `{ ...a, b: 1 }` y `const { x, ...resto } = obj` | [🧪](25-pruebas-de-debut.md#spread-de-objetos) |
@@ -530,7 +530,7 @@ TypeScript casi nunca retira nada, y por eso esta lista es corta. Casi todo lo q
 | `resolution-mode` estable | [5.3](09-typescript-5.0-5.4-decoradores-y-using.md) | Módulos | Solo tipos | — | 🟢 | En tipos de importación y en todos los modos de módulo | — |
 | `--resolveJsonModule` | [2.9](04-typescript-2.3-2.9-estricto-y-condicionales.md) | Módulos | Opción | — | 🟢 | Importar archivos `.json` con su tipo inferido | [🧪](25-pruebas-de-debut.md#resolve-json-module) |
 | Restricciones en `infer` | [4.7](08-typescript-4.5-4.9-esm-y-satisfies.md) | Genéricos y nivel de tipos | Solo tipos | — | 🟢 | `infer U extends string` acota lo que se captura | [🧪](25-pruebas-de-debut.md#infer-extends) |
-| Retirada de lo obsoleto en la 5.0 | [5.5](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | Compilador y proyecto | Opción | — | 🟢 | Las opciones marcadas en la 5.0 dejan de existir | — |
+| Retirada de lo obsoleto en la 5.0 | [5.6](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | Compilador y proyecto | Opción | — | 🟢 | Anunciada para la 5.5, pero el compilador 5.5.4 aún las admite con `ignoreDeprecations`; la 5.6 las rechaza sin remedio | — |
 | Retirada de lo obsoleto en la 6.0 | [7.0](12-typescript-7-el-compilador-nativo.md) | Compilador y proyecto | Opción | — | 🟢 | Lo que la 6.0 marcó como obsoleto pasa a ser un error sin remedio | — |
 | Retornos implícitos en funciones `undefined` | [5.1](09-typescript-5.0-5.4-decoradores-y-using.md) | Flujo y estrictez | Solo tipos | — | 🟢 | Una función que devuelve `undefined` ya no necesita `return` | [🧪](25-pruebas-de-debut.md#retorno-undefined-implicito) |
 | `--rewriteRelativeImportExtensions` | [5.7](10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md) | Módulos | Opción | — | 🟢 | Convierte `./a.ts` en `./a.js` al emitir | [🧪](25-pruebas-de-debut.md#rewrite-relative-import-extensions) |

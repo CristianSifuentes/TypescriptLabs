@@ -583,6 +583,85 @@ function tablaMaestra(versiones: Version[]): string {
   return l.join('\n');
 }
 
+// --------------------------------------------------------------------------- opciones del compilador (datos extraídos de los compiladores)
+
+interface Opcion { opcion: string; tipo: string; categoria: string; desde: string; obsoleta: string; retirada: string; descripcion: string }
+interface Valor { opcion: string; valor: string; desde: string; obsoleta: string; retirada: string }
+
+/** Antes de la 1.5 los compiladores solo se pueden consultar por línea de comandos: estos debuts se comprobaron a mano. */
+const ANTERIORES_A_1_5: Record<string, string> = {
+  'target=es3': '0.8', 'target=es5': '0.8', 'target=es6': '1.4',
+  'module=commonjs': '0.8', 'module=amd': '0.8',
+};
+
+const SINTAXIS_POR_DESTINO: Record<string, [string, string]> = {
+  es3: ['ES3 (1999)', '—'],
+  es5: ['ES5 (2009)', '*Getters* y *setters*'],
+  es6: ['ES2015', 'Clases, `let`/`const`, flechas, plantillas, módulos'],
+  es2015: ['ES2015', 'Alias de `es6`'],
+  es2016: ['ES2016', '`**`'],
+  es2017: ['ES2017', '`async` / `await`'],
+  es2018: ['ES2018', 'Propagación de objetos, iteración asíncrona'],
+  es2019: ['ES2019', '`catch` sin variable'],
+  es2020: ['ES2020', '`?.`, `??`, `bigint`, `import()`'],
+  es2021: ['ES2021', '`&&=`, `\\|\\|=`, `??=`, separadores numéricos'],
+  es2022: ['ES2022', 'Campos de clase, `#privado`, bloques `static`, `await` de nivel superior'],
+  es2023: ['ES2023', '— (solo API: `toSorted`, `findLast`)'],
+  es2024: ['ES2024', '— (solo API: `Object.groupBy`, `Promise.withResolvers`)'],
+  es2025: ['ES2025', '— (solo API: auxiliares de iteradores, métodos de `Set`)'],
+  es2026: ['ES2026', '— (solo API: `Array.fromAsync`, `Error.isError`)'],
+  esnext: ['Lo último', '`using`, decoradores'],
+};
+
+function estadoDeValor(v: { obsoleta: string; retirada: string; desde: string }, betas: Set<string>): string {
+  if (v.retirada) return v.obsoleta ? `⛔ Obsoleto en ${v.obsoleta}, retirado en ${v.retirada}` : `⛔ Retirado en ${v.retirada}`;
+  if (v.obsoleta) return `🟠 Obsoleto desde ${v.obsoleta}`;
+  return betas.has(v.desde) ? '🟡 Solo en beta' : '🟢';
+}
+
+function tablaDeTarget(valores: Valor[], betas: Set<string>): string {
+  const l = ['| `target` | Edición | Disponible desde | Sintaxis que deja de transformarse | Estado |', '|---|---|---|---|---|'];
+  const orden = Object.keys(SINTAXIS_POR_DESTINO);
+  for (const v of valores.filter((x) => x.opcion === 'target').sort((a, b) => orden.indexOf(a.valor) - orden.indexOf(b.valor))) {
+    const [edicion, sintaxis] = SINTAXIS_POR_DESTINO[v.valor] ?? ['', ''];
+    const desde = ANTERIORES_A_1_5[`target=${v.valor}`] ?? v.desde;
+    let estado = estadoDeValor(v, betas);
+    if (v.valor === 'es6') estado = '🟢 Mínimo actual';
+    if (v.valor === 'es2025') estado = '🟢 Por defecto en 6.0 y 7.0';
+    if (v.valor === 'es2026') estado = '🟡 Por defecto en la 7.1 beta';
+    l.push(`| \`${v.valor}\` | ${edicion} | **${desde}** | ${sintaxis} | ${estado} |`);
+  }
+  return l.join('\n');
+}
+
+function tablaDeValores(valores: Valor[], opcion: string, notas: Record<string, string>, betas: Set<string>): string {
+  const l = [`| \`${opcion}\` | Disponible desde | Estado | Para qué |`, '|---|---|---|---|'];
+  for (const v of valores.filter((x) => x.opcion === opcion)) {
+    const desde = ANTERIORES_A_1_5[`${opcion}=${v.valor}`] ?? v.desde;
+    l.push(`| \`${v.valor}\` | **${desde}** | ${estadoDeValor(v, betas)} | ${notas[v.valor] ?? ''} |`);
+  }
+  return l.join('\n');
+}
+
+function tablaDeOpciones(opciones: Opcion[], betas: Set<string>): string {
+  const l = ['| Opción | Tipo | Desde | Obsoleta | Retirada | Qué hace (texto oficial del compilador) |', '|---|---|---|---|---|---|'];
+  for (const o of [...opciones].sort((a, b) => a.opcion.localeCompare(b.opcion, 'es', { sensitivity: 'base' }))) {
+    const desde = o.desde === '1.5' ? '≤ 1.5' : betas.has(o.desde) ? `${o.desde} 🟡` : o.desde;
+    l.push(`| \`${o.opcion}\` | ${o.tipo} | ${desde} | ${o.obsoleta || '—'} | ${o.retirada ? `**${o.retirada}**` : '—'} | ${celda(o.descripcion) || '—'} |`);
+  }
+  return l.join('\n');
+}
+
+function tablaDeLib(valores: Valor[], betas: Set<string>): string {
+  const porVersion = new Map<string, string[]>();
+  for (const v of valores.filter((x) => x.opcion === 'lib')) porVersion.set(v.desde, [...(porVersion.get(v.desde) ?? []), v.valor]);
+  const l = ['| TypeScript | Bibliotecas `lib` que debutan |', '|---|---|'];
+  for (const [version, libs] of [...porVersion].sort((a, b) => cmp(a[0], b[0]))) {
+    l.push(`| **${version}**${betas.has(version) ? ' 🟡' : ''} | ${libs.sort().map((x) => `\`${x}\``).join(' · ')} |`);
+  }
+  return l.join('\n');
+}
+
 function insignias(n: Record<string, string | number>): string {
   const insignia = (alt: string, etiqueta: string, valor: string | number, color: string): string =>
     `  <img alt="${alt}" src="https://img.shields.io/badge/${encodeURIComponent(etiqueta).replace(/-/g, '--')}-${encodeURIComponent(String(valor)).replace(/-/g, '--')}-${color}?style=for-the-badge">`;
@@ -652,9 +731,37 @@ function principal(): void {
     compiladores,
     diagramas,
   };
+  const rutaOpciones = join(RAIZ, 'data', 'opciones.csv');
+  const rutaValores = join(RAIZ, 'data', 'valores-de-opciones.csv');
+  const opciones = existsSync(rutaOpciones) ? (leerCsv(rutaOpciones) as unknown as Opcion[]) : [];
+  const valores = existsSync(rutaValores) ? (leerCsv(rutaValores) as unknown as Valor[]) : [];
+  const betas = new Set(versiones.filter((v) => v.estado === 'beta').map((v) => v.version));
+  const doc = (nombre: string): string => join(RAIZ, 'docs', nombre);
+  const NOTAS_MODULE: Record<string, string> = {
+    commonjs: '`require` y `module.exports`: Node clásico', amd: 'RequireJS', umd: 'CommonJS, AMD o global, según el entorno', system: 'SystemJS',
+    none: 'Sin módulos', es6: 'Módulos ES; alias de `es2015`', es2015: 'Módulos ES', es2020: 'Añade `import()` e `import.meta`',
+    es2022: 'Añade `await` de nivel superior', esnext: 'Módulos ES con lo último', node12: 'Nombre provisional de `node16`; solo en compilaciones nocturnas',
+    node16: 'Node 16: el formato lo decide `package.json`', node18: 'Node 18: sin `require(esm)`', node20: 'Node 20: con `require(esm)`',
+    nodenext: 'El Node más reciente que el compilador conoce', preserve: 'No transforma `import` ni `require`: empaquetadores y Bun',
+  };
+  const NOTAS_RESOLUCION: Record<string, string> = {
+    classic: 'El algoritmo original de TypeScript, anterior a Node', node: 'Alias histórico de `node10`', node10: 'Node 10: sin `exports` de `package.json`',
+    node12: 'Nombre provisional de `node16`', node16: 'Node 16+: `exports`, `imports` y extensiones obligatorias en ESM',
+    nodenext: 'El Node más reciente', bundler: 'Como Vite, esbuild o webpack: `exports` sin exigir extensiones',
+  };
+  const NOTAS_JSX: Record<string, string> = {
+    preserve: 'Deja el JSX intacto (`.jsx`) para otra herramienta', react: '`React.createElement`', 'react-native': 'Deja el JSX intacto en `.js`',
+    'react-jsx': 'El transformador automático de React 17', 'react-jsxdev': 'Como `react-jsx`, con información de depuración',
+  };
   const inyectados = [
     inyectar(join(RAIZ, 'README.md'), 'insignias', insignias(cifras)) && 'README: insignias',
-    inyectar(join(RAIZ, 'docs', '01-modelo-de-versiones.md'), 'tabla-maestra', tablaMaestra(versiones)) && '01: tabla maestra',
+    inyectar(doc('01-modelo-de-versiones.md'), 'tabla-maestra', tablaMaestra(versiones)) && '01: tabla maestra',
+    valores.length && inyectar(doc('01-modelo-de-versiones.md'), 'tabla-target', tablaDeTarget(valores, betas)) && '01: target',
+    valores.length && inyectar(doc('16-modulos-y-resolucion.md'), 'tabla-module', tablaDeValores(valores, 'module', NOTAS_MODULE, betas)) && '16: module',
+    valores.length && inyectar(doc('16-modulos-y-resolucion.md'), 'tabla-resolucion', tablaDeValores(valores, 'moduleResolution', NOTAS_RESOLUCION, betas)) && '16: moduleResolution',
+    valores.length && inyectar(doc('17-tsconfig-de-referencia.md'), 'tabla-jsx', tablaDeValores(valores, 'jsx', NOTAS_JSX, betas)) && '17: jsx',
+    opciones.length && inyectar(doc('17-tsconfig-de-referencia.md'), 'tabla-opciones', tablaDeOpciones(opciones, betas)) && '17: opciones',
+    valores.length && inyectar(doc('19-typescript-y-ecmascript.md'), 'tabla-lib', tablaDeLib(valores, betas)) && '19: lib',
   ].filter(Boolean);
 
   const enPoster = filas.filter((f) => f.poster === '1').length;

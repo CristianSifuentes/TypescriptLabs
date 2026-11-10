@@ -176,14 +176,15 @@ function conciliar(version: string, final: Opciones, extra: Opciones): void {
 /** Opciones con las que se emite JavaScript para ejecutarlo en Node. */
 export function opcionesDeEmision(version: string, extra: Opciones, esm: boolean): Opciones {
   const o: Opciones = {};
-  if (lt(version, '1.4')) o.target = 'ES5';
+  // La 1.5 y la 1.6 no saben combinar destino ES6 con módulos CommonJS: para ejecutar, emiten ES5.
+  if (lt(version, '1.7')) o.target = 'ES5';
   else if (lt(version, '2.1')) o.target = 'ES6';
   else if (lt(version, '3.8')) o.target = 'ES2017';
   else if (lt(version, '4.6')) o.target = 'ES2020';
   else o.target = 'ES2022';
 
   if (esm && ge(version, '2.4')) o.module = 'ESNext';
-  else if (ge(version, '1.7') || lt(version, '1.5')) o.module = 'commonjs';
+  else if (ge(version, '1.0')) o.module = 'commonjs';
   if (ge(version, '5.0')) o.moduleResolution = 'bundler';
   else if (ge(version, '1.6')) o.moduleResolution = 'node';
   if (ge(version, '4.7')) o.moduleDetection = 'force';

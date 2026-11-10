@@ -194,7 +194,7 @@ await-de-nivel-superior,`await` de nivel superior,3.8,ecma,S,GA,,ES2022,"`await`
 destino-es2020,`es2020` como `target` y `module`,3.8,compilador,C,GA,,,"Conserva `?.`, `??`, `bigint` e `import()` sin transformar",,,0
 modificadores-jsdoc,Modificadores de acceso en JSDoc,3.8,editor,T,GA,,,"`@public`, `@private`, `@protected` y `@readonly`",,,0
 watch-options,`watchOptions`,3.8,compilador,C,GA,,,"Estrategias de vigilancia de archivos y directorios",,,0
-imports-not-used-as-values,`importsNotUsedAsValues`,3.8,modulos,C,Retirada,5.5,,"Controlaba la elisión de importaciones; la sustituyó `verbatimModuleSyntax`",Iv,importsNotUsed|AsValues,1
+imports-not-used-as-values,`importsNotUsedAsValues`,3.8,modulos,C,Retirada,5.6,,"Controlaba la elisión de importaciones; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax`",Iv,importsNotUsed|AsValues,1
 ts-expect-error,`// @ts-expect-error`,3.9,flujo,T,GA,,,"Silencia un error y avisa si el error desaparece",Xe,@ts-expect-|error,1
 promise-all,Mejor inferencia en `Promise.all`,3.9,nivel,T,GA,,,"Corrige la mezcla de `null` y `undefined` entre los resultados",,,0
 velocidad-3-9,Mejoras de velocidad de la 3.9,3.9,compilador,H,GA,,,"Alrededor de un 40 % menos de tiempo de compilación en material-ui",Vl,Velocidad,1
@@ -242,7 +242,7 @@ lib-desde-node-modules,`lib` desde `node_modules`,4.5,compilador,C,GA,,,"Un paqu
 plantillas-como-discriminantes,Tipos de plantilla como discriminantes,4.5,flujo,T,GA,,,"Una unión se estrecha por una propiedad con patrón de plantilla",,,0
 module-es2022,`--module es2022`,4.5,modulos,C,GA,,,"Módulos con `await` de nivel superior",,,0
 recursion-de-cola,Eliminación de recursión de cola en tipos,4.5,nivel,T,GA,,,"Los tipos condicionales recursivos en posición de cola no agotan el límite de profundidad",Tt,Recursión|de cola,1
-preserve-value-imports,`--preserveValueImports`,4.5,modulos,C,Retirada,5.5,,"Conservaba importaciones sin uso aparente; la sustituyó `verbatimModuleSyntax`",,,0
+preserve-value-imports,`--preserveValueImports`,4.5,modulos,C,Retirada,5.6,,"Conservaba importaciones sin uso aparente; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax`",,,0
 modificador-type-en-imports,Modificador `type` en nombres importados,4.5,modulos,T,GA,,,"`import { type Tipo, valor } from './m'`",Ti,{ type T },1
 presencia-de-campo-privado,Comprobación de marca privada,4.5,clases,S,GA,,ES2022,"`#x in obj` pregunta si un objeto tiene el campo privado",Pb,#x in obj,1
 aserciones-de-importacion,Aserciones de importación,4.5,modulos,S,Retirada,7.0,Sustituida,"`assert { type: 'json' }`: la propuesta cambió a `with`; obsoleta en la 6.0",,,0
@@ -286,7 +286,7 @@ verbatim-module-syntax,`--verbatimModuleSyntax`,5.0,modulos,C,GA,,,"Lo que no ll
 export-type-estrella,`export type *`,5.0,modulos,T,GA,,,"Reexporta solo los tipos de un módulo",,,0
 jsdoc-satisfies-overload,`@satisfies` y `@overload` en JSDoc,5.0,editor,T,GA,,,"`satisfies` y las sobrecargas llegan a los archivos JavaScript",,,0
 migracion-a-modulos,El compilador migra a módulos,5.0,compilador,H,GA,,,"Entre un 10 % y un 20 % más rápido, y un paquete npm que baja de 63,8 MB a 37,4 MB",,,0
-obsolescencias-5-0,Obsolescencias de la 5.0,5.0,compilador,C,GA,,,"`target ES3`, `out`, `charset`, `keyofStringsOnly` y otras: aviso con `ignoreDeprecations: '5.0'` y retirada en la 5.5",,,0
+obsolescencias-5-0,Obsolescencias de la 5.0,5.0,compilador,C,GA,,,"`target ES3`, `out`, `charset`, `keyofStringsOnly` y otras: error salvo con `ignoreDeprecations: '5.0'`",,,0
 completado-de-switch,Completado exhaustivo de `switch`,5.0,editor,H,GA,,,"El editor escribe todos los `case` de una unión",,,0
 retorno-undefined-implicito,Retornos implícitos en funciones `undefined`,5.1,flujo,T,GA,,,"Una función que devuelve `undefined` ya no necesita `return`",Ru,return|implícito,1
 accesores-sin-relacion,Tipos sin relación en `get` y `set`,5.1,clases,T,GA,,,"Con anotaciones explícitas, el `get` y el `set` pueden tener tipos independientes",Gs,get y set|libres,1
@@ -324,7 +324,7 @@ isolated-declarations,`--isolatedDeclarations`,5.5,compilador,C,GA,,,"Exige anot
 config-dir,Variable `${configDir}`,5.5,compilador,C,GA,,,"Rutas relativas al proyecto que hereda una configuración compartida",Cd,${configDir},1
 rendimiento-5-5,Optimizaciones de rendimiento de la 5.5,5.5,compilador,H,GA,,,"Objetos monomórficos: compilaciones entre un 5 % y un 8 % más rápidas con la API pública",,,0
 transpile-declaration,API `transpileDeclaration`,5.5,compilador,H,GA,,,"Genera el `.d.ts` de un solo archivo",,,0
-retirada-de-5-0,Retirada de lo obsoleto en la 5.0,5.5,compilador,C,GA,,,"Las opciones marcadas en la 5.0 dejan de existir",,,0
+retirada-de-5-0,Retirada de lo obsoleto en la 5.0,5.6,compilador,C,GA,,,"Anunciada para la 5.5, pero el compilador 5.5.4 aún las admite con `ignoreDeprecations`; la 5.6 las rechaza sin remedio",,,0
 comprobaciones-de-verdad,Comprobaciones de verdad y nulidad imposibles,5.6,flujo,T,GA,,,"Error si una condición es siempre verdadera o si un `??` nunca se usa",Tn,Condiciones|imposibles,1
 helpers-de-iteradores,Métodos auxiliares de iteradores,5.6,ecma,L,GA,,ES2025,"`map`, `filter` y `take` sobre cualquier iterador; tipo `IteratorObject`",Ih,Iterator|helpers,1
 strict-builtin-iterator-return,`--strictBuiltinIteratorReturn`,5.6,flujo,C,GA,,,"`next()` de los iteradores nativos ya no devuelve `any` al terminar",,,0
