@@ -228,7 +228,7 @@ override,`override` y `--noImplicitOverride`,4.3,clases,T,GA,,,"Declara, y permi
 plantillas-contextuales,Mejoras de tipos de plantilla,4.3,nivel,T,GA,,,"Las expresiones de plantilla se tipan por contexto y los patrones se comparan entre sí",,,0
 metodos-privados,Métodos y accesores `#privados`,4.3,clases,S,GA,,ES2022,"`#metodo()`, `get #x()` y miembros estáticos privados",Pm,#método(),1
 estrechamiento-contextual-de-genericos,Estrechamiento contextual de genéricos,4.3,flujo,T,GA,,,"Un valor de tipo `T` se estrecha según su restricción cuando el contexto lo pide",,,0
-promesas-siempre-verdaderas,Promesas siempre verdaderas,4.3,flujo,T,GA,,,"Error al usar una promesa sin `await` como condición",,,0
+promesas-siempre-verdaderas,Promesas siempre verdaderas,4.3,flujo,T,GA,,,"Error al usar una promesa sin `await` como condición; con una llamada directa, `if (f())`, desde la 4.4",,,0
 indices-estaticos,Firmas de índice `static`,4.3,clases,T,GA,,,"`static [clave: string]: number`",,,0
 completado-de-importaciones,Completado de sentencias de importación,4.3,editor,H,GA,,,"El editor propone la línea `import` entera",,,0
 flujo-con-alias,Análisis de flujo con condiciones en alias,4.4,flujo,T,GA,,,"`const esTexto = typeof x === 'string'` estrecha después en el `if`",Ca,Condiciones|con alias,1
@@ -246,7 +246,7 @@ preserve-value-imports,`--preserveValueImports`,4.5,modulos,C,Retirada,5.5,,"Con
 modificador-type-en-imports,Modificador `type` en nombres importados,4.5,modulos,T,GA,,,"`import { type Tipo, valor } from './m'`",Ti,{ type T },1
 presencia-de-campo-privado,Comprobación de marca privada,4.5,clases,S,GA,,ES2022,"`#x in obj` pregunta si un objeto tiene el campo privado",Pb,#x in obj,1
 aserciones-de-importacion,Aserciones de importación,4.5,modulos,S,Retirada,7.0,Sustituida,"`assert { type: 'json' }`: la propuesta cambió a `with`; obsoleta en la 6.0",,,0
-codigo-antes-de-super,Código antes de `super()`,4.6,clases,T,GA,,,"Permitido si no usa `this`, aunque la clase tenga campos inicializados",,,0
+codigo-antes-de-super,Código antes de `super()`,4.6,clases,T,GA,,,"Permitido si no usa `this`, aunque la clase tenga campos inicializados y el destino obligue a transformarlos",,,0
 flujo-en-desestructuracion,Análisis de flujo en uniones desestructuradas,4.6,flujo,T,GA,,,"`const { tipo, dato } = accion`: estrechar `tipo` estrecha `dato`",Dn,Estrechar al|desestructurar,1
 profundidad-de-recursion,Mejores comprobaciones de profundidad,4.6,nivel,T,GA,,,"Detecta mejor las expansiones de tipos infinitas",,,0
 inferencia-de-acceso-indexado,Inferencia en accesos indexados,4.6,nivel,T,GA,,,"Se infiere `T[K]` al mapear sobre claves genéricas",,,0
@@ -255,7 +255,7 @@ destino-es2022,`--target es2022`,4.6,compilador,C,GA,,ES2022,"Campos de clase, `
 analizador-de-trazas,Analizador de trazas,4.6,compilador,H,GA,,,"`@typescript/analyze-trace` interpreta la salida de `--generateTrace`",Tz,Trazas de|rendimiento,1
 errores-de-sintaxis-en-js,Errores de sintaxis en JavaScript,4.6,editor,H,GA,,,"El editor avisa de redeclaraciones y modificadores inválidos también en `.js`",,,0
 esm-en-node,Módulos ECMAScript en Node,4.7,modulos,C,GA,,,"`node16` y `nodenext` entienden `exports`, `imports` y `type` de `package.json`",Nd,node16 ·|nodenext,1
-extensiones-mts-cts,Extensiones `.mts` y `.cts`,4.7,modulos,C,GA,,,"El formato del módulo se declara en la extensión, como `.mjs` y `.cjs`",Mc,.mts · .cts,1
+extensiones-mts-cts,Extensiones `.mts` y `.cts`,4.7,modulos,C,GA,,,"El formato del módulo se declara en la extensión, como `.mjs` y `.cjs`; el compilador 4.6.4 ya las leía",Mc,.mts · .cts,1
 module-detection,`--moduleDetection`,4.7,modulos,C,GA,,,"`force` trata todo archivo como módulo",,,0
 flujo-en-corchetes,Análisis de flujo en accesos con corchetes,4.7,flujo,T,GA,,,"`obj[clave]` se estrecha cuando `clave` es un literal o un símbolo único",,,0
 inferencia-en-objetos-y-metodos,Inferencia de funciones en objetos y métodos,4.7,nivel,T,GA,,,"La inferencia avanza propiedad a propiedad, de izquierda a derecha",,,0
@@ -266,7 +266,7 @@ module-suffixes,`moduleSuffixes`,4.7,modulos,C,GA,,,"Busca `archivo.ios.ts` ante
 resolution-mode,`resolution-mode`,4.7,modulos,T,GA,,,"Elige resolver como `import` o como `require` en una directiva o en un tipo",,,0
 ir-a-definicion-en-fuente,Ir a la definición en el código fuente,4.7,editor,H,GA,,,"Salta al `.js` o al `.ts` real en lugar del `.d.ts`",,,0
 estrechamiento-de-unknown,Estrechamiento de `unknown` y `{}`,4.8,flujo,T,GA,,,"`unknown` se comporta como `{} | null | undefined` y `NonNullable<T>` es `T & {}`",Nk,unknown se|estrecha,1
-infer-en-plantillas,Mejor `infer` en tipos de plantilla,4.8,nivel,T,GA,,,"`infer N extends number` convierte un fragmento de cadena en un número literal",Xn,infer N extends|number,1
+infer-en-plantillas,Mejor `infer` en tipos de plantilla,4.8,nivel,T,GA,,,"`infer N extends number` convierte un fragmento de cadena en un número literal (en la 4.7 daba `number` a secas)",Xn,infer N extends|number,1
 comparar-literales-de-objeto,Comparación con literales de objeto y arreglo,4.8,flujo,T,GA,,,"`x === []` es siempre falso, y ahora es un error",Ce,x === [ ],1
 rendimiento-de-build-4-8,Rendimiento de las compilaciones incrementales,4.8,compilador,H,GA,,,"Entre un 10 % y un 25 % menos de tiempo en `--build`, `--watch` e `--incremental`",,,0
 excluir-de-auto-import,Excluir archivos de la importación automática,4.8,editor,H,GA,,,"Preferencia `autoImportFileExcludePatterns`",,,0

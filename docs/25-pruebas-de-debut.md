@@ -1866,9 +1866,9 @@ function saludo(nombre: string): `hola ${string}` {
 }
 ```
 
-<a id="metodos-privados"></a>**Métodos y accesores `#privados`**
+<a id="metodos-privados"></a>**Métodos y accesores `#privados`.** Un campo estático privado con inicializador exigía entonces `useDefineForClassFields`.
 
-```ts debut
+```ts debut opts=useDefineForClassFields
 class Motor {
     static #instancias = 0;
     #encender(): boolean { return true; }
@@ -1883,19 +1883,21 @@ class Motor {
 <a id="estrechamiento-contextual-de-genericos"></a>**Estrechamiento contextual de genéricos**
 
 ```ts debut
-function crearConjunto<T, C extends Set<T> | T[]>(coleccion: C): Set<T> {
+function ordenarSiEsArreglo<T, C extends Set<T> | T[]>(coleccion: C, comparar: (a: T, b: T) => number): C {
     if (coleccion instanceof Set) { return coleccion; }
-    return new Set(coleccion);
+    coleccion.sort(comparar);   // aquí `coleccion` se trata como T[]
+    return coleccion;
 }
 ```
 
-<a id="promesas-siempre-verdaderas"></a>**Promesas siempre verdaderas**
+<a id="promesas-siempre-verdaderas"></a>**Promesas siempre verdaderas.** En la 4.3 el aviso salta con una variable; la forma `if (disponible())` no se detecta hasta la 4.4.
 
 ```ts debut err=TS2801
 async function disponible(): Promise<boolean> { return true; }
 
 async function comprobar(): Promise<string> {
-    if (disponible()) { return "siempre entra aquí"; }
+    const promesa = disponible();
+    if (promesa) { return "siempre entra aquí"; }
     return "nunca";
 }
 ```
@@ -1950,7 +1952,7 @@ const ajustes: Ajustes = { tema: undefined };
 
 <a id="bloques-static"></a>**Bloques `static`**
 
-```ts debut
+```ts debut opts=useDefineForClassFields
 class Contador {
     static #total = 0;
     static {
@@ -2043,9 +2045,9 @@ const version: number = datos.version;
 
 ## TypeScript 4.6
 
-<a id="codigo-antes-de-super"></a>**Código antes de `super()`**
+<a id="codigo-antes-de-super"></a>**Código antes de `super()`.** La restricción solo existía cuando el compilador tenía que transformar los campos (aquí, con `target es2015`).
 
-```ts debut
+```ts debut opts=target:es2015
 class Base { }
 class Derivada extends Base {
     valor = 1;
@@ -2098,9 +2100,10 @@ export var destino = "es2022";
 export const formato = "decidido por package.json";
 ```
 
-<a id="extensiones-mts-cts"></a>**Extensiones `.mts` y `.cts`**
+<a id="extensiones-mts-cts"></a>**Extensiones `.mts` y `.cts`.** Sin prueba de debut: el compilador 4.6.4 ya acepta un archivo `.mts` como entrada (el soporte
+se desarrolló durante la 4.5 y la 4.6 detrás de las compilaciones nocturnas). Lo que la 4.7 estabiliza es el modo `node16`, que sí tiene prueba arriba.
 
-```ts debut
+```ts
 // @filename: modulo.mts
 export const esModuloEs = true;
 ```
@@ -2187,7 +2190,9 @@ function exigirValor<T>(valor: T): {} {
 
 ```ts debut
 type Numero<S> = S extends `${infer N extends number}` ? N : never;
-const cuarentaYDos: Numero<"42"> = 42;
+// Con la 4.7 el resultado era `number` a secas; desde la 4.8 es el literal 42.
+type EsLiteral = number extends Numero<"42"> ? "no" : "sí";
+const comprobado: EsLiteral = "sí";
 ```
 
 <a id="comparar-literales-de-objeto"></a>**Comparación con literales de objeto y arreglo**
@@ -2237,4 +2242,629 @@ class Persona {
 ```ts debut err=TS2845
 declare const valor: number;
 if (valor === NaN) { }
+```
+
+---
+
+<!-- ts=5.0 -->
+
+## TypeScript 5.0
+
+<a id="decoradores-estandar"></a>**Decoradores estándar.** Sin `experimentalDecorators`: son los de la propuesta de TC39.
+
+```ts debut
+function registrar<This, Args extends unknown[], R>(
+    metodo: (this: This, ...args: Args) => R,
+    contexto: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => R>,
+) {
+    return function (this: This, ...args: Args): R {
+        console.log(`→ ${String(contexto.name)}`);
+        return metodo.call(this, ...args);
+    };
+}
+
+class Servicio {
+    @registrar
+    saludar(nombre: string): string { return `Hola, ${nombre}`; }
+}
+```
+
+<a id="parametros-const"></a>**Parámetros de tipo `const`**
+
+```ts debut
+function tupla<const T extends readonly unknown[]>(valores: T): T {
+    return valores;
+}
+const literal: readonly ["a", "b"] = tupla(["a", "b"]);
+```
+
+<a id="enums-de-union"></a>**Todos los enums son enums de unión**
+
+```ts debut
+enum Dado { Tirada = Math.random() }
+const tirada: Dado.Tirada = Dado.Tirada;
+```
+
+<a id="resolucion-bundler"></a>**`--moduleResolution bundler`**
+
+```ts debut opts=moduleResolution:bundler
+export var comoUnEmpaquetador = true;
+```
+
+<a id="opciones-de-resolucion"></a>**Opciones de personalización de resolución**
+
+```ts debut opts=allowImportingTsExtensions,noEmit
+// @filename: util.ts
+export const version = 1;
+
+// @filename: principal.ts
+import { version } from "./util.ts";
+const v: number = version;
+```
+
+<a id="verbatim-module-syntax"></a>**`--verbatimModuleSyntax`**
+
+```ts debut opts=verbatimModuleSyntax
+// @filename: tipos.ts
+export interface Usuario { nombre: string; }
+
+// @filename: principal.ts
+import type { Usuario } from "./tipos";
+const u: Usuario = { nombre: "Ana" };
+```
+
+<a id="export-type-estrella"></a>**`export type *`**
+
+```ts debut
+// @filename: tipos.ts
+export interface Usuario { nombre: string; }
+
+// @filename: principal.ts
+export type * from "./tipos";
+export type * as modelos from "./tipos";
+```
+
+---
+
+<!-- ts=5.1 -->
+
+## TypeScript 5.1
+
+<a id="retorno-undefined-implicito"></a>**Retornos implícitos en funciones `undefined`**
+
+```ts debut
+function sinResultado(): undefined {
+    // sin `return`
+}
+```
+
+<a id="accesores-sin-relacion"></a>**Tipos sin relación en `get` y `set`**
+
+```ts debut
+class Elemento {
+    #estilo = { color: "rojo" };
+    get estilo(): { color: string } { return this.#estilo; }
+    set estilo(css: string) { this.#estilo = { color: css }; }
+}
+```
+
+---
+
+<!-- ts=5.2 -->
+
+## TypeScript 5.2
+
+<a id="using"></a>**`using` y gestión explícita de recursos**
+
+```ts debut
+function conRecurso(): void {
+    using recurso = { [Symbol.dispose](): void { } };
+}
+
+async function conRecursoAsincrono(): Promise<void> {
+    await using conexion = { async [Symbol.asyncDispose](): Promise<void> { } };
+}
+```
+
+<a id="metadatos-de-decoradores"></a>**Metadatos de decoradores**
+
+```ts debut
+function marcar(_clase: unknown, contexto: ClassDecoratorContext): void {
+    contexto.metadata.registrada = true;
+}
+
+@marcar
+class Entidad { }
+```
+
+<a id="tuplas-mixtas"></a>**Tuplas con elementos con y sin nombre**
+
+```ts debut
+type Par = [primero: string, number];
+const par: Par = ["a", 1];
+```
+
+<a id="metodos-en-uniones-de-arreglos"></a>**Métodos sobre uniones de arreglos**
+
+```ts debut
+declare const valores: string[] | number[];
+const presentes = valores.filter(v => !!v);
+```
+
+<a id="copia-de-arreglos"></a>**Métodos de copia de arreglos**
+
+```ts debut
+const original = [3, 1, 2];
+const ordenado: number[] = original.toSorted();
+const cambiado: number[] = original.with(0, 9);
+```
+
+<a id="rutas-ts-en-import-type"></a>**Extensiones `.ts` en importaciones de tipo**
+
+```ts debut
+// @filename: tipos.ts
+export interface Usuario { nombre: string; }
+
+// @filename: principal.ts
+import type { Usuario } from "./tipos.ts";
+const u: Usuario = { nombre: "Ana" };
+```
+
+---
+
+<!-- ts=5.3 -->
+
+## TypeScript 5.3
+
+<a id="atributos-de-importacion"></a>**Atributos de importación**
+
+```ts debut opts=resolveJsonModule
+// @filename: datos.json
+{ "version": 1 }
+
+// @filename: principal.ts
+import datos from "./datos.json" with { type: "json" };
+const version: number = datos.version;
+```
+
+<a id="switch-true"></a>**Estrechamiento con `switch (true)`**
+
+```ts debut
+function describir(x: unknown): number {
+    switch (true) {
+        case typeof x === "string": return x.length;
+        case Array.isArray(x): return x.length;
+        default: return 0;
+    }
+}
+```
+
+<a id="comparacion-con-booleanos"></a>**Estrechamiento por comparación con booleanos**
+
+```ts debut
+function esTexto(x: unknown): x is string { return typeof x === "string"; }
+
+function largo(x: unknown): number {
+    if (esTexto(x) === true) { return x.length; }
+    return 0;
+}
+```
+
+<a id="has-instance"></a>**`instanceof` con `Symbol.hasInstance`**
+
+```ts debut
+interface Punto { x: number; }
+
+class ConX {
+    static [Symbol.hasInstance](valor: unknown): valor is Punto {
+        return typeof valor === "object" && valor !== null && "x" in valor;
+    }
+}
+
+function leerX(valor: unknown): number {
+    if (valor instanceof ConX) { return valor.x; }
+    return 0;
+}
+```
+
+<a id="super-en-campos"></a>**`super` sobre campos de instancia**
+
+```ts debut err=TS2855
+class Base {
+    campo = (): number => 1;
+}
+class Derivada extends Base {
+    leer(): number { return super.campo(); }
+}
+```
+
+---
+
+<!-- ts=5.4 -->
+
+## TypeScript 5.4
+
+<a id="estrechamiento-en-clausuras"></a>**Estrechamiento preservado en clausuras**
+
+```ts debut
+function construirUrls(url: string | URL, nombres: string[]): string[] {
+    if (typeof url === "string") { url = new URL(url); }
+    return nombres.map(nombre => {
+        url.searchParams.set("nombre", nombre);
+        return url.toString();
+    });
+}
+```
+
+<a id="no-infer"></a>**Tipo `NoInfer`**
+
+```ts debut
+function elegir<C extends string>(colores: C[], porDefecto?: NoInfer<C>): C[] {
+    return colores;
+}
+elegir(["rojo", "verde"], "rojo");
+```
+
+<a id="group-by"></a>**`Object.groupBy` y `Map.groupBy`**
+
+```ts debut
+const porParidad = Object.groupBy([1, 2, 3], n => (n % 2 === 0 ? "par" : "impar"));
+const enMapa = Map.groupBy([1, 2, 3], n => n % 2);
+```
+
+<a id="module-preserve"></a>**`--module preserve`**
+
+```ts debut opts=module:preserve
+export var conservado = true;
+```
+
+---
+
+<!-- ts=5.5 -->
+
+## TypeScript 5.5
+
+<a id="predicados-inferidos"></a>**Predicados de tipo inferidos**
+
+```ts debut
+const mezcla = [1, undefined, 2];
+const limpios: number[] = mezcla.filter(x => x !== undefined);
+```
+
+<a id="accesos-indexados-constantes"></a>**Estrechamiento de accesos indexados constantes**
+
+```ts debut
+function enMayusculas(objeto: Record<string, unknown>, clave: string): string {
+    if (typeof objeto[clave] === "string") { return objeto[clave].toUpperCase(); }
+    return "";
+}
+```
+
+<a id="sintaxis-de-regex"></a>**Comprobación de expresiones regulares**
+
+```ts debut err=TS1532
+const patron = /(?<nombre>\w+) \k<apellido>/;
+```
+
+<a id="metodos-de-set"></a>**Métodos nuevos de `Set`**
+
+```ts debut
+const pares = new Set([2, 4]);
+const primos = new Set([2, 3]);
+const union: Set<number> = pares.union(primos);
+const comunes: Set<number> = pares.intersection(primos);
+```
+
+<a id="isolated-declarations"></a>**`--isolatedDeclarations`**
+
+```ts debut opts=declaration,isolatedDeclarations
+export const puerto: number = 8080;
+export function duplicar(n: number): number { return n * 2; }
+```
+
+---
+
+<!-- ts=5.6 -->
+
+## TypeScript 5.6
+
+<a id="comprobaciones-de-verdad"></a>**Comprobaciones de verdad y nulidad imposibles**
+
+```ts debut err=TS2872
+if (/abc/) { }
+```
+
+<a id="helpers-de-iteradores"></a>**Métodos auxiliares de iteradores**
+
+```ts debut
+function* naturales(): Generator<number> {
+    let n = 0;
+    while (true) { yield n++; }
+}
+const primerosPares: number[] = naturales().filter(n => n % 2 === 0).take(3).toArray();
+```
+
+<a id="strict-builtin-iterator-return"></a>**`--strictBuiltinIteratorReturn`**
+
+```ts debut opts=strictBuiltinIteratorReturn
+export var iteradoresEstrictos = true;
+```
+
+<a id="identificadores-de-modulo-arbitrarios"></a>**Identificadores de módulo arbitrarios**
+
+```ts debut
+const platano = "🍌";
+export { platano as "🍌" };
+```
+
+<a id="no-unchecked-side-effect-imports"></a>**`--noUncheckedSideEffectImports`**
+
+```ts debut err=TS2882/TS2307 opts=noUncheckedSideEffectImports
+import "./estilos-que-no-existen.css";
+```
+
+<a id="no-check"></a>**`--noCheck`**
+
+```ts debut opts=noCheck
+export var sinComprobar = true;
+```
+
+---
+
+<!-- ts=5.7 -->
+
+## TypeScript 5.7
+
+<a id="variables-nunca-inicializadas"></a>**Variables nunca inicializadas**
+
+```ts debut err=TS2454
+function calcular(): void {
+    let resultado: number;
+    function mostrar(): void { console.log(resultado); }
+    mostrar();
+}
+```
+
+<a id="rewrite-relative-import-extensions"></a>**`--rewriteRelativeImportExtensions`**
+
+```ts debut opts=rewriteRelativeImportExtensions
+// @filename: util.ts
+export const version = 1;
+
+// @filename: principal.ts
+import { version } from "./util.ts";
+const v: number = version;
+```
+
+<a id="destino-es2024"></a>**`--target es2024` y `--lib es2024`**
+
+```ts debut opts=target:es2024
+const { promise, resolve } = Promise.withResolvers<number>();
+```
+
+<a id="typed-arrays-genericos"></a>**Arreglos tipados genéricos**
+
+```ts debut
+const bytes: Uint8Array<ArrayBuffer> = new Uint8Array(4);
+```
+
+---
+
+<!-- ts=5.8 -->
+
+## TypeScript 5.8
+
+<a id="ramas-de-retorno"></a>**Comprobación granular de ramas de retorno**
+
+```ts debut err=TS2322
+declare const cache: Map<any, any>;
+
+function obtenerUrl(texto: string): URL {
+    return cache.has(texto) ? cache.get(texto) : texto;
+}
+```
+
+<a id="require-esm"></a>**`require()` de módulos ES**
+
+```ts debut opts=module:nodenext,moduleResolution:nodenext
+// @filename: moderno.mts
+export const valor = 1;
+
+// @filename: clasico.cts
+import moderno = require("./moderno.mjs");
+const v: number = moderno.valor;
+```
+
+<a id="module-node18"></a>**`--module node18`**
+
+```ts debut opts=module:node18,moduleResolution:node16
+export const paraNode18 = true;
+```
+
+<a id="erasable-syntax-only"></a>**`--erasableSyntaxOnly`**
+
+```ts debut err=TS1294 opts=erasableSyntaxOnly
+enum NoBorrable { A }
+```
+
+<a id="lib-replacement"></a>**`--libReplacement`**
+
+```ts debut opts=libReplacement
+export var sustitucionDeBibliotecas = true;
+```
+
+---
+
+<!-- ts=5.9 -->
+
+## TypeScript 5.9
+
+<a id="import-defer"></a>**`import defer`**
+
+```ts debut
+// @filename: pesado.ts
+export function calcular(): number { return 42; }
+
+// @filename: principal.ts
+import defer * as pesado from "./pesado";
+
+function alPulsar(): number {
+    return pesado.calcular();   // el módulo se evalúa aquí, en su primer uso
+}
+```
+
+<a id="module-node20"></a>**`--module node20`**
+
+```ts debut opts=module:node20,moduleResolution:node16
+export const paraNode20 = true;
+```
+
+---
+
+<!-- ts=6.0 -->
+
+## TypeScript 6.0
+
+<a id="strict-por-defecto"></a>**`strict` por defecto.** Sin ninguna opción, un parámetro sin tipo ya es un error.
+
+```ts debut predeterminado err=TS7006
+function identidad(valor) { return valor; }
+```
+
+<a id="valores-por-defecto-6-0"></a>**Nuevos valores por defecto.** Sin ninguna opción, `Map` existe: el destino ya no es ES5.
+
+```ts debut predeterminado
+const visitas = new Map<string, number>();
+visitas.set("inicio", 1);
+```
+
+<a id="menos-sensibilidad-contextual"></a>**Funciones sin `this` menos sensibles al contexto**
+
+```ts debut
+declare function conectar<T>(extremos: { producir: (x: number) => T; consumir: (y: T) => void }): void;
+
+conectar({
+    consumir(y) { return y.toFixed(); },
+    producir(x: number) { return x * 2; },
+});
+```
+
+<a id="subrutas-almohadilla"></a>**Importaciones de subruta `#/`**
+
+```ts debut opts=rootDir:.
+// @filename: package.json
+{ "name": "demo", "type": "module", "imports": { "#/*": "./*.ts" } }
+
+// @filename: util.ts
+export const version = 1;
+
+// @filename: principal.ts
+import { version } from "#/util";
+const v: number = version;
+```
+
+<a id="bundler-con-commonjs"></a>**`bundler` con `--module commonjs`**
+
+```ts debut opts=module:commonjs,moduleResolution:bundler
+export const formato = "commonjs";
+```
+
+<a id="stable-type-ordering"></a>**`--stableTypeOrdering`**
+
+```ts debut opts=stableTypeOrdering
+export const ordenEstable = true;
+```
+
+<a id="destino-es2025"></a>**`es2025` en `target` y `lib`**
+
+```ts debut opts=target:es2025
+const numero: Promise<number> = Promise.try(() => 42);
+```
+
+<a id="tipos-temporal"></a>**Tipos de `Temporal`**
+
+```ts debut
+const ahora = Temporal.Now.instant();
+const manana = ahora.add({ hours: 24 });
+```
+
+<a id="upsert"></a>**Métodos `getOrInsert`**
+
+```ts debut
+const contadores = new Map<string, number>();
+const actual: number = contadores.getOrInsert("visitas", 0);
+const calculado: number = contadores.getOrInsertComputed("clics", clave => clave.length);
+```
+
+<a id="regexp-escape"></a>**`RegExp.escape`**
+
+```ts debut
+const seguro: string = RegExp.escape("1 + 1 = 2?");
+```
+
+<a id="dom-iterable-integrado"></a>**`dom` incluye `dom.iterable`**
+
+```ts debut opts=lib:esnext+dom
+for (const elemento of document.querySelectorAll("div")) {
+    elemento.id;
+}
+```
+
+---
+
+<!-- ts=7.0 -->
+
+## TypeScript 7.0
+
+El compilador nativo no añade sintaxis: su novedad es la velocidad. Aun así, una diferencia de comportamiento se deja demostrar por compilación.
+
+<a id="plantillas-por-punto-de-codigo"></a>**Inferencia de plantillas por punto de código.** Con la 6.0, `Cabeza<"😀abc">` era la mitad de un par sustituto (`"\uD83D"`).
+
+```ts debut
+type Cabeza<S> = S extends `${infer C}${string}` ? C : never;
+const emoji: Cabeza<"😀abc"> = "😀";
+```
+
+---
+
+<!-- ts=7.1 -->
+
+## TypeScript 7.1
+
+> [!WARNING]
+> TypeScript 7.1 está **en beta** (20 de octubre de 2026). Estas pruebas se ejecutan con `7.1.0-beta` cuando el verificador se invoca con `--beta`,
+> y su sintaxis todavía puede cambiar antes de la versión estable.
+
+<a id="destino-es2026"></a>**`es2026` en `target` y `lib`**
+
+```ts debut opts=target:es2026
+const texto: string = new Uint8Array([72, 111, 108, 97]).toBase64();
+const esError: boolean = Error.isError(new Error("x"));
+```
+
+<a id="atributos-en-modulos-ambientales"></a>**Atributos de importación en módulos ambientales**
+
+```ts debut
+// @filename: ambiente.d.ts
+declare module "*" with { type: "css" } {
+    const hoja: CSSStyleSheet;
+    export default hoja;
+}
+declare module "*" with { type: "text" } {
+    const texto: string;
+    export default texto;
+}
+
+// @filename: principal.ts
+import estilos from "./tema.css" with { type: "css" };
+import leeme from "./LEEME.md" with { type: "text" };
+const reglas: number = estilos.cssRules.length;
+const largo: number = leeme.length;
+```
+
+<a id="import-source"></a>**Importaciones en fase de origen**
+
+```ts debut
+import source modulo from "./calculo.wasm";
+const instancia = await WebAssembly.instantiate(modulo);
 ```
