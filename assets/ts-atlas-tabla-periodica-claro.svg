@@ -1,0 +1,1406 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2114 1910" width="2114" height="1910" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="pt pd">
+<title id="pt">Tabla periódica de TypeScript, edición noviembre 2026</title>
+<desc id="pd">172 características clave de TypeScript 0.8 a 7.1. Cada fila (periodo) es una versión mayor y cada columna (grupo) una versión menor. El color y el glifo indican la familia. La lista completa está en el catálogo A–Z.</desc>
+<rect width="2114" height="1910" rx="18" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="2113" height="1909" rx="18" fill="none" stroke="#e1e0d9"/>
+<text x="223" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.0</text>
+<text x="419" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.1</text>
+<text x="615" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.2</text>
+<text x="811" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.3</text>
+<text x="1007" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.4</text>
+<text x="1203" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.5</text>
+<text x="1399" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.6</text>
+<text x="1595" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.7</text>
+<text x="1791" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.8</text>
+<text x="1987" y="42" font-size="15" font-weight="600" fill="#898781" text-anchor="middle">.9</text>
+<text x="116" y="42" font-size="12" fill="#898781" text-anchor="end">periodo ╲ grupo</text>
+<text x="132" y="142" font-size="62" font-weight="700" fill="#0b0b0b" letter-spacing="-1">Tabla periódica de TypeScript</text>
+<text x="134" y="186" font-size="22" fill="#52514e">172 características clave, de la 0.8 a la 7.1 beta · periodo = versión mayor · grupo = versión menor</text>
+<text x="134" y="220" font-size="17" fill="#898781">Edición noviembre 2026 · fechas de npm · el catálogo completo tiene 386 entradas (docs/22-catalogo-a-z.md)</text>
+<text x="110" y="136" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">0.x</text>
+<text x="110" y="162" font-size="14" fill="#52514e" text-anchor="end">Orígenes</text>
+<text x="110" y="182" font-size="13" fill="#898781" text-anchor="end">2012–2013</text>
+<text x="1700" y="80" font-size="17" font-weight="700" fill="#0b0b0b">0.8<tspan font-size="12.5" font-weight="400" fill="#898781">  oct-2012</tspan></text>
+<g transform="translate(1700,88)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">An</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Anotaciones</text>
+</g>
+<g transform="translate(1794,88)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">If</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Interfaces</text>
+</g>
+<g transform="translate(1700,182)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cl</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Clases</text>
+</g>
+<g transform="translate(1794,182)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mo</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Módulos</text>
+</g>
+<text x="1896" y="80" font-size="17" font-weight="700" fill="#0b0b0b">0.9<tspan font-size="12.5" font-weight="400" fill="#898781">  jun-2013</tspan></text>
+<g transform="translate(1896,88)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ge</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Genéricos</text>
+</g>
+<g transform="translate(1990,88)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">En</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Enums</text>
+</g>
+<g transform="translate(1896,182)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Fu</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Fusión de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">declaraciones</text>
+</g>
+<g transform="translate(1990,182)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Na</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">noImplicitAny</text>
+</g>
+<text x="110" y="362" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">1.x</text>
+<text x="110" y="388" font-size="14" fill="#52514e" text-anchor="end">Fundación</text>
+<text x="110" y="408" font-size="13" fill="#898781" text-anchor="end">2014–2016</text>
+<text x="132" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.0<tspan font-size="12.5" font-weight="400" fill="#898781">  abr-2014</tspan></text>
+<g transform="translate(132,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">V1</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Versión 1.0</text>
+</g>
+<text x="328" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.1<tspan font-size="12.5" font-weight="400" fill="#898781">  oct-2014</tspan></text>
+<g transform="translate(328,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rw</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Compilador</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">reescrito</text>
+</g>
+<text x="720" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.3<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2014</tspan></text>
+<g transform="translate(720,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pt</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">protected</text>
+</g>
+<g transform="translate(814,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tu</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Tuplas</text>
+</g>
+<text x="916" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.4<tspan font-size="12.5" font-weight="400" fill="#898781">  ene-2015</tspan></text>
+<g transform="translate(916,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Un</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Uniones</text>
+</g>
+<g transform="translate(1010,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Guardas</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de tipo</text>
+</g>
+<g transform="translate(916,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Al</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Alias de tipo</text>
+</g>
+<g transform="translate(1010,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Lc</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">let · const</text>
+</g>
+<text x="1112" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.5<tspan font-size="12.5" font-weight="400" fill="#898781">  jul-2015</tspan></text>
+<g transform="translate(1112,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Es</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Módulos ES6</text>
+</g>
+<g transform="translate(1206,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">De</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Desestruc-</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">turación</text>
+</g>
+<g transform="translate(1112,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dx</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Decoradores</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">experimentales</text>
+</g>
+<g transform="translate(1206,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tc</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">tsconfig.json</text>
+</g>
+<text x="1308" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.6<tspan font-size="12.5" font-weight="400" fill="#898781">  sep-2015</tspan></text>
+<g transform="translate(1308,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Jx</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">JSX</text>
+</g>
+<g transform="translate(1402,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">In</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Intersecciones</text>
+</g>
+<g transform="translate(1308,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ab</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">abstract</text>
+</g>
+<g transform="translate(1402,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Is</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">x is T</text>
+</g>
+<text x="1504" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.7<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2015</tspan></text>
+<g transform="translate(1504,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Aw</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">async · await</text>
+</g>
+<g transform="translate(1598,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Th</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">this</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">polimórfico</text>
+</g>
+<g transform="translate(1504,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ex</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Operador **</text>
+</g>
+<text x="1700" y="306" font-size="17" font-weight="700" fill="#0b0b0b">1.8<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2016</tspan></text>
+<g transform="translate(1700,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Fc</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Errores</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de flujo</text>
+</g>
+<g transform="translate(1794,314)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ls</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Literales</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de cadena</text>
+</g>
+<g transform="translate(1700,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Au</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Aumento de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">módulos</text>
+</g>
+<g transform="translate(1794,408)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Aj</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">allowJs</text>
+</g>
+<text x="110" y="588" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">2.x</text>
+<text x="110" y="614" font-size="14" fill="#52514e" text-anchor="end">Solidez</text>
+<text x="110" y="634" font-size="13" fill="#898781" text-anchor="end">2016–2018</text>
+<text x="132" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.0<tspan font-size="12.5" font-weight="400" fill="#898781">  sep-2016</tspan></text>
+<g transform="translate(132,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">strictNull</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Checks</text>
+</g>
+<g transform="translate(226,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cf</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Análisis</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de flujo</text>
+</g>
+<g transform="translate(132,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ud</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Uniones</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">discriminadas</text>
+</g>
+<g transform="translate(226,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nv</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">never</text>
+</g>
+<text x="328" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.1<tspan font-size="12.5" font-weight="400" fill="#898781">  dic-2016</tspan></text>
+<g transform="translate(328,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ko</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">keyof · T[K]</text>
+</g>
+<g transform="translate(422,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mp</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Tipos</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">mapeados</text>
+</g>
+<g transform="translate(328,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sp</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Spread de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">objetos</text>
+</g>
+<g transform="translate(422,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Xt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">extends en</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">tsconfig</text>
+</g>
+<text x="524" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.2<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2017</tspan></text>
+<g transform="translate(524,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mx</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Mixins</text>
+</g>
+<g transform="translate(618,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ob</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">object</text>
+</g>
+<text x="720" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.3<tspan font-size="12.5" font-weight="400" fill="#898781">  abr-2017</tspan></text>
+<g transform="translate(720,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">St</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">strict</text>
+</g>
+<g transform="translate(814,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Fa</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">for await</text>
+</g>
+<g transform="translate(720,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gd</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Genéricos por</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">defecto</text>
+</g>
+<g transform="translate(814,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cj</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">checkJs</text>
+</g>
+<text x="916" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.4<tspan font-size="12.5" font-weight="400" fill="#898781">  jun-2017</tspan></text>
+<g transform="translate(916,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Id</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">import()</text>
+</g>
+<g transform="translate(1010,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ec</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Enums de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">cadena</text>
+</g>
+<g transform="translate(916,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Wk</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Tipos débiles</text>
+</g>
+<text x="1112" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.5<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2017</tspan></text>
+<g transform="translate(1112,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Co</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">catch { }</text>
+</g>
+<text x="1308" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.6<tspan font-size="12.5" font-weight="400" fill="#898781">  oct-2017</tspan></text>
+<g transform="translate(1308,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sf</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">strictFunction</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Types</text>
+</g>
+<g transform="translate(1402,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ig</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">@ts-ignore</text>
+</g>
+<text x="1504" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.7<tspan font-size="12.5" font-weight="400" fill="#898781">  ene-2018</tspan></text>
+<g transform="translate(1504,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Us</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">unique symbol</text>
+</g>
+<g transform="translate(1598,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pi</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Inicialización</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">estricta</text>
+</g>
+<g transform="translate(1504,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ei</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">esModule</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Interop</text>
+</g>
+<g transform="translate(1598,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ns</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">1_000_000</text>
+</g>
+<text x="1700" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.8<tspan font-size="12.5" font-weight="400" fill="#898781">  mar-2018</tspan></text>
+<g transform="translate(1700,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ct</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Tipos</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">condicionales</text>
+</g>
+<g transform="translate(1794,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nf</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">infer</text>
+</g>
+<g transform="translate(1700,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ut</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Utilidades</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">condicionales</text>
+</g>
+<text x="1896" y="532" font-size="17" font-weight="700" fill="#0b0b0b">2.9<tspan font-size="12.5" font-weight="400" fill="#898781">  may-2018</tspan></text>
+<g transform="translate(1896,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Kn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">keyof</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">ampliado</text>
+</g>
+<g transform="translate(1990,540)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">It</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">import('m').T</text>
+</g>
+<g transform="translate(1896,634)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rj</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">resolveJson</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Module</text>
+</g>
+<text x="110" y="814" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">3.x</text>
+<text x="110" y="840" font-size="14" fill="#52514e" text-anchor="end">Escala</text>
+<text x="110" y="860" font-size="13" fill="#898781" text-anchor="end">2018–2020</text>
+<text x="132" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.0<tspan font-size="12.5" font-weight="400" fill="#898781">  jul-2018</tspan></text>
+<g transform="translate(132,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pr</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Referencias</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de proyecto</text>
+</g>
+<g transform="translate(226,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tr</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Tuplas rest</text>
+</g>
+<g transform="translate(132,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Uk</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">unknown</text>
+</g>
+<text x="328" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.1<tspan font-size="12.5" font-weight="400" fill="#898781">  sep-2018</tspan></text>
+<g transform="translate(328,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Mapeados</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">sobre tuplas</text>
+</g>
+<g transform="translate(422,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tv</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">typesVersions</text>
+</g>
+<text x="524" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.2<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2018</tspan></text>
+<g transform="translate(524,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Bc</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">strictBind</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">CallApply</text>
+</g>
+<g transform="translate(618,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Bi</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">bigint</text>
+</g>
+<text x="720" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.3<tspan font-size="12.5" font-weight="400" fill="#898781">  ene-2019</tspan></text>
+<g transform="translate(720,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cu</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Llamar a</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">uniones</text>
+</g>
+<text x="916" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.4<tspan font-size="12.5" font-weight="400" fill="#898781">  mar-2019</tspan></text>
+<g transform="translate(916,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ic</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">incremental</text>
+</g>
+<g transform="translate(1010,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ro</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">readonly T[]</text>
+</g>
+<g transform="translate(916,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ac</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">as const</text>
+</g>
+<g transform="translate(1010,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gl</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">globalThis</text>
+</g>
+<text x="1112" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.5<tspan font-size="12.5" font-weight="400" fill="#898781">  may-2019</tspan></text>
+<g transform="translate(1112,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Om</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Omit</text>
+</g>
+<g transform="translate(1206,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Su</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Uniones</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">inteligentes</text>
+</g>
+<text x="1308" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.6<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2019</tspan></text>
+<g transform="translate(1308,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Generator</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">&lt;T · R · N&gt;</text>
+</g>
+<text x="1504" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.7<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2019</tspan></text>
+<g transform="translate(1504,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Oc</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">a?.b</text>
+</g>
+<g transform="translate(1598,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nc</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">a ?? b</text>
+</g>
+<g transform="translate(1504,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">As</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">asserts</text>
+</g>
+<g transform="translate(1598,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ra</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Alias</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">recursivos</text>
+</g>
+<text x="1700" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.8<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2020</tspan></text>
+<g transform="translate(1700,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ty</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">import type</text>
+</g>
+<g transform="translate(1794,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pf</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">#privado</text>
+</g>
+<g transform="translate(1700,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ta</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">await de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">nivel superior</text>
+</g>
+<g transform="translate(1794,860)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="78" y="21" font-size="15" fill="#52514e" text-anchor="end">†</text>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Iv</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">importsNotUsed</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">AsValues</text>
+</g>
+<text x="1896" y="758" font-size="17" font-weight="700" fill="#0b0b0b">3.9<tspan font-size="12.5" font-weight="400" fill="#898781">  may-2020</tspan></text>
+<g transform="translate(1896,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Xe</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">@ts-expect-</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">error</text>
+</g>
+<g transform="translate(1990,766)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Vl</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Velocidad</text>
+</g>
+<text x="110" y="1040" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">4.x</text>
+<text x="110" y="1066" font-size="14" fill="#52514e" text-anchor="end">Expresividad</text>
+<text x="110" y="1086" font-size="13" fill="#898781" text-anchor="end">2020–2022</text>
+<text x="132" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.0<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2020</tspan></text>
+<g transform="translate(132,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Vt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Tuplas</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">variádicas</text>
+</g>
+<g transform="translate(226,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Lt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Tuplas</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">etiquetadas</text>
+</g>
+<g transform="translate(132,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">La</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">a ??= b</text>
+</g>
+<g transform="translate(226,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Uc</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">catch (e:</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">unknown)</text>
+</g>
+<text x="328" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.1<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2020</tspan></text>
+<g transform="translate(328,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tl</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Plantilla</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">literal</text>
+</g>
+<g transform="translate(422,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Kr</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Remapeo</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de claves</text>
+</g>
+<g transform="translate(328,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rc</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Condicionales</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">recursivos</text>
+</g>
+<g transform="translate(422,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nu</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">noUnchecked</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">IndexedAccess</text>
+</g>
+<text x="524" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.2<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2021</tspan></text>
+<g transform="translate(524,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rm</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Rest en</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">medio</text>
+</g>
+<g transform="translate(618,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ak</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">abstract new</text>
+</g>
+<g transform="translate(524,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Xf</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">explainFiles</text>
+</g>
+<text x="720" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.3<tspan font-size="12.5" font-weight="400" fill="#898781">  may-2021</tspan></text>
+<g transform="translate(720,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ws</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">get ≠ set</text>
+</g>
+<g transform="translate(814,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ov</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">override</text>
+</g>
+<g transform="translate(720,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pm</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">#método()</text>
+</g>
+<text x="916" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.4<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2021</tspan></text>
+<g transform="translate(916,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ca</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Condiciones</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">con alias</text>
+</g>
+<g transform="translate(1010,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Xs</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Índices de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">plantilla</text>
+</g>
+<g transform="translate(916,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Eo</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">exactOptional</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">PropertyTypes</text>
+</g>
+<g transform="translate(1010,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sb</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">static { }</text>
+</g>
+<text x="1112" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.5<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2021</tspan></text>
+<g transform="translate(1112,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ad</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Awaited</text>
+</g>
+<g transform="translate(1206,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tt</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Recursión</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">de cola</text>
+</g>
+<g transform="translate(1112,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ti</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">{ type T }</text>
+</g>
+<g transform="translate(1206,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Pb</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">#x in obj</text>
+</g>
+<text x="1308" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.6<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2022</tspan></text>
+<g transform="translate(1308,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Estrechar al</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">desestructurar</text>
+</g>
+<g transform="translate(1402,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">E2</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">target es2022</text>
+</g>
+<g transform="translate(1308,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tz</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Trazas de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">rendimiento</text>
+</g>
+<text x="1504" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.7<tspan font-size="12.5" font-weight="400" fill="#898781">  may-2022</tspan></text>
+<g transform="translate(1504,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nd</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">node16 ·</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">nodenext</text>
+</g>
+<g transform="translate(1598,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mc</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">.mts · .cts</text>
+</g>
+<g transform="translate(1504,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ix</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">f&lt;T&gt; sin</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">llamar</text>
+</g>
+<g transform="translate(1598,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Va</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">in · out</text>
+</g>
+<text x="1700" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.8<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2022</tspan></text>
+<g transform="translate(1700,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nk</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">unknown se</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">estrecha</text>
+</g>
+<g transform="translate(1794,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Xn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">infer N extends</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">number</text>
+</g>
+<g transform="translate(1700,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ce</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">x === [ ]</text>
+</g>
+<text x="1896" y="984" font-size="17" font-weight="700" fill="#0b0b0b">4.9<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2022</tspan></text>
+<g transform="translate(1896,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sa</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">satisfies</text>
+</g>
+<g transform="translate(1990,992)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ip</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">in estrecha</text>
+</g>
+<g transform="translate(1896,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ax</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">accessor</text>
+</g>
+<g transform="translate(1990,1086)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nn</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">=== NaN</text>
+</g>
+<text x="110" y="1266" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">5.x</text>
+<text x="110" y="1292" font-size="14" fill="#52514e" text-anchor="end">Estándares</text>
+<text x="110" y="1312" font-size="13" fill="#898781" text-anchor="end">2023–2025</text>
+<text x="132" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.0<tspan font-size="12.5" font-weight="400" fill="#898781">  mar-2023</tspan></text>
+<g transform="translate(132,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dc</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Decoradores</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">estándar</text>
+</g>
+<g transform="translate(226,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Kt</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">const T</text>
+</g>
+<g transform="translate(132,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Bn</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">bundler</text>
+</g>
+<g transform="translate(226,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Vm</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">verbatimModule</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Syntax</text>
+</g>
+<text x="328" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.1<tspan font-size="12.5" font-weight="400" fill="#898781">  jun-2023</tspan></text>
+<g transform="translate(328,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ru</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">return</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">implícito</text>
+</g>
+<g transform="translate(422,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gs</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">get y set</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">libres</text>
+</g>
+<g transform="translate(328,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Je</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">JSX.Element</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Type</text>
+</g>
+<text x="524" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.2<tspan font-size="12.5" font-weight="400" fill="#898781">  ago-2023</tspan></text>
+<g transform="translate(524,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ug</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">using</text>
+</g>
+<g transform="translate(618,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eda100" fill-opacity="0.09" stroke="#eda100" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.6 20.9,16.0 15.0,22.4 9.1,16.0" fill="#eda100"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Md</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Metadatos de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">decoradores</text>
+</g>
+<g transform="translate(524,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#2a78d6" fill-opacity="0.09" stroke="#2a78d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<circle cx="15" cy="16" r="5.6" fill="#2a78d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ua</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Uniones de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">arreglos</text>
+</g>
+<g transform="translate(618,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cs</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">toSorted</text>
+</g>
+<text x="720" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.3<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2023</tspan></text>
+<g transform="translate(720,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Wa</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">with { type }</text>
+</g>
+<g transform="translate(814,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sw</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">switch (true)</text>
+</g>
+<g transform="translate(720,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Hi</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">hasInstance</text>
+</g>
+<g transform="translate(814,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Jd</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Sin analizar</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">JSDoc</text>
+</g>
+<text x="916" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.4<tspan font-size="12.5" font-weight="400" fill="#898781">  mar-2024</tspan></text>
+<g transform="translate(916,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Clausuras</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">estrechadas</text>
+</g>
+<g transform="translate(1010,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#eb6834" fill-opacity="0.09" stroke="#eb6834" stroke-opacity="0.75" stroke-width="1.2"/>
+<rect x="10.072" y="11.072" width="9.856" height="9.856" rx="1.5" fill="#eb6834"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ni</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">NoInfer</text>
+</g>
+<g transform="translate(916,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Gb</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">groupBy</text>
+</g>
+<g transform="translate(1010,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Mv</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">module</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">preserve</text>
+</g>
+<text x="1112" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.5<tspan font-size="12.5" font-weight="400" fill="#898781">  jun-2024</tspan></text>
+<g transform="translate(1112,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tp</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Predicados</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">inferidos</text>
+</g>
+<g transform="translate(1206,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rx</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Regex</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">comprobadas</text>
+</g>
+<g transform="translate(1112,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Di</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">isolated</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">Declarations</text>
+</g>
+<g transform="translate(1206,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cd</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">${configDir}</text>
+</g>
+<text x="1308" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.6<tspan font-size="12.5" font-weight="400" fill="#898781">  sep-2024</tspan></text>
+<g transform="translate(1308,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tn</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Condiciones</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">imposibles</text>
+</g>
+<g transform="translate(1402,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ih</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Iterator</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">helpers</text>
+</g>
+<g transform="translate(1308,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Se</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Imports de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">efecto</text>
+</g>
+<g transform="translate(1402,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nx</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">noCheck</text>
+</g>
+<text x="1504" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.7<tspan font-size="12.5" font-weight="400" fill="#898781">  nov-2024</tspan></text>
+<g transform="translate(1504,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Vi</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Sin</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">inicializar</text>
+</g>
+<g transform="translate(1598,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Re</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Reescribir</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">extensiones</text>
+</g>
+<g transform="translate(1504,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">E4</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">target es2024</text>
+</g>
+<g transform="translate(1598,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">V8</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Caché de V8</text>
+</g>
+<text x="1700" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.8<tspan font-size="12.5" font-weight="400" fill="#898781">  feb-2025</tspan></text>
+<g transform="translate(1700,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rb</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Ramas de</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">retorno</text>
+</g>
+<g transform="translate(1794,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Rq</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">require(esm)</text>
+</g>
+<g transform="translate(1700,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Er</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">erasable</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">SyntaxOnly</text>
+</g>
+<text x="1896" y="1210" font-size="17" font-weight="700" fill="#0b0b0b">5.9<tspan font-size="12.5" font-weight="400" fill="#898781">  jul-2025</tspan></text>
+<g transform="translate(1896,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Nt</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">tsc --init</text>
+</g>
+<g transform="translate(1990,1218)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Df</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">import defer</text>
+</g>
+<g transform="translate(1896,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">N2</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">module node20</text>
+</g>
+<g transform="translate(1990,1312)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Hv</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Hover</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">expandible</text>
+</g>
+<text x="110" y="1492" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">6.x</text>
+<text x="110" y="1518" font-size="14" fill="#52514e" text-anchor="end">Transición</text>
+<text x="110" y="1538" font-size="13" fill="#898781" text-anchor="end">2026</text>
+<text x="132" y="1436" font-size="17" font-weight="700" fill="#0b0b0b">6.0<tspan font-size="12.5" font-weight="400" fill="#898781">  mar-2026</tspan></text>
+<g transform="translate(132,1444)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#1baf7a" fill-opacity="0.09" stroke="#1baf7a" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,10.1 20.6,20.5 9.4,20.5" fill="#1baf7a"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sx</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">strict por</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">defecto</text>
+</g>
+<g transform="translate(226,1444)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dv</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Nuevos</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">valores</text>
+</g>
+<g transform="translate(132,1538)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#008300" fill-opacity="0.09" stroke="#008300" stroke-opacity="0.75" stroke-width="1.2"/>
+<path d="M9.4 16H20.6M15 10.4V21.6" stroke="#008300" stroke-width="3.9" stroke-linecap="round"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Tm</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Temporal</text>
+</g>
+<g transform="translate(226,1538)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Dp</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Obsoles-</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">cencias</text>
+</g>
+<text x="110" y="1718" font-size="40" font-weight="700" fill="#0b0b0b" text-anchor="end">7.x</text>
+<text x="110" y="1744" font-size="14" fill="#52514e" text-anchor="end">Nativa</text>
+<text x="110" y="1764" font-size="13" fill="#898781" text-anchor="end">2026</text>
+<text x="132" y="1662" font-size="17" font-weight="700" fill="#0b0b0b">7.0<tspan font-size="12.5" font-weight="400" fill="#898781">  jul-2026</tspan></text>
+<g transform="translate(132,1670)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Go</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Compilador</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">nativo</text>
+</g>
+<g transform="translate(226,1670)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ck</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">--checkers</text>
+</g>
+<g transform="translate(132,1764)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Bd</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">--builders</text>
+</g>
+<g transform="translate(226,1764)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e34948" fill-opacity="0.09" stroke="#e34948" stroke-opacity="0.75" stroke-width="1.2"/>
+<polygon points="15.0,9.3 16.6,13.7 21.4,13.9 17.7,16.9 18.9,21.4 15.0,18.8 11.1,21.4 12.3,16.9 8.6,13.9 13.4,13.7" fill="#e34948"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Lp</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">Servidor LSP</text>
+</g>
+<text x="328" y="1662" font-size="17" font-weight="700" fill="#0b0b0b">7.1 beta<tspan font-size="12.5" font-weight="400" fill="#898781">  oct-2026</tspan></text>
+<g transform="translate(328,1670)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2" stroke-dasharray="5 4"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Ap</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">API estable</text>
+</g>
+<g transform="translate(422,1670)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2" stroke-dasharray="5 4"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="46" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Cm</text>
+<text x="44" y="63" font-size="10.8" fill="#52514e" text-anchor="middle">Content</text>
+<text x="44" y="76" font-size="10.8" fill="#52514e" text-anchor="middle">mappers</text>
+</g>
+<g transform="translate(328,1764)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#6250d6" fill-opacity="0.09" stroke="#6250d6" stroke-opacity="0.75" stroke-width="1.2" stroke-dasharray="5 4"/>
+<polygon points="15.0,21.9 20.6,11.5 9.4,11.5" fill="#6250d6"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">E6</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">target es2026</text>
+</g>
+<g transform="translate(422,1764)">
+<rect width="88" height="88" rx="10" fill="#f6f8fa"/>
+<rect width="88" height="88" rx="10" fill="#e87ba4" fill-opacity="0.09" stroke="#e87ba4" stroke-opacity="0.75" stroke-width="1.2" stroke-dasharray="5 4"/>
+<polygon points="20.9,16.0 17.9,21.1 12.1,21.1 9.1,16.0 12.1,10.9 17.9,10.9" fill="#e87ba4"/>
+<text x="44" y="50" font-size="27" font-weight="700" fill="#0b0b0b" text-anchor="middle">Sr</text>
+<text x="44" y="70" font-size="10.8" fill="#52514e" text-anchor="middle">import source</text>
+</g>
+<text x="334" y="1438" font-size="15" font-weight="700" fill="#0b0b0b">Familias</text>
+<circle cx="343" cy="1466" r="8" fill="#2a78d6"/>
+<text x="362" y="1472" font-size="17" fill="#52514e">Tipos y datos</text>
+<rect x="755.96" y="1458.96" width="14.08" height="14.08" rx="1.5" fill="#eb6834"/>
+<text x="782" y="1472" font-size="17" fill="#52514e">Genéricos y nivel de tipos</text>
+<polygon points="1183.0,1457.6 1191.0,1472.4 1175.0,1472.4" fill="#1baf7a"/>
+<text x="1202" y="1472" font-size="17" fill="#52514e">Flujo y estrictez</text>
+<polygon points="1603.0,1456.8 1611.4,1466.0 1603.0,1475.2 1594.6,1466.0" fill="#eda100"/>
+<text x="1622" y="1472" font-size="17" fill="#52514e">Clases y decoradores</text>
+<polygon points="351.4,1510.0 347.2,1517.3 338.8,1517.3 334.6,1510.0 338.8,1502.7 347.2,1502.7" fill="#e87ba4"/>
+<text x="362" y="1516" font-size="17" fill="#52514e">Módulos</text>
+<path d="M755 1510H771M763 1502V1518" stroke="#008300" stroke-width="5.6" stroke-linecap="round"/>
+<text x="782" y="1516" font-size="17" fill="#52514e">Sintaxis y API de ECMAScript</text>
+<polygon points="1183.0,1518.4 1191.0,1503.6 1175.0,1503.6" fill="#6250d6"/>
+<text x="1202" y="1516" font-size="17" fill="#52514e">Compilador y proyecto</text>
+<polygon points="1603.0,1500.4 1605.4,1506.8 1612.1,1507.0 1606.8,1511.2 1608.6,1517.8 1603.0,1514.0 1597.4,1517.8 1599.2,1511.2 1593.9,1507.0 1600.6,1506.8" fill="#e34948"/>
+<text x="1622" y="1516" font-size="17" fill="#52514e">JavaScript, JSX y editor</text>
+<text x="334" y="1570" font-size="15" font-weight="700" fill="#0b0b0b">Marcas</text>
+<text x="418" y="1570" font-size="16" fill="#52514e">†  retirada o sustituida en una versión posterior   ·   borde discontinuo: en beta al 10 de noviembre de 2026</text>
+<text x="334" y="1604" font-size="15" fill="#898781">Los huecos son reales: no hubo TypeScript 1.2 ni 1.9, TypeScript 6 tuvo una sola versión menor y la serie 7 acaba de empezar.</text>
+<text x="530" y="1664" font-size="15" font-weight="700" fill="#0b0b0b">Cómo leerla</text>
+<text x="530" y="1698" font-size="16.5" fill="#52514e">De izquierda a derecha, las versiones menores de cada serie; de arriba abajo, catorce años de lenguaje.</text>
+<text x="530" y="1728" font-size="16.5" fill="#52514e">El símbolo es una abreviatura propia de este atlas; el glifo y el color indican la familia.</text>
+<text x="530" y="1758" font-size="16.5" fill="#52514e">Cada ficha tiene su capítulo, su ejemplo verificado y su fila en el catálogo A–Z.</text>
+<text x="530" y="1788" font-size="16.5" fill="#898781">Guía no oficial: TypeScript es una marca de Microsoft.</text>
+<text x="132" y="1888" font-size="13.5" fill="#898781">Fuente: data/caracteristicas.csv y data/versiones.csv · generado con tools/generar-atlas.ts · TypeScript Atlas, noviembre 2026</text>
+</svg>

@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "atlas:generar": "node tools/generar-atlas.ts",
+    "atlas:verificar": "node tools/verificar-ejemplos.ts"
   },
   "devDependencies": {
     "typescript": "~5.7.2",

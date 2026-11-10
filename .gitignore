@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Caché local de compiladores del atlas (se regenera con tools/verificar-ejemplos.ts)
+.atlas-cache
