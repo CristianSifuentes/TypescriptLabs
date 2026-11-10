@@ -1,0 +1,54 @@
+version,parche,fecha,beta,rc,era,motor,tema,capitulo,estado
+0.8,0.8.3,2012-10-01,,,origenes,original,"Lanzamiento público: clases, módulos e interfaces",02-origenes-y-typescript-1.md,historica
+0.9,0.9.7,2013-06-18,,,origenes,original,"Genéricos, enums y fusión de declaraciones",02-origenes-y-typescript-1.md,historica
+1.0,1.0.1,2014-04-02,,,fundacion,original,Primera versión estable,02-origenes-y-typescript-1.md,historica
+1.1,,2014-10-06,,,fundacion,strada,"Compilador reescrito, cuatro veces más rápido",02-origenes-y-typescript-1.md,historica
+1.3,1.3.0,2014-11-12,,,fundacion,strada,protected y tuplas,02-origenes-y-typescript-1.md,historica
+1.4,1.4.1,2015-01-16,,,fundacion,strada,"Uniones, guardas de tipo, alias, let y const",02-origenes-y-typescript-1.md,historica
+1.5,1.5.3,2015-07-20,2015-04-30,,fundacion,strada,"Módulos ES6, decoradores y tsconfig.json",02-origenes-y-typescript-1.md,historica
+1.6,1.6.2,2015-09-16,2015-09-02,,fundacion,strada,"JSX, intersecciones y clases abstractas",02-origenes-y-typescript-1.md,historica
+1.7,1.7.5,2015-11-30,,,fundacion,strada,async/await y this polimórfico,02-origenes-y-typescript-1.md,historica
+1.8,1.8.10,2016-02-22,2016-01-28,,fundacion,strada,"Literales de cadena, allowJs y errores de flujo",02-origenes-y-typescript-1.md,historica
+2.0,2.0.10,2016-09-22,2016-07-11,2016-08-30,solidez,strada,"strictNullChecks, análisis de flujo y never",03-typescript-2.0-2.2-nulos-y-flujo.md,historica
+2.1,2.1.6,2016-12-07,,2016-11-08,solidez,strada,"keyof, tipos mapeados y spread de objetos",03-typescript-2.0-2.2-nulos-y-flujo.md,historica
+2.2,2.2.2,2017-02-22,,2017-02-02,solidez,strada,Mixins y el tipo object,03-typescript-2.0-2.2-nulos-y-flujo.md,historica
+2.3,2.3.4,2017-04-27,,2017-04-10,solidez,strada,"--strict, iteración asíncrona y genéricos con valor por defecto",04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.4,2.4.2,2017-06-27,,2017-06-12,solidez,strada,import() dinámico y enums de cadena,04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.5,2.5.3,2017-08-31,,2017-08-17,solidez,strada,catch sin variable,04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.6,2.6.2,2017-10-31,,2017-10-12,solidez,strada,strictFunctionTypes y @ts-ignore,04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.7,2.7.2,2018-01-31,,2018-01-17,solidez,strada,unique symbol e inicialización estricta de propiedades,04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.8,2.8.4,2018-03-27,,2018-03-15,solidez,strada,Tipos condicionales e infer,04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+2.9,2.9.2,2018-05-31,,2018-05-16,solidez,strada,keyof ampliado y tipos import(),04-typescript-2.3-2.9-estricto-y-condicionales.md,historica
+3.0,3.0.3,2018-07-30,,2018-07-12,escala,strada,"Referencias de proyecto, unknown y tuplas en rest",05-typescript-3.0-3.4-proyectos-y-tuplas.md,historica
+3.1,3.1.8,2018-09-27,,2018-09-13,escala,strada,Tipos mapeados sobre tuplas y typesVersions,05-typescript-3.0-3.4-proyectos-y-tuplas.md,historica
+3.2,3.2.4,2018-11-29,,2018-11-15,escala,strada,strictBindCallApply y BigInt,05-typescript-3.0-3.4-proyectos-y-tuplas.md,historica
+3.3,3.3.4000,2019-01-31,,2019-01-22,escala,strada,Llamadas sobre uniones de funciones,05-typescript-3.0-3.4-proyectos-y-tuplas.md,historica
+3.4,3.4.5,2019-03-29,,2019-03-15,escala,strada,"as const, --incremental y readonly en arreglos",05-typescript-3.0-3.4-proyectos-y-tuplas.md,historica
+3.5,3.5.3,2019-05-29,,2019-05-16,escala,strada,Omit y comprobación de uniones más inteligente,06-typescript-3.5-3.9-encadenamiento-y-aserciones.md,historica
+3.6,3.6.5,2019-08-28,2019-07-19,2019-08-16,escala,strada,Generadores estrictos,06-typescript-3.5-3.9-encadenamiento-y-aserciones.md,historica
+3.7,3.7.7,2019-11-05,2019-10-01,2019-10-24,escala,strada,"Encadenamiento opcional, fusión nula y funciones de aserción",06-typescript-3.5-3.9-encadenamiento-y-aserciones.md,historica
+3.8,3.8.3,2020-02-20,2020-01-10,2020-02-06,escala,strada,"import type, campos #privados y await de nivel superior",06-typescript-3.5-3.9-encadenamiento-y-aserciones.md,historica
+3.9,3.9.10,2020-05-12,2020-03-27,2020-04-28,escala,strada,@ts-expect-error y rendimiento,06-typescript-3.5-3.9-encadenamiento-y-aserciones.md,historica
+4.0,4.0.8,2020-08-20,2020-06-26,2020-08-06,expresividad,strada,Tuplas variádicas y elementos etiquetados,07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md,historica
+4.1,4.1.6,2020-11-19,2020-09-18,2020-11-03,expresividad,strada,Tipos de plantilla literal y remapeo de claves,07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md,historica
+4.2,4.2.4,2021-02-23,2021-01-13,2021-02-11,expresividad,strada,Elementos rest en cualquier posición de una tupla,07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md,historica
+4.3,4.3.5,2021-05-26,2021-04-01,2021-05-12,expresividad,strada,override y tipos de escritura separados,07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md,historica
+4.4,4.4.4,2021-08-26,2021-07-01,2021-08-12,expresividad,strada,Flujo de control con alias y exactOptionalPropertyTypes,07-typescript-4.0-4.4-tuplas-variadicas-y-plantillas.md,historica
+4.5,4.5.5,2021-11-17,2021-10-01,2021-11-02,expresividad,strada,Awaited y modificador type en importaciones,08-typescript-4.5-4.9-esm-y-satisfies.md,historica
+4.6,4.6.4,2022-02-28,2022-01-21,2022-02-11,expresividad,strada,Flujo de control en uniones desestructuradas,08-typescript-4.5-4.9-esm-y-satisfies.md,historica
+4.7,4.7.4,2022-05-24,2022-04-08,2022-05-11,expresividad,strada,ESM en Node y anotaciones de varianza,08-typescript-4.5-4.9-esm-y-satisfies.md,historica
+4.8,4.8.4,2022-08-25,2022-06-21,2022-08-11,expresividad,strada,Mejor estrechamiento de unknown y {},08-typescript-4.5-4.9-esm-y-satisfies.md,historica
+4.9,4.9.5,2022-11-15,2022-09-23,2022-11-01,expresividad,strada,satisfies y accessor,08-typescript-4.5-4.9-esm-y-satisfies.md,historica
+5.0,5.0.4,2023-03-16,2023-01-26,2023-03-01,estandares,strada,"Decoradores estándar, parámetros const y bundler",09-typescript-5.0-5.4-decoradores-y-using.md,historica
+5.1,5.1.6,2023-06-01,2023-04-18,2023-05-18,estandares,strada,Retornos undefined implícitos,09-typescript-5.0-5.4-decoradores-y-using.md,historica
+5.2,5.2.2,2023-08-24,2023-06-30,2023-08-09,estandares,strada,using y metadatos de decoradores,09-typescript-5.0-5.4-decoradores-y-using.md,historica
+5.3,5.3.3,2023-11-20,2023-10-03,2023-11-03,estandares,strada,Atributos de importación y switch (true),09-typescript-5.0-5.4-decoradores-y-using.md,historica
+5.4,5.4.5,2024-03-06,2024-01-29,2024-02-22,estandares,strada,NoInfer y estrechamiento preservado en clausuras,09-typescript-5.0-5.4-decoradores-y-using.md,historica
+5.5,5.5.4,2024-06-20,2024-04-25,2024-06-06,estandares,strada,Predicados de tipo inferidos e isolatedDeclarations,10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md,historica
+5.6,5.6.3,2024-09-09,2024-07-26,2024-08-23,estandares,strada,Comprobaciones de verdad y nulidad,10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md,historica
+5.7,5.7.3,2024-11-22,2024-10-09,2024-11-08,estandares,strada,Variables nunca inicializadas y reescritura de extensiones,10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md,historica
+5.8,5.8.3,2025-02-28,2025-01-29,2025-02-13,estandares,strada,erasableSyntaxOnly y require(esm),10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md,historica
+5.9,5.9.3,2025-07-31,2025-07-08,2025-07-24,estandares,strada,import defer y tsc --init mínimo,10-typescript-5.5-5.9-inferencia-y-sintaxis-borrable.md,historica
+6.0,6.0.3,2026-03-23,2026-02-11,2026-03-06,transicion,strada,El puente: nuevos valores por defecto y obsolescencias,11-typescript-6.0-el-puente.md,puente
+7.0,7.0.2,2026-07-08,2026-04-21,2026-06-18,nativa,corsa,El compilador nativo en Go,12-typescript-7-el-compilador-nativo.md,actual
+7.1,7.1.0-beta,,2026-10-20,,nativa,corsa,"API estable, content mappers y es2026",12-typescript-7-el-compilador-nativo.md,beta

@@ -1,0 +1,127 @@
+opcion,tipo,categoria,desde,obsoleta,retirada,descripcion
+charset,string,Compatibilidad con versiones anteriores,1.5,5.0,5.6,"Ya no se admite. En versiones anteriores, establezca manualmente la codificación de texto para leer archivos."
+declaration,boolean,Emitir,1.5,,,Genere archivos .d.ts desde los archivos TypeScript y JavaScript del proyecto.
+diagnostics,boolean,Diagnóstico del compilador,1.5,,,Información de rendimiento resultante del compilador después de la compilación.
+emitBOM,boolean,Emitir,1.5,,,Emitir una marca BOM UTF-8 al principio de los archivos de salida.
+emitDecoratorMetadata,boolean,Lenguaje y ambiente,1.5,,,Emita metadatos de tipo de diseño para las declaraciones decoradas en los archivos de origen.
+experimentalDecorators,boolean,Lenguaje y ambiente,1.5,,,Habilite la compatibilidad experimental con decoradores experimentales heredados.
+inlineSourceMap,boolean,Emitir,1.5,,,Incluir archivos de mapas de origen dentro del JavaScript emitido.
+inlineSources,boolean,Emitir,1.5,,,Incluya el código fuente en los mapas de origen dentro del JavaScript emitido.
+isolatedModules,boolean,Restricciones de interoperabilidad,1.5,,,Asegúrese de que cada archivo pueda transpilarse con seguridad sin depender de otras importaciones.
+listFiles,boolean,Diagnóstico del compilador,1.5,,,Imprima todos los archivos leídos durante la compilación.
+mapRoot,string,Emitir,1.5,,,Especifique la ubicación donde el depurador debe colocar los archivos de asignaciones en lugar de las ubicaciones generadas.
+module,enumerada,Módulos,1.5,,,Especifique qué código de módulo se generará.
+newLine,enumerada,Emitir,1.5,,,Establezca el carácter de nueva línea para emitir archivos.
+noEmit,boolean,Emitir,1.5,,,Deshabilita la emisión de archivos de una compilación.
+noEmitHelpers,boolean,Emitir,1.5,,,"Deshabilite la generación de funciones auxiliares personalizadas como ""__extends"" en la salida compilada."
+noEmitOnError,boolean,Emitir,1.5,,,Deshabilite la emisión de archivos si se informa algún error de comprobación de tipos.
+noImplicitAny,boolean,Comprobación de tipos,1.5,,,"Habilite el informe de errores para expresiones y declaraciones con un tipo ""any"" implícito."
+noLib,boolean,Lenguaje y ambiente,1.5,,,"Deshabilite la inclusión de cualquier archivo de biblioteca, incluido el archivo predeterminado lib.d.ts."
+noResolve,boolean,Módulos,1.5,,,"No permita que ningún ""import"", ""require"" o ""<reference>"" amplíe el número de archivos que TypeScript debe agregar a un proyecto."
+out,string,Compatibilidad con versiones anteriores,1.5,5.0,5.6,"Valor en desuso. Use ""outFile"" en su lugar."
+outDir,string,Emitir,1.5,,,Especifique una carpeta de salida para todos los archivos emitidos.
+preserveConstEnums,boolean,Emitir,1.5,,,"Deshabilite el borrado de declaraciones ""enumeración const"" en el código generado."
+removeComments,boolean,Emitir,1.5,,,Deshabilite el poder escribir comentarios.
+rootDir,string,Módulos,1.5,,,Especifique la carpeta raíz en los archivos de código fuente.
+sourceMap,boolean,Emitir,1.5,,,Cree archivos de mapa de origen para los archivos JavaScript emitidos.
+sourceRoot,string,Emitir,1.5,,,Especifique la ruta raíz para que los depuradores encuentren el código de origen de referencia.
+stripInternal,boolean,Emitir,1.5,,,"Deshabilite la emisión de declaraciones que tienen ""@internal"" en los comentarios de JSDoc."
+suppressImplicitAnyIndexErrors,boolean,Compatibilidad con versiones anteriores,1.5,5.0,5.6,"Suprima los errores ""noImplicitAny"" al indexar objetos que carecen de firmas de índice."
+target,enumerada,Lenguaje y ambiente,1.5,,,Establezca la versión del lenguaje de JavaScript para las JavaScript emitidas e incluya las declaraciones de bibliotecas compatibles.
+experimentalAsyncFunctions,boolean,,1.6,,1.7,
+jsx,enumerada,Lenguaje y ambiente,1.6,,,Especifique qué código de JSX se generará.
+moduleResolution,enumerada,Módulos,1.6,,,Especifique cómo busca TypeScript un archivo a partir del especificador de módulo que se le indique.
+outFile,string,Emitir,1.6,6.0,7.0,"Especifique un archivo que agrupe todas las salidas en un archivo JavaScript. Si 'declaración' es verdadera, también designa un archivo que agrupa toda la salida .d.ts."
+skipDefaultLibCheck,boolean,Integridad,1.6,,,Omita la comprobación de tipos de archivo .d.ts que se incluyen con TypeScript.
+suppressExcessPropertyErrors,boolean,Compatibilidad con versiones anteriores,1.6,5.0,5.6,Deshabilite la creación de informes de errores de exceso de propiedad durante la creación de literales de objetos.
+allowJs,boolean,Compatibilidad con JavaScript,1.8,,,"Permitir que los archivos JavaScript formen parte del programa. Use la opción ""checkJS"" para obtener errores de estos archivos."
+allowSyntheticDefaultImports,boolean,Restricciones de interoperabilidad,1.8,,,"Permita ""importar x desde y"" cuando un módulo no tiene una exportación predeterminada."
+allowUnreachableCode,boolean,Comprobación de tipos,1.8,,,Deshabilite los informes de errores para los códigos inaccesibles.
+allowUnusedLabels,boolean,Comprobación de tipos,1.8,,,Deshabilite los informes de errores para etiquetas sin usar.
+disableSizeLimit,boolean,Compatibilidad con el editor,1.8,,,Elimine el límite de 20 MB del tamaño total del código fuente para los archivos JavaScript en el servidor de lenguaje TypeScript.
+forceConsistentCasingInFileNames,boolean,Restricciones de interoperabilidad,1.8,,,Verifique el uso correcto de mayúsculas y minúsculas en las importaciones.
+noCustomAsyncPromise,boolean,,1.8,,2.0,
+noFallthroughCasesInSwitch,boolean,Comprobación de tipos,1.8,,,Habilite los informes de errores para los casos de fallthrough en instrucciones switch.
+noImplicitReturns,boolean,Comprobación de tipos,1.8,,,Habilite el informe de errores para rutas de código que no devuelvan explícitamente una función.
+noImplicitUseStrict,boolean,Compatibilidad con versiones anteriores,1.8,5.0,5.6,"Deshabilite la adición de directivas ""use strict"" en archivos JavaScript emitidos."
+pretty,boolean,Formato de salida,1.8,,,Habilite el color y el formato en la salida de TypeScript para facilitar la lectura de los errores del compilador.
+reactNamespace,string,Lenguaje y ambiente,1.8,,,"Especifique el objeto invocado para 'createElement'. Esto solo se aplica cuando el destino es la emisión JSX ""react""."
+baseUrl,string,Módulos,2.0,6.0,7.0,Especifique el directorio base para resolver nombres de módulos no relativos.
+compileOnSave,boolean,,2.0,,2.3,
+declarationDir,string,Emitir,2.0,,,Especifique el directorio de salida para los archivos de declaración generados.
+extendedDiagnostics,boolean,Diagnóstico del compilador,2.0,,,Produzca información más detallada del rendimiento resultante del compilador después de la compilación.
+lib,lista,Lenguaje y ambiente,2.0,,,Especifique un conjunto de archivos de declaración de biblioteca agrupados que describan el entorno de tiempo de ejecución de destino.
+listEmittedFiles,boolean,Diagnóstico del compilador,2.0,,,Imprima los nombres de los archivos emitidos después de una compilación.
+maxNodeModuleJsDepth,number,Compatibilidad con JavaScript,2.0,,,"Especifique la profundidad máxima de carpeta usada para comprobar archivos JavaScript de ""node_modules"". Solo es compatible con ""allowJs""."
+noErrorTruncation,boolean,Formato de salida,2.0,,,Deshabilite los tipos truncados en los mensajes de error.
+noImplicitThis,boolean,Comprobación de tipos,2.0,,,Habilite el informe de errores cuando a 'this' se le asigna el tipo 'any'.
+noUnusedLocals,boolean,Comprobación de tipos,2.0,,,Habilite el informe de errores cuando una variable local no se lea.
+noUnusedParameters,boolean,Comprobación de tipos,2.0,,,Genera un error cuando no se lee un parámetro de función.
+paths,string,Módulos,2.0,,,Especifique un conjunto de entradas que reasignan las importaciones a ubicaciones de búsqueda adicionales.
+rootDirs,lista,Módulos,2.0,,,Permita que varias carpetas se consideren como una al resolver módulos.
+skipLibCheck,boolean,Integridad,2.0,,,Omita la comprobación de tipos de todos los archivos .d.ts.
+strictNullChecks,boolean,Comprobación de tipos,2.0,,,"Al comprobar tipos, tenga en cuenta ""null"" y ""undefined""."
+traceResolution,boolean,Diagnóstico del compilador,2.0,,,"Rutas de acceso de registro usadas durante el proceso ""moduleResolution""."
+typeRoots,string,Módulos,2.0,,,"Especifique varias carpetas que actúen como ""./node_modules/@types""."
+types,string,Módulos,2.0,,,Especifique los nombres de los paquetes de tipo que se incluyen sin ser referenciados en un archivo fuente.
+alwaysStrict,boolean,Comprobación de tipos,2.1,,,"Asegúrese de que siempre se emite ""use strict""."
+importHelpers,boolean,Emitir,2.1,,,"Permita la importación de funciones de ayuda desde tslib una vez por proyecto, en lugar de incluirlas por archivo."
+jsxFactory,string,Lenguaje y ambiente,2.1,,,"Especifique la función de generador JSX que se usa al establecer como destino la emisión JSX de React; por ejemplo, ""React.createElement"" o ""h""."
+plugins,lista,Compatibilidad con el editor,2.2,,,Especifique una lista de complementos de servicio de lenguaje para incluirlos.
+checkJs,boolean,Compatibilidad con JavaScript,2.3,,,Habilite el informe de errores en los archivos JavaScript de comprobación de tipos.
+downlevelIteration,boolean,Emitir,2.3,6.0,7.0,"Emita un JavaScript más compatible, pero más detallado y de menor rendimiento para la iteración."
+strict,boolean,Comprobación de tipos,2.3,,,Habilitar todas las opciones de comprobación de tipos estricta.
+noStrictGenericChecks,boolean,Compatibilidad con versiones anteriores,2.4,5.0,5.6,Deshabilite la comprobación estricta de firmas genéricas en tipos de función.
+preserveSymlinks,boolean,Restricciones de interoperabilidad,2.5,,,Deshabilite la resolución de symlink a su realpath. Se corresponde con la misma marca en el nodo.
+strictFunctionTypes,boolean,Comprobación de tipos,2.6,,,"Al asignar funciones, compruebe que efectivamente los parámetros y los valores devueltos son compatibles con el subtipo."
+emitDeclarationOnly,boolean,Emitir,2.7,,,Genere solo archivos d.ts y no archivos JavaScript.
+esModuleInterop,boolean,Restricciones de interoperabilidad,2.7,,,"Emita un JavaScript adicional para facilitar la importación de módulos CommonJS. Esto habilita ""allowSyntheticDefaultImports"" para la compatibilidad de tipos."
+strictPropertyInitialization,boolean,Comprobación de tipos,2.7,,,Compruebe las propiedades de clase declaradas pero no establecidas en el constructor.
+preserveWatchOutput,boolean,Formato de salida,2.8,,,Deshabilita la eliminación de la consola en modo inspección.
+composite,boolean,Proyectos,2.9,,,Habilite restricciones que permitan usar un proyecto TypeScript con referencias del proyecto.
+declarationMap,boolean,Emitir,2.9,,,Cree mapas de origen para archivos d.ts.
+keyofStringsOnly,boolean,Compatibilidad con versiones anteriores,2.9,5.0,5.6,"Haga que keyof solo devuelva cadenas en lugar de cadenas, números o símbolos. Opción heredada."
+resolveJsonModule,boolean,Módulos,2.9,,,Habilite la importación de archivos .json.
+strictBindCallApply,boolean,Comprobación de tipos,3.2,,,"Compruebe que los argumentos de los métodos 'bind', 'call' y 'apply' coinciden con la función original."
+incremental,boolean,Proyectos,3.4,,,Guarde archivos .tsbuildinfo para permitir la compilación incremental de proyectos.
+tsBuildInfoFile,string,Proyectos,3.4,,,Especifique la ruta de acceso para el archivo de compilación incremental .tsbuildinfo.
+allowUmdGlobalAccess,boolean,Módulos,3.5,,,Permite el acceso a las bibliotecas globales de UMD desde los módulos.
+disableSourceOfProjectReferenceRedirect,boolean,Proyectos,3.7,,,Deshabilite la preferencia de archivos de código fuente en lugar de archivos de declaración cuando haga referencia a proyectos compuestos.
+generateCpuProfile,string,Diagnóstico del compilador,3.7,,,Emita un perfil de CPU v8 de la ejecución del compilador para la depuración.
+useDefineForClassFields,boolean,Lenguaje y ambiente,3.7,,,Emita campos de clases compatibles con el estándar de ECMAScript.
+assumeChangesOnlyAffectDirectDependencies,boolean,Modos de compilación e inspección,3.8,,,Hacer que las recompilaciones en los proyectos que utilizan el modo 'incremental' y 'inspección' supongan que los cambios dentro de un archivo sólo afectarán a los archivos que dependen directamente de él.
+disableSolutionSearching,boolean,Proyectos,3.8,,,Opte por excluir un proyecto de la comprobación de referencias de varios proyectos al editar.
+importsNotUsedAsValues,enumerada,Compatibilidad con versiones anteriores,3.8,5.0,5.6,Especificar el comportamiento de emisión o comprobación para las importaciones que solo se usan para los tipos.
+disableReferencedProjectLoad,boolean,Proyectos,4.0,,,Reduzca el número de proyectos cargados automáticamente por TypeScript.
+jsxFragmentFactory,string,Lenguaje y ambiente,4.0,,,"Especifique la referencia de fragmento de JSX utilizada para los fragmentos cuando se dirige a la emisión de JSX de React, por ejemplo, ""React.Fragment"" o ""Fragment""."
+jsxImportSource,string,Lenguaje y ambiente,4.1,,,"Especifique el especificador de módulo que se usa para importar las funciones de fábrica de JSX cuando se usa ""jsx: react-jsx*""."
+noUncheckedIndexedAccess,boolean,Comprobación de tipos,4.1,,,"Agregue ""indefinido"" a un tipo cuando se acceda mediante un índice."
+explainFiles,boolean,Diagnóstico del compilador,4.2,,,"Imprima los archivos leídos durante la compilación, incluyendo la razón por la que se incluyó."
+noPropertyAccessFromIndexSignature,boolean,Comprobación de tipos,4.2,,,Exige el uso de descriptores de acceso indexados para las claves declaradas mediante un tipo indexado.
+noImplicitOverride,boolean,Comprobación de tipos,4.3,,,"Asegúrese de que al invalidar miembros en clases derivadas, estos están marcados con un modificador de invalidación."
+exactOptionalPropertyTypes,boolean,Comprobación de tipos,4.4,,,"Interprete los tipos de propiedad opcionales como escritos en lugar de agregar ""undefined""."
+useUnknownInCatchVariables,boolean,Comprobación de tipos,4.4,,,"Variables de cláusula catch predeterminadas como ""unknown"" en lugar de ""any""."
+preserveValueImports,boolean,Compatibilidad con versiones anteriores,4.5,5.0,5.6,"Conserva los valores importados no usados en la salida de JavaScript que, de lo contrario, se quitarían."
+moduleDetection,enumerada,Lenguaje y ambiente,4.7,,,Controlar qué método se usa para detectar archivos JS con formato de módulo.
+moduleSuffixes,string,Módulos,4.7,,,Lista de sufijos de nombre de archivo para buscar al resolver un módulo.
+ignoreDeprecations,string,,4.9,,,
+allowArbitraryExtensions,boolean,Módulos,5.0,,,"Habilite la importación de archivos con cualquier extensión, siempre que haya un archivo de declaración presente."
+allowImportingTsExtensions,boolean,Módulos,5.0,,,"Permitir que las importaciones incluyan extensiones de archivo TypeScript. Requiere que se establezca ""--moduleResolution bundler"" y ""--noEmit"" o ""--emitDeclarationOnly""."
+customConditions,string,Módulos,5.0,,,Condiciones que se establecerán además de los valores predeterminados específicos de la resolución al resolver las importaciones.
+resolvePackageJsonExports,boolean,Módulos,5.0,,,Use el campo “exports” de package.json al resolver las importaciones de paquetes.
+resolvePackageJsonImports,boolean,Módulos,5.0,,,Use el campo “imports” de package.json al resolver importaciones.
+verbatimModuleSyntax,boolean,Restricciones de interoperabilidad,5.0,,,"No transforme ni evite ninguna importación o exportación no marcada como solo de tipo, asegurándose de que se escriben en el formato del archivo de salida en función de la configuración ""module""."
+isolatedDeclarations,boolean,Restricciones de interoperabilidad,5.5,,,Requiere una anotación suficiente en las exportaciones para que otras herramientas puedan generar archivos de declaración de forma trivial.
+noCheck,boolean,Diagnóstico del compilador,5.5,,,Deshabilitar la comprobación completa de tipos (solo se notificarán los errores críticos de análisis y emisión).
+generateTrace,string,Diagnóstico del compilador,5.6,,,Genera un seguimiento de eventos y una lista de tipos.
+noUncheckedSideEffectImports,boolean,Módulos,5.6,,,Compruebe las importaciones de efectos secundarios.
+strictBuiltinIteratorReturn,boolean,Comprobación de tipos,5.6,,,Se crea una instancia de los iteradores integrados con un tipo 'TReturn' de 'undefined' en lugar de 'any'.
+rewriteRelativeImportExtensions,boolean,Módulos,5.7,,,"Vuelva a escribir las extensiones de archivo "".ts"", "".tsx"", "".mts"" y "".cts"" en rutas de acceso de importación relativas a su equivalente de JavaScript en los archivos de salida."
+erasableSyntaxOnly,boolean,Restricciones de interoperabilidad,5.8,,,No permitir construcciones en tiempo de ejecución que no formen parte de ECMAScript.
+libReplacement,boolean,Lenguaje y ambiente,5.8,,,Habilite el reemplazo de bibliotecas.
+stableTypeOrdering,boolean,Comprobación de tipos,6.0,,,Ensure types are ordered stably and deterministically across compilations.
+checkers,number,,7.0,,,Set the number of checkers per project.
+deduplicatePackages,boolean,,7.0,,,Deduplicate packages with the same name and version.
+pprofDir,string,,7.0,,,Generate pprof CPU/memory profiles to the given directory.
+quiet,boolean,,7.0,,,Do not print diagnostics.
+singleThreaded,boolean,,7.0,,,Run in single threaded mode.

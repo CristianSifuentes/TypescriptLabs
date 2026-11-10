@@ -1,0 +1,387 @@
+id,nombre,version,familia,clase,estado,fin,ecma,descripcion,simbolo,etiqueta,poster
+anotaciones-de-tipo,Anotaciones de tipo,0.8,tipos,T,GA,,,"Tipos estáticos opcionales sobre JavaScript: `x: number`",An,Anotaciones,1
+interfaces,Interfaces,0.8,tipos,T,GA,,,"Contratos estructurales que desaparecen al compilar",If,Interfaces,1
+clases,Clases,0.8,clases,S,GA,,ES2015,"Clases con herencia, tres años antes de que existieran en ECMAScript",Cl,Clases,1
+modulos-internos-y-externos,Módulos internos y externos,0.8,modulos,E,GA,,,"`module` interno (hoy `namespace`) y módulos externos CommonJS y AMD",Mo,Módulos,1
+funciones-flecha,Funciones flecha,0.8,ecma,S,GA,,ES2015,"`(x) => x + 1`, con `this` léxico",,,0
+propiedades-de-parametro,Propiedades de parámetro,0.8,clases,E,GA,,,"`constructor(public x: number)` declara y asigna el campo",,,0
+tipado-estructural,Tipado estructural,0.8,tipos,T,GA,,,"La compatibilidad se decide por la forma, no por el nombre",,,0
+archivos-de-declaracion,Archivos de declaración `.d.ts`,0.8,modulos,T,GA,,,"Describen los tipos de código JavaScript que ya existe",,,0
+inferencia-de-tipos,Inferencia de tipos,0.8,tipos,T,GA,,,"El tipo se deduce del inicializador y del contexto",,,0
+sobrecarga-de-funciones,Sobrecarga de funciones,0.8,tipos,T,GA,,,"Varias firmas y una sola implementación",,,0
+parametros-opcionales-y-rest,"Parámetros opcionales, por defecto y rest",0.8,ecma,S,GA,,ES2015,"`f(a?: T, b = 1, ...resto: T[])`",,,0
+tipo-any,Tipo `any`,0.8,tipos,T,GA,,,"La salida de emergencia del sistema de tipos: desactiva la comprobación",,,0
+aserciones-de-tipo,Aserciones de tipo `<T>x`,0.8,tipos,T,GA,,,"El programador afirma un tipo; no hay comprobación en ejecución",,,0
+mapas-de-codigo,Mapas de código fuente,0.8,compilador,C,GA,,,"`--sourcemap` permite depurar el TypeScript original",,,0
+genericos,Genéricos,0.9,nivel,T,GA,,,"Tipos, funciones y clases parametrizados, con restricciones `extends`",Ge,Genéricos,1
+enums,Enums,0.8,tipos,E,GA,,,"Constantes con nombre; los numéricos tienen mapeo inverso. Anunciados con la 0.9, el compilador 0.8.3 ya los acepta",,,0
+fusion-de-declaraciones,Fusión de declaraciones,0.9,tipos,T,GA,,,"Interfaces, módulos y clases con el mismo nombre se combinan",Fu,Fusión de|declaraciones,1
+export-asignacion,`export =`,0.9,modulos,E,GA,,,"Exportación única compatible con CommonJS y AMD",,,0
+consultas-typeof,`typeof` en posición de tipo,0.9,nivel,T,GA,,,"`let y: typeof x` copia el tipo de un valor",Tq,typeof x,1
+sobrecarga-por-constantes,Sobrecarga por constantes,0.9,tipos,T,GA,,,"Firmas especializadas por cadena literal: el antecedente de los tipos literales",,,0
+no-implicit-any,`--noImplicitAny`,0.9,flujo,C,GA,,,"Error cuando un tipo se infiere como `any` sin haberlo escrito (desde la 0.9.1)",Na,noImplicitAny,1
+version-1-0,TypeScript 1.0,1.0,compilador,H,GA,,,"Primera versión estable, con especificación del lenguaje y contribuciones externas",V1,Versión 1.0,1
+compilador-reescrito,Compilador reescrito,1.1,compilador,H,GA,,,"Nueva base de código unas cuatro veces más rápida; el proyecto se muda a GitHub",Rw,Compilador|reescrito,1
+protected,`protected`,1.3,clases,T,GA,,,"Miembros visibles solo en la clase y en sus derivadas",Pt,protected,1
+tuplas,Tipos tupla,1.3,tipos,T,GA,,,"`[string, number]`: posiciones con tipos distintos",Tu,Tuplas,1
+uniones,Tipos unión,1.4,tipos,T,GA,,,"`string | number`: un valor de uno de varios tipos",Un,Uniones,1
+guardas-typeof-instanceof,Guardas de tipo `typeof` e `instanceof`,1.4,flujo,T,GA,,,"El tipo se estrecha dentro de la rama comprobada",Gt,Guardas|de tipo,1
+alias-de-tipo,Alias de tipo,1.4,tipos,T,GA,,,"`type Nombre = ...` da nombre a cualquier tipo",Al,Alias de tipo,1
+let-y-const,`let` y `const`,1.4,ecma,S,GA,,ES2015,"Ámbito de bloque; en la 1.4 solo con destino ES6",Lc,let · const,1
+plantillas-de-cadena,Plantillas de cadena,1.4,ecma,S,GA,,ES2015,"Cadenas con interpolación `${expr}` y varias líneas",,,0
+const-enum,`const enum`,1.4,tipos,E,GA,,,"Enum que se sustituye por sus valores y no deja objeto en ejecución",,,0
+no-emit-on-error,`--noEmitOnError`,1.4,compilador,C,GA,,,"No se escribe JavaScript si hay errores",,,0
+modulos-es6,Módulos ES6,1.5,modulos,S,GA,,ES2015,"`import` y `export` estándar",Es,Módulos ES6,1
+namespace,`namespace`,1.5,modulos,E,GA,,,"Nuevo nombre de los módulos internos; `module X {}` siguió como sinónimo hasta la 6.0",,,0
+desestructuracion,Desestructuración,1.5,ecma,S,GA,,ES2015,"`const { a, b } = obj` y `[x, y] = par`, en declaraciones, asignaciones y parámetros",De,Desestruc-|turación,1
+spread-de-arreglos,Operador de propagación,1.5,ecma,S,GA,,ES2015,"`f(...args)` y `[...a, ...b]`",,,0
+for-of,`for...of`,1.5,ecma,S,GA,,ES2015,"Recorrido de arreglos e iterables",,,0
+decoradores-experimentales,Decoradores experimentales,1.5,clases,E,GA,,Propuesta de 2015,"`--experimentalDecorators`: la versión que adoptaron Angular y NestJS; sigue disponible",Dx,Decoradores|experimentales,1
+emit-decorator-metadata,`emitDecoratorMetadata`,1.5,clases,E,GA,,,"Emite los tipos de diseño para `reflect-metadata`",,,0
+propiedades-calculadas,Propiedades calculadas,1.5,ecma,S,GA,,ES2015,"`{ [clave]: valor }`",,,0
+tsconfig-json,`tsconfig.json`,1.5,compilador,C,GA,,,"El proyecto y sus opciones en un archivo",Tc,tsconfig.json,1
+salida-umd-y-system,Salida `umd` y `system`,1.5,modulos,C,Retirada,7.0,,"Formatos de módulo anteriores a ESM; obsoletos en la 6.0 junto con `amd` y `none`",,,0
+isolated-modules,`--isolatedModules`,1.5,compilador,C,GA,,,"Garantiza que cada archivo se puede transpilar por separado",,,0
+plantillas-etiquetadas,Plantillas etiquetadas para ES3 y ES5,1.5,ecma,S,GA,,ES2015,"Las plantillas etiquetadas también se compilan para destinos antiguos",,,0
+jsx,JSX y archivos `.tsx`,1.6,editor,E,GA,,,"`--jsx preserve` o `react`, con comprobación de elementos y atributos",Jx,JSX,1
+operador-as,Operador `as`,1.6,tipos,T,GA,,,"Aserción de tipo sin ambigüedad con JSX: `x as T`",,,0
+intersecciones,Tipos intersección,1.6,tipos,T,GA,,,"`A & B`: un valor que cumple ambos tipos a la vez",In,Intersecciones,1
+tipos-locales,Declaraciones de tipo locales,1.6,tipos,T,GA,,,"Clases, interfaces, enums y alias dentro de funciones y bloques",,,0
+expresiones-de-clase,Expresiones de clase,1.6,ecma,S,GA,,ES2015,"`const C = class { }`",,,0
+clases-abstractas,Clases y métodos `abstract`,1.6,clases,T,GA,,,"Clases que no se instancian y miembros que la derivada debe implementar",Ab,abstract,1
+alias-genericos,Alias de tipo genéricos,1.6,nivel,T,GA,,,"`type Caja<T> = { valor: T }`",,,0
+propiedades-sobrantes,Comprobación de propiedades sobrantes,1.6,flujo,T,GA,,,"Un literal de objeto no puede traer propiedades que el tipo de destino no declara",,,0
+generadores,Generadores,1.6,ecma,S,GA,,ES2015,"`function*` y `yield`, con destino ES6",,,0
+guardas-definidas-por-el-usuario,Guardas de tipo definidas por el usuario,1.6,flujo,T,GA,,,"`function esPez(x): x is Pez`",Is,x is T,1
+resolucion-node,Resolución de módulos `node`,1.6,modulos,C,Retirada,7.0,,"Imita a Node 10 (hoy `node10`); obsoleta en la 6.0 en favor de `nodenext` y `bundler`",,,0
+tsc-init,`tsc --init` y `exclude`,1.6,compilador,C,GA,,,"Genera un `tsconfig.json` inicial; `exclude` descarta carpetas",,,0
+builds-nocturnos,Compilaciones nocturnas,1.6,compilador,H,GA,,,"`npm install typescript@next`",,,0
+async-await,`async` y `await`,1.7,ecma,S,GA,,ES2017,"Con destino ES6 en la 1.7; para ES5 y ES3, desde la 2.1",Aw,async · await,1
+this-polimorfico,Tipo `this` polimórfico,1.7,tipos,T,GA,,,"`this` como tipo de retorno: API fluidas que sobreviven a la herencia",Th,this|polimórfico,1
+exponenciacion,Operador de exponenciación,1.7,ecma,S,GA,,ES2016,"`2 ** 10` y `x **= 2`",Ex,Operador **,1
+parametros-de-tipo-como-restriccion,Parámetros de tipo como restricciones,1.8,nivel,T,GA,,,"`<T extends U, U>`: un parámetro puede acotar a otro",,,0
+errores-de-flujo,Errores de flujo de control,1.8,flujo,C,GA,,,"Código inalcanzable, etiquetas sin uso, `--noImplicitReturns` y `--noFallthroughCasesInSwitch`",Fc,Errores|de flujo,1
+literales-de-cadena,Tipos literales de cadena,1.8,tipos,T,GA,,,"`'izquierda' | 'derecha'` como tipo",Ls,Literales|de cadena,1
+aumento-de-modulos,Aumento de módulos y del ámbito global,1.8,modulos,T,GA,,,"`declare module 'x'` y `declare global` amplían tipos ajenos",Au,Aumento de|módulos,1
+allow-js,`--allowJs`,1.8,editor,C,GA,,,"Archivos `.js` dentro de un proyecto TypeScript",Aj,allowJs,1
+guardas-this,Guardas de tipo basadas en `this`,1.8,flujo,T,GA,,,"`esArchivo(): this is Archivo`",,,0
+componentes-de-funcion,Componentes de función en JSX,1.8,editor,T,GA,,,"Una función puede usarse como elemento JSX con sus propiedades comprobadas",,,0
+let-const-en-bucles,`let` y `const` capturados en bucles,1.8,ecma,S,GA,,ES2015,"Cada iteración tiene su propio enlace, también en ES5",,,0
+comentarios-en-tsconfig,Comentarios en `tsconfig.json`,1.8,compilador,C,GA,,,"El archivo de configuración admite `//` y `/* */`",,,0
+strict-null-checks,`--strictNullChecks`,2.0,flujo,C,GA,,,"`null` y `undefined` dejan de pertenecer a todos los tipos",Sn,strictNull|Checks,1
+tipos-null-y-undefined,Tipos `null` y `undefined`,2.0,tipos,T,GA,,,"Tipos con nombre propio que pueden formar parte de una unión",,,0
+analisis-de-flujo,Análisis de tipos por flujo de control,2.0,flujo,T,GA,,,"El tipo de una variable depende del punto del programa",Cf,Análisis|de flujo,1
+uniones-discriminadas,Uniones discriminadas,2.0,flujo,T,GA,,,"Una propiedad literal común distingue los casos de una unión",Ud,Uniones|discriminadas,1
+never,Tipo `never`,2.0,tipos,T,GA,,,"El tipo sin valores: funciones que no retornan y ramas imposibles",Nv,never,1
+asercion-no-nula,Operador de aserción no nula,2.0,flujo,T,GA,,,"`x!` descarta `null` y `undefined` sin comprobación en ejecución",,,0
+readonly,Propiedades e índices `readonly`,2.0,tipos,T,GA,,,"Solo asignables en la declaración o en el constructor",,,0
+parametro-this,Tipo de `this` en funciones,2.0,tipos,T,GA,,,"`function f(this: Ventana)` y la opción `--noImplicitThis`",,,0
+globs-en-tsconfig,Patrones en `tsconfig.json`,2.0,compilador,C,GA,,,"`include` y `exclude` con comodines",,,0
+paths,Mapeo de rutas `paths`,2.0,modulos,C,GA,,,"Alias de importación para el compilador; no cambian el JavaScript emitido",,,0
+base-url,`baseUrl`,2.0,modulos,C,Retirada,7.0,,"Raíz de búsqueda de módulos no relativos; obsoleta en la 6.0, porque `paths` ya no la necesita",,,0
+modulos-ambientales-abreviados,Módulos ambientales abreviados y con comodín,2.0,modulos,T,GA,,,"`declare module 'modulo-sin-tipos';` y `declare module '*.css'`",,,0
+export-as-namespace,Definiciones UMD,2.0,modulos,T,GA,,,"`export as namespace miLib` en un archivo de declaración",,,0
+propiedades-opcionales-de-clase,Propiedades de clase opcionales,2.0,clases,T,GA,,,"`nombre?: string` también en clases",,,0
+constructores-privados,Constructores privados y protegidos,2.0,clases,T,GA,,,"Para *singletons* y para clases que solo se derivan",,,0
+propiedades-abstractas,Propiedades y accesores abstractos,2.0,clases,T,GA,,,"`abstract` también en propiedades",,,0
+opcion-lib,`--lib`,2.0,compilador,C,GA,,,"Las declaraciones del runtime se eligen aparte del destino",,,0
+no-unused,`--noUnusedLocals` y `--noUnusedParameters`,2.0,flujo,C,GA,,,"Error por declaraciones sin uso",,,0
+tipos-arroba,Paquetes `@types`,2.0,modulos,C,GA,,,"Las declaraciones se instalan con npm desde DefinitelyTyped; opciones `types` y `typeRoots`",,,0
+comas-finales,Comas finales en parámetros,2.0,ecma,S,GA,,ES2017,"`f(a, b,)`",,,0
+skip-lib-check,`--skipLibCheck`,2.0,compilador,C,GA,,,"No comprueba los archivos de declaración",,,0
+keyof,`keyof` y tipos de acceso indexado,2.1,nivel,T,GA,,,"`keyof T` son las claves de `T`; `T[K]`, el tipo de esa propiedad",Ko,keyof · T[K],1
+tipos-mapeados,Tipos mapeados,2.1,nivel,T,GA,,,"`{ [K in keyof T]: ... }` transforma cada propiedad",Mp,Tipos|mapeados,1
+utilidades-2-1,"`Partial`, `Readonly`, `Record` y `Pick`",2.1,nivel,T,GA,,,"Los primeros tipos utilitarios de la biblioteca estándar",,,0
+spread-de-objetos,Propagación y resto de objetos,2.1,ecma,S,GA,,ES2018,"`{ ...a, b: 1 }` y `const { x, ...resto } = obj`",Sp,Spread de|objetos,1
+async-para-es5,`async` y `await` para ES5 y ES3,2.1,ecma,S,GA,,ES2017,"Máquina de estados con los auxiliares `__awaiter` y `__generator`",,,0
+tslib,`tslib` e `--importHelpers`,2.1,compilador,C,GA,,,"Los auxiliares se importan de un paquete en vez de repetirse en cada archivo",,,0
+importaciones-sin-tipos,Importaciones sin tipos,2.1,modulos,T,GA,,,"Un módulo sin declaraciones se importa como `any`, salvo con `noImplicitAny`",,,0
+destinos-es2016-es2017,"Destinos `ES2016`, `ES2017` y `ESNext`",2.1,compilador,C,GA,,,"El destino deja de ser solo ES3, ES5 o ES6",,,0
+any-por-flujo,Inferencia de `any` por flujo de control,2.1,flujo,T,GA,,,"`let x;` toma el tipo de lo que se le asigna en cada punto",,,0
+literales-inferidos,Mejor inferencia de tipos literales,2.1,tipos,T,GA,,,"`const c = 'hola'` tiene el tipo `'hola'`",,,0
+extends-en-tsconfig,Herencia de configuración,2.1,compilador,C,GA,,,"`extends` en `tsconfig.json`",Xt,extends en|tsconfig,1
+always-strict,`--alwaysStrict`,2.1,compilador,C,GA,,,"Analiza en modo estricto y emite `'use strict'`; siempre activo desde la 6.0",,,0
+mixins,Clases mixin,2.2,clases,T,GA,,,"Funciones que reciben un constructor y devuelven una clase extendida",Mx,Mixins,1
+tipo-object,Tipo `object`,2.2,tipos,T,GA,,,"Cualquier valor que no sea primitivo",Ob,object,1
+new-target,`new.target`,2.2,ecma,S,GA,,ES2015,"Saber con qué constructor se invocó `new`",,,0
+operandos-nulos,Operandos posiblemente nulos,2.2,flujo,T,GA,,,"Error al operar con `null` o `undefined` en expresiones aritméticas",,,0
+punto-en-indices,Acceso con punto en firmas de índice,2.2,tipos,T,GA,,,"`mapa.clave` además de `mapa['clave']`",,,0
+strict,`--strict`,2.3,flujo,C,GA,,,"Activa toda la familia de comprobaciones estrictas; por defecto desde la 6.0",St,strict,1
+downlevel-iteration,`--downlevelIteration`,2.3,ecma,C,Retirada,7.0,,"Iteradores y generadores exactos para ES5 y ES3; obsoleta en la 6.0 junto con `target es5`",,,0
+iteracion-asincrona,Iteración asíncrona,2.3,ecma,S,GA,,ES2018,"`for await...of` y generadores `async function*`",Fa,for await,1
+genericos-por-defecto,Valores por defecto de parámetros de tipo,2.3,nivel,T,GA,,,"`<T = string>`",Gd,Genéricos por|defecto,1
+check-js,`--checkJs` y `// @ts-check`,2.3,editor,C,GA,,,"Errores de tipos en archivos JavaScript, con JSDoc como anotación",Cj,checkJs,1
+plugins-del-servicio,Plugins del servicio de lenguaje,2.3,editor,H,GA,,,"Extensiones del editor que amplían el servicio de lenguaje",,,0
+import-dinamico,`import()` dinámico,2.4,modulos,S,GA,,ES2020,"Carga diferida de módulos; devuelve una promesa tipada",Id,import(),1
+enums-de-cadena,Enums de cadena,2.4,tipos,E,GA,,,"`enum Color { Rojo = 'ROJO' }`",Ec,Enums de|cadena,1
+inferencia-desde-retorno,Inferencia desde el tipo de retorno,2.4,nivel,T,GA,,,"Los genéricos se infieren también del tipo esperado del resultado",,,0
+callbacks-contravariantes,Parámetros de *callback* contravariantes,2.4,flujo,T,GA,,,"Comparación más estricta de funciones que reciben funciones",,,0
+tipos-debiles,Detección de tipos débiles,2.4,flujo,T,GA,,,"Error si un objeto no comparte ninguna propiedad con un tipo de propiedades todas opcionales",Wk,Tipos débiles,1
+catch-opcional,`catch` sin variable,2.5,ecma,S,GA,,ES2019,"`try { } catch { }`",Co,catch { },1
+aserciones-jsdoc,Aserciones de tipo en JSDoc,2.5,editor,T,GA,,,"`/** @type {T} */ (valor)` en archivos JavaScript",,,0
+paquetes-deduplicados,Paquetes deduplicados,2.5,modulos,H,GA,,,"Dos copias del mismo paquete y versión se tratan como una",,,0
+preserve-symlinks,`--preserveSymlinks`,2.5,modulos,C,GA,,,"No resuelve los enlaces simbólicos a su ruta real",,,0
+strict-function-types,`--strictFunctionTypes`,2.6,flujo,C,GA,,,"Los parámetros de los tipos función se comparan de forma contravariante",Sf,strictFunction|Types,1
+ts-ignore,`// @ts-ignore`,2.6,flujo,T,GA,,,"Silencia los errores de la línea siguiente",Ig,@ts-ignore,1
+diagnosticos-localizados,Diagnósticos localizados,2.6,compilador,C,GA,,,"`--locale es` muestra los mensajes en español",,,0
+watch-rapido,`--watch` más rápido,2.6,compilador,H,GA,,,"Reutiliza el programa anterior entre cambios",,,0
+unique-symbol,`unique symbol`,2.7,tipos,T,GA,,,"Cada símbolo `const` tiene un tipo propio y sirve como clave de propiedad",Us,unique symbol,1
+strict-property-initialization,`--strictPropertyInitialization`,2.7,flujo,C,GA,,,"Toda propiedad de clase debe inicializarse en su declaración o en el constructor",Pi,Inicialización|estricta,1
+asignacion-definida,Aserción de asignación definida,2.7,flujo,T,GA,,,"`nombre!: string` promete que algo externo la inicializa",,,0
+tuplas-de-longitud-fija,Tuplas de longitud fija,2.7,tipos,T,GA,,,"`[number, string]` ya no acepta una tupla más larga",,,0
+guardas-in,Guardas de tipo con `in`,2.7,flujo,T,GA,,,"`'nadar' in animal` estrecha una unión",,,0
+es-module-interop,`--esModuleInterop`,2.7,modulos,C,GA,,,"`import d from 'cjs'` como lo hacen Node y los empaquetadores; siempre activo desde la 6.0",Ei,esModule|Interop,1
+separadores-numericos,Separadores numéricos,2.7,ecma,S,GA,,ES2021,"`1_000_000`",Ns,1_000_000,1
+tipos-condicionales,Tipos condicionales,2.8,nivel,T,GA,,,"`T extends U ? X : Y`: tipos que dependen de una condición",Ct,Tipos|condicionales,1
+condicionales-distributivos,Tipos condicionales distributivos,2.8,nivel,T,GA,,,"Sobre una unión, la condición se aplica a cada miembro",,,0
+infer,`infer`,2.8,nivel,T,GA,,,"Captura una parte de un tipo dentro de una condición",Nf,infer,1
+utilidades-2-8,"`Exclude`, `Extract`, `NonNullable`, `ReturnType` e `InstanceType`",2.8,nivel,T,GA,,,"Tipos utilitarios construidos con condicionales",Ut,Utilidades|condicionales,1
+modificadores-mapeados,Modificadores `+` y `-` en tipos mapeados,2.8,nivel,T,GA,,,"`-readonly` y `-?` quitan modificadores; de ahí nace `Required<T>`",,,0
+emit-declaration-only,`--emitDeclarationOnly`,2.8,compilador,C,GA,,,"Emite solo los `.d.ts`. Anunciada con la 2.8; el parche 2.7.2 ya la incluía",,,0
+jsx-por-archivo,Fábricas JSX por archivo,2.8,editor,T,GA,,,"El pragma `/** @jsx h */` elige la función que construye los elementos",,,0
+organizar-importaciones,Organizar importaciones,2.8,editor,H,GA,,,"Ordena y limpia los `import` desde el editor",,,0
+keyof-number-symbol,`keyof` con claves numéricas y símbolos,2.9,nivel,T,GA,,,"`keyof T` es `string | number | symbol`",Kn,keyof|ampliado,1
+argumentos-de-tipo-en-jsx,Argumentos de tipo en JSX y plantillas etiquetadas,2.9,nivel,T,GA,,,"`<Lista<Usuario> />` y plantillas etiquetadas genéricas",,,0
+tipos-import,Tipos `import()`,2.9,modulos,T,GA,,,"`import('./mod').Tipo` nombra un tipo sin importar el módulo",It,import('m').T,1
+import-meta,`import.meta`,2.9,modulos,S,GA,,ES2020,"Metadatos del módulo actual",,,0
+resolve-json-module,`--resolveJsonModule`,2.9,modulos,C,GA,,,"Importar archivos `.json` con su tipo inferido",Rj,resolveJson|Module,1
+declaration-map,`--declarationMap`,2.9,compilador,C,GA,,,"«Ir a la definición» lleva al `.ts` original y no al `.d.ts`",,,0
+referencias-de-proyecto,Referencias de proyecto,3.0,compilador,C,GA,,,"`references`, `composite` y `tsc --build` dividen un repositorio en proyectos",Pr,Referencias|de proyecto,1
+tuplas-en-rest,Tuplas en parámetros rest y propagación,3.0,tipos,T,GA,,,"`(...args: [number, string])`, con elementos opcionales y rest en las tuplas",Tr,Tuplas rest,1
+unknown,Tipo `unknown`,3.0,tipos,T,GA,,,"El tipo superior seguro: admite cualquier valor y obliga a estrechar antes de usarlo",Uk,unknown,1
+default-props-jsx,`defaultProps` en JSX,3.0,editor,T,GA,,,"`LibraryManagedAttributes` describe las propiedades con valor por defecto",,,0
+reference-lib,Directiva `/// <reference lib>`,3.0,compilador,T,GA,,,"Un archivo pide una biblioteca concreta",,,0
+mapeados-sobre-tuplas,Tipos mapeados sobre tuplas y arreglos,3.1,nivel,T,GA,,,"Un tipo mapeado homomórfico conserva la forma de tupla",Mt,Mapeados|sobre tuplas,1
+propiedades-en-funciones,Propiedades en declaraciones de función,3.1,tipos,T,GA,,,"`f.valorPorDefecto = 1` declara la propiedad",,,0
+types-versions,`typesVersions`,3.1,modulos,C,GA,,,"Un paquete ofrece declaraciones distintas según la versión de TypeScript",Tv,typesVersions,1
+strict-bind-call-apply,`--strictBindCallApply`,3.2,flujo,C,GA,,,"`bind`, `call` y `apply` comprueban sus argumentos",Bc,strictBind|CallApply,1
+spread-generico,Propagación y resto de objetos genéricos,3.2,nivel,T,GA,,,"`{ ...t, extra }` con `t: T` produce `T & { extra }`",,,0
+bigint,`bigint`,3.2,ecma,S,GA,,ES2020,"Enteros de precisión arbitraria: `100n`",Bi,bigint,1
+discriminantes-no-unitarios,Discriminantes no unitarios,3.2,flujo,T,GA,,,"Una unión se distingue también por propiedades `null`, `undefined` o no literales",,,0
+tsconfig-desde-paquetes,Configuración heredada de paquetes,3.2,compilador,C,GA,,,"`extends` puede apuntar a un paquete de `node_modules`",,,0
+show-config,`--showConfig`,3.2,compilador,C,GA,,,"Muestra la configuración final calculada",,,0
+llamadas-sobre-uniones,Llamadas sobre uniones de funciones,3.3,tipos,T,GA,,,"Se puede invocar una unión de firmas: los parámetros se intersecan",Cu,Llamar a|uniones,1
+build-watch-incremental,`--build --watch` incremental,3.3,compilador,H,GA,,,"Los proyectos compuestos solo recompilan lo afectado",,,0
+incremental,`--incremental`,3.4,compilador,C,GA,,,"Guarda el grafo del proyecto en `.tsbuildinfo` para compilar más rápido",Ic,incremental,1
+inferencia-de-orden-superior,Inferencia de orden superior,3.4,nivel,T,GA,,,"Componer funciones genéricas conserva sus parámetros de tipo",,,0
+readonly-en-arreglos,Modificador `readonly` en arreglos y tuplas,3.4,tipos,T,GA,,,"`readonly string[]` y `readonly [number, number]`",Ro,readonly T[],1
+as-const,Aserciones `const`,3.4,tipos,T,GA,,,"`as const`: literales exactos, propiedades `readonly` y tuplas",Ac,as const,1
+global-this,`globalThis`,3.4,ecma,S,GA,,ES2020,"Acceso tipado al objeto global",Gl,globalThis,1
+omit,`Omit`,3.5,nivel,T,GA,,,"`Omit<T, K>` quita propiedades de un tipo",Om,Omit,1
+propiedades-sobrantes-en-uniones,Propiedades sobrantes en uniones,3.5,flujo,T,GA,,,"La comprobación mira cada miembro de la unión",,,0
+allow-umd-global-access,`--allowUmdGlobalAccess`,3.5,modulos,C,GA,,,"Permite usar un global UMD desde un módulo",,,0
+uniones-mas-inteligentes,Comprobación de uniones más inteligente,3.5,flujo,T,GA,,,"Un objeto se compara con la unión descomponiendo sus discriminantes",Su,Uniones|inteligentes,1
+constructores-genericos,Inferencia desde constructores genéricos,3.5,nivel,T,GA,,,"La inferencia de orden superior alcanza a las clases",,,0
+velocidad-3-5,Mejoras de velocidad de la 3.5,3.5,compilador,H,GA,,,"Hasta un 68 % menos de tiempo al reconstruir con `--build` frente a la 3.4",,,0
+generadores-estrictos,Generadores más estrictos,3.6,tipos,T,GA,,,"`Generator<T, TReturn, TNext>` distingue lo producido, lo devuelto y lo recibido",Gn,Generator|<T · R · N>,1
+spread-preciso,Propagación de arreglos más precisa,3.6,ecma,S,GA,,,"El auxiliar `__spreadArrays` respeta los huecos al compilar para ES5",,,0
+promesas-olvidadas,Mejores errores con promesas,3.6,flujo,T,GA,,,"Sugiere `await` cuando se usa una promesa como si fuera su valor",,,0
+accesores-ambientales,Accesores en contextos ambientales,3.6,clases,T,GA,,,"`get` y `set` en archivos `.d.ts`",,,0
+playground-nuevo,Nuevo *playground*,3.6,editor,H,GA,,,"Editor en línea con todas las opciones y versiones",,,0
+encadenamiento-opcional,Encadenamiento opcional,3.7,ecma,S,GA,,ES2020,"`a?.b`, `a?.[i]` y `f?.()` se detienen si hay `null` o `undefined`",Oc,a?.b,1
+fusion-nula,Operador de fusión nula,3.7,ecma,S,GA,,ES2020,"`a ?? b` usa `b` solo si `a` es `null` o `undefined`",Nc,a ?? b,1
+funciones-de-asercion,Funciones de aserción,3.7,flujo,T,GA,,,"`asserts cond` y `asserts x is T`: si retornan, el tipo queda estrechado",As,asserts,1
+funciones-never,Funciones que devuelven `never`,3.7,flujo,T,GA,,,"El análisis de flujo sabe que el código posterior es inalcanzable",,,0
+alias-recursivos,Alias de tipo recursivos,3.7,nivel,T,GA,,,"`type Json = string | number | Json[] | { [k: string]: Json }`",Ra,Alias|recursivos,1
+declaraciones-desde-js,Declaraciones desde JavaScript,3.7,editor,C,GA,,,"`--declaration` con `--allowJs` genera `.d.ts` a partir de JSDoc",,,0
+use-define-for-class-fields,`useDefineForClassFields` y `declare` en propiedades,3.7,clases,C,GA,,ES2022,"Los campos de clase se definen como manda el estándar",,,0
+funciones-no-llamadas,Comprobación de funciones no llamadas,3.7,flujo,T,GA,,,"`if (usuario.esAdmin)` es un error si `esAdmin` es un método",,,0
+ts-nocheck,`// @ts-nocheck` en TypeScript,3.7,flujo,T,GA,,,"Desactiva la comprobación de un archivo `.ts` entero",,,0
+import-type,Importaciones y exportaciones solo de tipo,3.8,modulos,T,GA,,,"`import type { T }` y `export type { T }` se borran siempre",Ty,import type,1
+campos-privados,Campos privados `#`,3.8,clases,S,GA,,ES2022,"`#saldo`: privacidad real, garantizada en ejecución",Pf,#privado,1
+export-estrella-como,`export * as ns`,3.8,modulos,S,GA,,ES2020,"Reexporta un módulo entero bajo un nombre",,,0
+await-de-nivel-superior,`await` de nivel superior,3.8,ecma,S,GA,,ES2022,"`await` fuera de una función `async`, en módulos",Ta,await de|nivel superior,1
+destino-es2020,`es2020` como `target` y `module`,3.8,compilador,C,GA,,,"Conserva `?.`, `??`, `bigint` e `import()` sin transformar",,,0
+modificadores-jsdoc,Modificadores de acceso en JSDoc,3.8,editor,T,GA,,,"`@public`, `@private`, `@protected` y `@readonly`",,,0
+watch-options,`watchOptions`,3.8,compilador,C,GA,,,"Estrategias de vigilancia de archivos y directorios",,,0
+imports-not-used-as-values,`importsNotUsedAsValues`,3.8,modulos,C,Retirada,5.6,,"Controlaba la elisión de importaciones; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax`",Iv,importsNotUsed|AsValues,1
+ts-expect-error,`// @ts-expect-error`,3.9,flujo,T,GA,,,"Silencia un error y avisa si el error desaparece",Xe,@ts-expect-|error,1
+promise-all,Mejor inferencia en `Promise.all`,3.9,nivel,T,GA,,,"Corrige la mezcla de `null` y `undefined` entre los resultados",,,0
+velocidad-3-9,Mejoras de velocidad de la 3.9,3.9,compilador,H,GA,,,"Alrededor de un 40 % menos de tiempo de compilación en material-ui",Vl,Velocidad,1
+funciones-no-llamadas-en-ternarios,Funciones no llamadas en ternarios,3.9,flujo,T,GA,,,"La comprobación de la 3.7 se extiende al operador condicional",,,0
+tsconfig-de-solucion,Archivos `tsconfig.json` de solución,3.9,editor,H,GA,,,"El editor entiende un `tsconfig.json` que solo contiene `references`",,,0
+interseccion-a-never,Intersecciones reducidas a `never`,3.9,tipos,T,GA,,,"Una intersección con discriminantes incompatibles es `never`",,,0
+tuplas-variadicas,Tipos de tupla variádicos,4.0,nivel,T,GA,,,"`[...T, ...U]`: tuplas genéricas que se concatenan",Vt,Tuplas|variádicas,1
+elementos-etiquetados,Elementos de tupla etiquetados,4.0,tipos,T,GA,,,"`[inicio: number, fin: number]`",Lt,Tuplas|etiquetadas,1
+propiedades-desde-constructor,Inferencia de propiedades desde el constructor,4.0,clases,T,GA,,,"Con `noImplicitAny`, el tipo de un campo se deduce de sus asignaciones",,,0
+asignacion-logica,Operadores de asignación lógica,4.0,ecma,S,GA,,ES2021,"`a &&= b`, `a ||= b` y `a ??= b`",La,a ??= b,1
+unknown-en-catch,`unknown` en la variable de `catch`,4.0,flujo,T,GA,,,"`catch (e: unknown)` obliga a comprobar el error",Uc,catch (e:|unknown),1
+jsx-fragment-factory,`jsxFragmentFactory`,4.0,editor,C,GA,,,"Fábrica propia para los fragmentos JSX",,,0
+incremental-con-no-emit,`--incremental` con `--noEmit`,4.0,compilador,C,GA,,,"Caché incremental para quien solo comprueba tipos",,,0
+deprecated-en-editor,`@deprecated` en el editor,4.0,editor,H,GA,,,"Las declaraciones marcadas aparecen tachadas",,,0
+modo-semantico-parcial,Modo semántico parcial,4.0,editor,H,GA,,,"El editor responde antes de terminar de cargar el proyecto",,,0
+plantilla-literal,Tipos de plantilla literal,4.1,nivel,T,GA,,,"Tipos de cadena construidos por interpolación de otros tipos",Tl,Plantilla|literal,1
+remapeo-de-claves,Remapeo de claves,4.1,nivel,T,GA,,,"`{ [K in keyof T as NuevaClave]: T[K] }` renombra o filtra propiedades",Kr,Remapeo|de claves,1
+condicionales-recursivos,Tipos condicionales recursivos,4.1,nivel,T,GA,,,"Un tipo condicional puede referirse a sí mismo en sus ramas",Rc,Condicionales|recursivos,1
+tipos-intrinsecos-de-cadena,"`Uppercase`, `Lowercase`, `Capitalize` y `Uncapitalize`",4.1,nivel,T,GA,,,"Tipos intrínsecos que transforman cadenas literales",,,0
+no-unchecked-indexed-access,`--noUncheckedIndexedAccess`,4.1,flujo,C,GA,,,"`arr[i]` y `mapa[k]` incluyen `undefined`",Nu,noUnchecked|IndexedAccess,1
+paths-sin-base-url,`paths` sin `baseUrl`,4.1,modulos,C,GA,,,"Las rutas se resuelven respecto al `tsconfig.json`",,,0
+react-jsx,Fábricas JSX de React 17,4.1,editor,C,GA,,,"`jsx: react-jsx` y `react-jsxdev`, con `jsxImportSource`",,,0
+rest-en-cualquier-posicion,Elementos rest al inicio o en medio de una tupla,4.2,tipos,T,GA,,,"`[...string[], number]`",Rm,Rest en|medio,1
+alias-preservados,Conservación de alias de tipo,4.2,tipos,H,GA,,,"Los mensajes y los `.d.ts` muestran el alias que escribiste",,,0
+no-property-access-from-index-signature,`--noPropertyAccessFromIndexSignature`,4.2,flujo,C,GA,,,"Obliga a usar corchetes con las firmas de índice",,,0
+construccion-abstracta,Firmas de construcción `abstract`,4.2,clases,T,GA,,,"`abstract new () => T` describe clases abstractas como valores",Ak,abstract new,1
+explain-files,`--explainFiles`,4.2,compilador,C,GA,,,"Explica por qué cada archivo forma parte del programa",Xf,explainFiles,1
+in-estricto,Comprobación estricta del operador `in`,4.2,flujo,T,GA,,,"El lado derecho de `in` no puede ser un primitivo",,,0
+tipos-de-escritura,Tipos de escritura separados,4.3,clases,T,GA,,,"El `set` de una propiedad puede aceptar un tipo más amplio que el que devuelve el `get`",Ws,get ≠ set,1
+override,`override` y `--noImplicitOverride`,4.3,clases,T,GA,,,"Declara, y permite exigir, que un miembro sustituye al de la clase base",Ov,override,1
+plantillas-contextuales,Mejoras de tipos de plantilla,4.3,nivel,T,GA,,,"Las expresiones de plantilla se tipan por contexto y los patrones se comparan entre sí",,,0
+metodos-privados,Métodos y accesores `#privados`,4.3,clases,S,GA,,ES2022,"`#metodo()`, `get #x()` y miembros estáticos privados",Pm,#método(),1
+estrechamiento-contextual-de-genericos,Estrechamiento contextual de genéricos,4.3,flujo,T,GA,,,"Un valor de tipo `T` se estrecha según su restricción cuando el contexto lo pide",,,0
+promesas-siempre-verdaderas,Promesas siempre verdaderas,4.3,flujo,T,GA,,,"Error al usar una promesa sin `await` como condición; con una llamada directa, `if (f())`, desde la 4.4",,,0
+indices-estaticos,Firmas de índice `static`,4.3,clases,T,GA,,,"`static [clave: string]: number`",,,0
+completado-de-importaciones,Completado de sentencias de importación,4.3,editor,H,GA,,,"El editor propone la línea `import` entera",,,0
+flujo-con-alias,Análisis de flujo con condiciones en alias,4.4,flujo,T,GA,,,"`const esTexto = typeof x === 'string'` estrecha después en el `if`",Ca,Condiciones|con alias,1
+indices-de-simbolo-y-plantilla,Firmas de índice de símbolo y de plantilla,4.4,tipos,T,GA,,,"`[k: symbol]` y patrones de plantilla literal como claves de índice",Xs,Índices de|plantilla,1
+use-unknown-in-catch-variables,`--useUnknownInCatchVariables`,4.4,flujo,C,GA,,,"La variable de `catch` es `unknown`; forma parte de `strict`",,,0
+exact-optional-property-types,`--exactOptionalPropertyTypes`,4.4,flujo,C,GA,,,"`x?: T` deja de aceptar un `undefined` explícito",Eo,exactOptional|PropertyTypes,1
+bloques-static,Bloques `static`,4.4,clases,S,GA,,ES2022,"Inicialización estática con acceso a los campos privados",Sb,static { },1
+inlay-hints,Sugerencias incrustadas,4.4,editor,H,GA,,,"Nombres de parámetros y tipos inferidos junto al código",,,0
+awaited,Tipo `Awaited`,4.5,nivel,T,GA,,,"Desenvuelve promesas de forma recursiva, como hace `await`",Ad,Awaited,1
+lib-desde-node-modules,`lib` desde `node_modules`,4.5,compilador,C,GA,,,"Un paquete `@typescript/lib-dom` sustituye a la biblioteca integrada",,,0
+plantillas-como-discriminantes,Tipos de plantilla como discriminantes,4.5,flujo,T,GA,,,"Una unión se estrecha por una propiedad con patrón de plantilla",,,0
+module-es2022,`--module es2022`,4.5,modulos,C,GA,,,"Módulos con `await` de nivel superior",,,0
+recursion-de-cola,Eliminación de recursión de cola en tipos,4.5,nivel,T,GA,,,"Los tipos condicionales recursivos en posición de cola no agotan el límite de profundidad",Tt,Recursión|de cola,1
+preserve-value-imports,`--preserveValueImports`,4.5,modulos,C,Retirada,5.6,,"Conservaba importaciones sin uso aparente; obsoleta en la 5.0, la sustituyó `verbatimModuleSyntax`",,,0
+modificador-type-en-imports,Modificador `type` en nombres importados,4.5,modulos,T,GA,,,"`import { type Tipo, valor } from './m'`",Ti,{ type T },1
+presencia-de-campo-privado,Comprobación de marca privada,4.5,clases,S,GA,,ES2022,"`#x in obj` pregunta si un objeto tiene el campo privado",Pb,#x in obj,1
+aserciones-de-importacion,Aserciones de importación,4.5,modulos,S,Retirada,7.0,Sustituida,"`assert { type: 'json' }`: la propuesta cambió a `with`; obsoleta en la 6.0",,,0
+codigo-antes-de-super,Código antes de `super()`,4.6,clases,T,GA,,,"Permitido si no usa `this`, aunque la clase tenga campos inicializados y el destino obligue a transformarlos",,,0
+flujo-en-desestructuracion,Análisis de flujo en uniones desestructuradas,4.6,flujo,T,GA,,,"`const { tipo, dato } = accion`: estrechar `tipo` estrecha `dato`",Dn,Estrechar al|desestructurar,1
+profundidad-de-recursion,Mejores comprobaciones de profundidad,4.6,nivel,T,GA,,,"Detecta mejor las expansiones de tipos infinitas",,,0
+inferencia-de-acceso-indexado,Inferencia en accesos indexados,4.6,nivel,T,GA,,,"Se infiere `T[K]` al mapear sobre claves genéricas",,,0
+parametros-dependientes,Análisis de flujo en parámetros dependientes,4.6,flujo,T,GA,,,"Con `...args` de tipo unión de tuplas, estrechar uno estrecha los demás",,,0
+destino-es2022,`--target es2022`,4.6,compilador,C,GA,,ES2022,"Campos de clase, `at()`, `Object.hasOwn` y `cause` en los errores",E2,target es2022,1
+analizador-de-trazas,Analizador de trazas,4.6,compilador,H,GA,,,"`@typescript/analyze-trace` interpreta la salida de `--generateTrace`",Tz,Trazas de|rendimiento,1
+errores-de-sintaxis-en-js,Errores de sintaxis en JavaScript,4.6,editor,H,GA,,,"El editor avisa de redeclaraciones y modificadores inválidos también en `.js`",,,0
+esm-en-node,Módulos ECMAScript en Node,4.7,modulos,C,GA,,,"`node16` y `nodenext` entienden `exports`, `imports` y `type` de `package.json`",Nd,node16 ·|nodenext,1
+extensiones-mts-cts,Extensiones `.mts` y `.cts`,4.7,modulos,C,GA,,,"El formato del módulo se declara en la extensión, como `.mjs` y `.cjs`; el compilador 4.6.4 ya las leía",Mc,.mts · .cts,1
+module-detection,`--moduleDetection`,4.7,modulos,C,GA,,,"`force` trata todo archivo como módulo",,,0
+flujo-en-corchetes,Análisis de flujo en accesos con corchetes,4.7,flujo,T,GA,,,"`obj[clave]` se estrecha cuando `clave` es un literal o un símbolo único",,,0
+inferencia-en-objetos-y-metodos,Inferencia de funciones en objetos y métodos,4.7,nivel,T,GA,,,"La inferencia avanza propiedad a propiedad, de izquierda a derecha",,,0
+expresiones-de-instanciacion,Expresiones de instanciación,4.7,nivel,T,GA,,,"`const MapaDeErrores = Map<string, Error>` fija los argumentos de tipo sin llamar",Ix,f<T> sin|llamar,1
+infer-extends,Restricciones en `infer`,4.7,nivel,T,GA,,,"`infer U extends string` acota lo que se captura",,,0
+anotaciones-de-varianza,Anotaciones de varianza,4.7,nivel,T,GA,,,"`in` y `out` en parámetros de tipo declaran contravarianza y covarianza",Va,in · out,1
+module-suffixes,`moduleSuffixes`,4.7,modulos,C,GA,,,"Busca `archivo.ios.ts` antes que `archivo.ts`",,,0
+resolution-mode,`resolution-mode`,4.7,modulos,T,GA,,,"Elige resolver como `import` o como `require` en una directiva o en un tipo",,,0
+ir-a-definicion-en-fuente,Ir a la definición en el código fuente,4.7,editor,H,GA,,,"Salta al `.js` o al `.ts` real en lugar del `.d.ts`",,,0
+estrechamiento-de-unknown,Estrechamiento de `unknown` y `{}`,4.8,flujo,T,GA,,,"`unknown` se comporta como `{} | null | undefined` y `NonNullable<T>` es `T & {}`",Nk,unknown se|estrecha,1
+infer-en-plantillas,Mejor `infer` en tipos de plantilla,4.8,nivel,T,GA,,,"`infer N extends number` convierte un fragmento de cadena en un número literal (en la 4.7 daba `number` a secas)",Xn,infer N extends|number,1
+comparar-literales-de-objeto,Comparación con literales de objeto y arreglo,4.8,flujo,T,GA,,,"`x === []` es siempre falso, y ahora es un error",Ce,x === [ ],1
+rendimiento-de-build-4-8,Rendimiento de las compilaciones incrementales,4.8,compilador,H,GA,,,"Entre un 10 % y un 25 % menos de tiempo en `--build`, `--watch` e `--incremental`",,,0
+excluir-de-auto-import,Excluir archivos de la importación automática,4.8,editor,H,GA,,,"Preferencia `autoImportFileExcludePatterns`",,,0
+satisfies,Operador `satisfies`,4.9,tipos,T,GA,,,"Comprueba que una expresión cumple un tipo sin cambiar el tipo inferido",Sa,satisfies,1
+in-con-propiedades-no-listadas,Estrechamiento con `in` de propiedades no listadas,4.9,flujo,T,GA,,,"`'x' in obj` añade `Record<'x', unknown>` al tipo",Ip,in estrecha,1
+accessor,Accesores automáticos,4.9,clases,S,GA,,Stage 2.7,"`accessor nombre = ''` crea `get` y `set` sobre un campo privado",Ax,accessor,1
+igualdad-con-nan,Comparaciones con `NaN`,4.9,flujo,T,GA,,,"`x === NaN` es un error: usa `Number.isNaN`",Nn,=== NaN,1
+vigilancia-por-eventos,Vigilancia por eventos del sistema,4.9,compilador,H,GA,,,"`--watch` deja de sondear los archivos",,,0
+comandos-de-importaciones,Comandos de importaciones del editor,4.9,editor,H,GA,,,"«Quitar importaciones sin usar» y «Ordenar importaciones»",,,0
+decoradores-estandar,Decoradores estándar,5.0,clases,S,GA,,Stage 2.7,"Los de la propuesta de TC39, sin `--experimentalDecorators`; en stage 3 de 2022 a mayo de 2026",Dc,Decoradores|estándar,1
+parametros-const,Parámetros de tipo `const`,5.0,nivel,T,GA,,,"`<const T>` infiere literales como si el argumento llevara `as const`",Kt,const T,1
+extends-multiple,Varios archivos en `extends`,5.0,compilador,C,GA,,,"`extends` acepta una lista de configuraciones",,,0
+enums-de-union,Todos los enums son enums de unión,5.0,tipos,T,GA,,,"Cada miembro tiene su tipo, también con valores calculados",,,0
+resolucion-bundler,`--moduleResolution bundler`,5.0,modulos,C,GA,,,"Resuelve como Vite, esbuild o webpack: `exports` sin exigir extensiones",Bn,bundler,1
+opciones-de-resolucion,Opciones de personalización de resolución,5.0,modulos,C,GA,,,"`allowImportingTsExtensions`, `customConditions`, `allowArbitraryExtensions` y otras",,,0
+verbatim-module-syntax,`--verbatimModuleSyntax`,5.0,modulos,C,GA,,,"Lo que no lleva `type` se emite tal cual; lo que lo lleva, se borra",Vm,verbatimModule|Syntax,1
+export-type-estrella,`export type *`,5.0,modulos,T,GA,,,"Reexporta solo los tipos de un módulo",,,0
+jsdoc-satisfies-overload,`@satisfies` y `@overload` en JSDoc,5.0,editor,T,GA,,,"`satisfies` y las sobrecargas llegan a los archivos JavaScript",,,0
+migracion-a-modulos,El compilador migra a módulos,5.0,compilador,H,GA,,,"Entre un 10 % y un 20 % más rápido, y un paquete npm que baja de 63,8 MB a 37,4 MB",,,0
+obsolescencias-5-0,Obsolescencias de la 5.0,5.0,compilador,C,GA,,,"`target ES3`, `out`, `charset`, `keyofStringsOnly` y otras: error salvo con `ignoreDeprecations: '5.0'`",,,0
+completado-de-switch,Completado exhaustivo de `switch`,5.0,editor,H,GA,,,"El editor escribe todos los `case` de una unión",,,0
+retorno-undefined-implicito,Retornos implícitos en funciones `undefined`,5.1,flujo,T,GA,,,"Una función que devuelve `undefined` ya no necesita `return`",Ru,return|implícito,1
+accesores-sin-relacion,Tipos sin relación en `get` y `set`,5.1,clases,T,GA,,,"Con anotaciones explícitas, el `get` y el `set` pueden tener tipos independientes",Gs,get y set|libres,1
+jsx-element-type,Comprobación desacoplada de JSX,5.1,editor,T,GA,,,"`JSX.ElementType` permite componentes que devuelven promesas o cadenas",Je,JSX.Element|Type,1
+atributos-jsx-con-espacio-de-nombres,Atributos JSX con espacio de nombres,5.1,editor,T,GA,,,"`<a:b />` y `xlink:href`",,,0
+cursores-enlazados,Cursores enlazados en JSX,5.1,editor,H,GA,,,"Al renombrar la etiqueta de apertura cambia la de cierre",,,0
+mover-a-archivo-existente,Mover a un archivo existente,5.1,editor,H,GA,,,"Refactorización que traslada declaraciones y corrige los `import`",,,0
+using,`using` y gestión explícita de recursos,5.2,ecma,S,GA,,ES2027,"`using` y `await using` liberan el recurso al salir del bloque, con `Symbol.dispose`",Ug,using,1
+metadatos-de-decoradores,Metadatos de decoradores,5.2,clases,S,GA,,Stage 2.7,"`context.metadata` y `Symbol.metadata`",Md,Metadatos de|decoradores,1
+tuplas-mixtas,Tuplas con elementos con y sin nombre,5.2,tipos,T,GA,,,"`[primero: string, number]`",,,0
+metodos-en-uniones-de-arreglos,Métodos sobre uniones de arreglos,5.2,tipos,T,GA,,,"`filter`, `find` y `reduce` sobre `string[] | number[]`",Ua,Uniones de|arreglos,1
+copia-de-arreglos,Métodos de copia de arreglos,5.2,ecma,L,GA,,ES2023,"`toSorted`, `toReversed`, `toSpliced` y `with`",Cs,toSorted,1
+rutas-ts-en-import-type,Extensiones `.ts` en importaciones de tipo,5.2,modulos,T,GA,,,"`import type` admite rutas con extensión de implementación",,,0
+refactor-insertar-variable,Refactorización «Insertar variable»,5.2,editor,H,GA,,,"Sustituye una variable por su valor en todos sus usos",,,0
+atributos-de-importacion,Atributos de importación,5.3,modulos,S,GA,,ES2025,"`import datos from './d.json' with { type: 'json' }`",Wa,with { type },1
+resolution-mode-estable,`resolution-mode` estable,5.3,modulos,T,GA,,,"En tipos de importación y en todos los modos de módulo",,,0
+switch-true,Estrechamiento con `switch (true)`,5.3,flujo,T,GA,,,"Cada `case` condicional estrecha como un `if`",Sw,switch (true),1
+comparacion-con-booleanos,Estrechamiento por comparación con booleanos,5.3,flujo,T,GA,,,"`if (esTexto(x) === true)` también estrecha",,,0
+has-instance,`instanceof` con `Symbol.hasInstance`,5.3,flujo,T,GA,,,"Un método `[Symbol.hasInstance]` con predicado de tipo dirige el estrechamiento",Hi,hasInstance,1
+super-en-campos,`super` sobre campos de instancia,5.3,clases,T,GA,,,"Error al leer con `super.x` un campo que no está en el prototipo",,,0
+inlay-hints-interactivos,Sugerencias incrustadas interactivas,5.3,editor,H,GA,,,"Un clic en el tipo sugerido lleva a su definición",,,0
+jsdoc-sin-analizar,Omisión del análisis de JSDoc,5.3,compilador,H,GA,,,"`tsc` no analiza JSDoc en archivos TypeScript: menos tiempo y menos memoria",Jd,Sin analizar|JSDoc,1
+estrechamiento-en-clausuras,Estrechamiento preservado en clausuras,5.4,flujo,T,GA,,,"Se conserva dentro de una función creada después de la última asignación",Cn,Clausuras|estrechadas,1
+no-infer,Tipo `NoInfer`,5.4,nivel,T,GA,,,"`NoInfer<T>` impide que una posición aporte candidatos a la inferencia",Ni,NoInfer,1
+group-by,`Object.groupBy` y `Map.groupBy`,5.4,ecma,L,GA,,ES2024,"Agrupan un iterable por clave",Gb,groupBy,1
+module-preserve,`--module preserve`,5.4,modulos,C,GA,,,"Conserva `import` y `require` como se escribieron, para empaquetadores y Bun",Mv,module|preserve,1
+atributos-comprobados,Atributos de importación comprobados,5.4,modulos,T,GA,,,"Se validan contra el tipo global `ImportAttributes`",,,0
+anadir-parametros,Corrección rápida para parámetros,5.4,editor,H,GA,,,"Añade a la función los parámetros que faltan en una llamada",,,0
+predicados-inferidos,Predicados de tipo inferidos,5.5,flujo,T,GA,,,"`x => x !== undefined` se infiere como `x is T`: `filter` por fin estrecha",Tp,Predicados|inferidos,1
+accesos-indexados-constantes,Estrechamiento de accesos indexados constantes,5.5,flujo,T,GA,,,"`obj[clave]` se estrecha si ni `obj` ni `clave` cambian",,,0
+jsdoc-import,Etiqueta JSDoc `@import`,5.5,editor,T,GA,,,"`/** @import { T } from './tipos' */`",,,0
+sintaxis-de-regex,Comprobación de expresiones regulares,5.5,flujo,T,GA,,,"Errores de sintaxis y referencias a grupos inexistentes en los literales",Rx,Regex|comprobadas,1
+metodos-de-set,Métodos nuevos de `Set`,5.5,ecma,L,GA,,ES2025,"`union`, `intersection`, `difference` e `isSubsetOf`",,,0
+isolated-declarations,`--isolatedDeclarations`,5.5,compilador,C,GA,,,"Exige anotar lo exportado para que otras herramientas generen los `.d.ts` archivo a archivo",Di,isolated|Declarations,1
+config-dir,Variable `${configDir}`,5.5,compilador,C,GA,,,"Rutas relativas al proyecto que hereda una configuración compartida",Cd,${configDir},1
+rendimiento-5-5,Optimizaciones de rendimiento de la 5.5,5.5,compilador,H,GA,,,"Objetos monomórficos: compilaciones entre un 5 % y un 8 % más rápidas con la API pública",,,0
+transpile-declaration,API `transpileDeclaration`,5.5,compilador,H,GA,,,"Genera el `.d.ts` de un solo archivo",,,0
+retirada-de-5-0,Retirada de lo obsoleto en la 5.0,5.6,compilador,C,GA,,,"Anunciada para la 5.5, pero el compilador 5.5.4 aún las admite con `ignoreDeprecations`; la 5.6 las rechaza sin remedio",,,0
+comprobaciones-de-verdad,Comprobaciones de verdad y nulidad imposibles,5.6,flujo,T,GA,,,"Error si una condición es siempre verdadera o si un `??` nunca se usa",Tn,Condiciones|imposibles,1
+helpers-de-iteradores,Métodos auxiliares de iteradores,5.6,ecma,L,GA,,ES2025,"`map`, `filter` y `take` sobre cualquier iterador; tipo `IteratorObject`",Ih,Iterator|helpers,1
+strict-builtin-iterator-return,`--strictBuiltinIteratorReturn`,5.6,flujo,C,GA,,,"`next()` de los iteradores nativos ya no devuelve `any` al terminar",,,0
+identificadores-de-modulo-arbitrarios,Identificadores de módulo arbitrarios,5.6,modulos,S,GA,,ES2022,"`export { x as 'nombre con espacios' }`",,,0
+no-unchecked-side-effect-imports,`--noUncheckedSideEffectImports`,5.6,modulos,C,GA,,,"`import './estilos.css'` debe resolverse; por defecto desde la 6.0",Se,Imports de|efecto,1
+no-check,`--noCheck`,5.6,compilador,C,GA,,,"Emite sin comprobar tipos",Nx,noCheck,1
+build-con-errores,`--build` con errores intermedios,5.6,compilador,H,GA,,,"Un proyecto con errores ya no detiene a los que dependen de él",,,0
+diagnosticos-por-region,Diagnósticos por región,5.6,editor,H,GA,,,"El editor comprueba primero lo visible en pantalla",,,0
+variables-nunca-inicializadas,Variables nunca inicializadas,5.7,flujo,T,GA,,,"Error si una variable no recibe valor en ninguna ruta, también dentro de funciones",Vi,Sin|inicializar,1
+rewrite-relative-import-extensions,`--rewriteRelativeImportExtensions`,5.7,modulos,C,GA,,,"Convierte `./a.ts` en `./a.js` al emitir",Re,Reescribir|extensiones,1
+destino-es2024,`--target es2024` y `--lib es2024`,5.7,compilador,C,GA,,ES2024,"`Promise.withResolvers`, `Atomics.waitAsync` y búferes redimensionables",E4,target es2024,1
+typed-arrays-genericos,Arreglos tipados genéricos,5.7,tipos,L,GA,,,"`Uint8Array<TArrayBuffer>` distingue `ArrayBuffer` de `SharedArrayBuffer`",,,0
+tsconfig-ancestros,Búsqueda de configuración en directorios ancestros,5.7,editor,H,GA,,,"El editor sigue subiendo hasta encontrar el proyecto que contiene el archivo",,,0
+cache-de-compilacion-v8,Caché de compilación de V8,5.7,compilador,H,GA,,,"`module.enableCompileCache()` hace que `tsc --version` arranque unas 2,5 veces más rápido",V8,Caché de V8,1
+json-validado-en-nodenext,Importaciones JSON validadas en `nodenext`,5.7,modulos,T,GA,,,"Exigen `with { type: 'json' }` y solo ofrecen la exportación por defecto",,,0
+ramas-de-retorno,Comprobación granular de ramas de retorno,5.8,flujo,T,GA,,,"Cada rama de un `? :` en un `return` se comprueba contra el tipo declarado",Rb,Ramas de|retorno,1
+require-esm,`require()` de módulos ES,5.8,modulos,C,GA,,,"`--module nodenext` permite `require` de un módulo ES, como Node 22",Rq,require(esm),1
+module-node18,`--module node18`,5.8,modulos,C,GA,,,"Punto fijo para Node 18: sin `require(esm)` y con aserciones de importación",,,0
+erasable-syntax-only,`--erasableSyntaxOnly`,5.8,compilador,C,GA,,,"Prohíbe enums, namespaces y propiedades de parámetro: lo que Node no puede borrar",Er,erasable|SyntaxOnly,1
+lib-replacement,`--libReplacement`,5.8,compilador,C,GA,,,"Activa o desactiva la búsqueda de `@typescript/lib-*`; desactivada por defecto en la 6.0",,,0
+optimizaciones-de-carga,Optimizaciones de carga de programas,5.8,compilador,H,GA,,,"Menos normalización de rutas y menos validación repetida de opciones",,,0
+tsc-init-minimo,`tsc --init` mínimo,5.9,compilador,C,GA,,,"Un `tsconfig.json` corto y moderno: `nodenext`, `strict` y `verbatimModuleSyntax`",Nt,tsc --init,1
+import-defer,`import defer`,5.9,modulos,S,GA,,Stage 3,"`import defer * as ns` retrasa la evaluación del módulo hasta su primer uso",Df,import defer,1
+module-node20,`--module node20`,5.9,modulos,C,GA,,,"Punto fijo para Node 20, con `target es2023`",N2,module node20,1
+descripciones-del-dom,Descripciones en las API del DOM,5.9,editor,L,GA,,,"Resúmenes de MDN al pasar el cursor",,,0
+hovers-expandibles,Información expandible al pasar el cursor,5.9,editor,H,GA,,,"Botones `+` y `-` para desplegar tipos (vista previa)",Hv,Hover|expandible,1
+cache-de-instanciaciones,Caché de instanciaciones,5.9,compilador,H,GA,,,"Menos trabajo repetido en bibliotecas con tipos muy genéricos",,,0
+strict-por-defecto,`strict` por defecto,6.0,flujo,C,GA,,,"Sin configuración, el proyecto es estricto",Sx,strict por|defecto,1
+valores-por-defecto-6-0,Nuevos valores por defecto,6.0,compilador,C,GA,,,"`module: esnext`, `target` flotante (hoy `es2025`), `types: []` y `rootDir` en la carpeta del `tsconfig.json`",Dv,Nuevos|valores,1
+menos-sensibilidad-contextual,Funciones sin `this` menos sensibles al contexto,6.0,nivel,T,GA,,,"Los métodos que no usan `this` participan antes en la inferencia",,,0
+subrutas-almohadilla,Importaciones de subruta `#/`,6.0,modulos,C,GA,,,"`imports` de `package.json` admite el prefijo `#/`, como Node",,,0
+bundler-con-commonjs,`bundler` con `--module commonjs`,6.0,modulos,C,GA,,,"La salida natural para quien usaba `moduleResolution node`",,,0
+stable-type-ordering,`--stableTypeOrdering`,6.0,compilador,C,GA,,,"Ordena los tipos como la 7.0 para comparar resultados; hasta un 25 % más lento",,,0
+destino-es2025,`es2025` en `target` y `lib`,6.0,compilador,C,GA,,ES2025,"`Promise.try`, métodos de `Set`, auxiliares de iteradores y `RegExp.escape`",,,0
+tipos-temporal,Tipos de `Temporal`,6.0,ecma,L,GA,,ES2027,"Fechas y horas modernas en `esnext.temporal`",Tm,Temporal,1
+upsert,Métodos `getOrInsert`,6.0,ecma,L,GA,,ES2026,"`Map.prototype.getOrInsert` y `getOrInsertComputed`",,,0
+regexp-escape,`RegExp.escape`,6.0,ecma,L,GA,,ES2025,"Escapa texto para usarlo dentro de una expresión regular",,,0
+dom-iterable-integrado,`dom` incluye `dom.iterable`,6.0,compilador,L,GA,,,"Ya no hace falta añadir `dom.iterable` ni `dom.asynciterable`",,,0
+ignore-config,`--ignoreConfig`,6.0,compilador,C,GA,,,"`tsc archivo.ts` con un `tsconfig.json` presente es el error TS5112, salvo con esta opción",,,0
+obsolescencias-6-0,Obsolescencias de la 6.0,6.0,compilador,C,GA,,,"`target es5`, `baseUrl`, `outFile`, `node10`, AMD, UMD y System: error salvo con `ignoreDeprecations: '6.0'`",Dp,Obsoles-|cencias,1
+compilador-nativo,Compilador nativo en Go,7.0,compilador,H,GA,,,"Corsa: el mismo comprobador, portado a Go; entre 8 y 12 veces más rápido en compilaciones completas",Go,Compilador|nativo,1
+checkers,Comprobación de tipos en paralelo,7.0,compilador,C,GA,,,"`--checkers` fija cuántos comprobadores trabajan por proyecto",Ck,--checkers,1
+builders,Compilación de proyectos en paralelo,7.0,compilador,C,GA,,,"`--builders` fija cuántas referencias de proyecto se compilan a la vez",Bd,--builders,1
+single-threaded,`--singleThreaded`,7.0,compilador,C,GA,,,"Desactiva el paralelismo",,,0
+servidor-lsp,Servidor de lenguaje LSP,7.0,editor,H,GA,,,"El editor habla el protocolo estándar con el binario nativo; el paquete ya no trae `tsserver`",Lp,Servidor LSP,1
+watch-nativo,Modo `--watch` reescrito,7.0,compilador,H,GA,,,"Vigilancia de archivos basada en una adaptación a Go del vigilante de Parcel",,,0
+orden-determinista,Orden determinista de tipos,7.0,compilador,H,GA,,,"Uniones y propiedades se ordenan por contenido: la salida ya no depende del orden de análisis",,,0
+javascript-simplificado,Soporte de JavaScript simplificado,7.0,editor,H,GA,,,"JSDoc se interpreta como TypeScript; adiós a las funciones constructoras y a las etiquetas de Closure",,,0
+typescript6-compat,Paquete `@typescript/typescript6`,7.0,compilador,H,GA,,,"El compilador 6.0 como `tsc6`, para convivir con la 7.0 y conservar su API",,,0
+binarios-por-plataforma,Binarios por plataforma,7.0,compilador,H,GA,,,"Un paquete `@typescript/typescript-<so>-<arquitectura>` para cada una de las 20 plataformas",,,0
+opciones-nuevas-7-0,Opciones nuevas de la 7.0,7.0,compilador,C,GA,,,"`--quiet`, `--pprofDir` y `--deduplicatePackages`",,,0
+retirada-de-6-0,Retirada de lo obsoleto en la 6.0,7.0,compilador,C,GA,,,"Lo que la 6.0 marcó como obsoleto pasa a ser un error sin remedio",,,0
+plantillas-por-punto-de-codigo,Inferencia de plantillas por punto de código,7.0,nivel,T,GA,,,"Un emoji ya no se parte en dos mitades al inferir con plantillas literales",,,0
+api-inestable,API inestable,7.0,compilador,H,GA,,,"`typescript/unstable/*`: la API definitiva llega con la 7.1",,,0
+api-estable,API estable del compilador,7.1,compilador,H,Beta,,,"`typescript/sync`, `typescript/async`, `typescript/ast` y `typescript/fs`",Ap,API estable,1
+content-mappers,*Content mappers*,7.1,compilador,C,Beta,,,"Complementos que dan al compilador una vista TypeScript de archivos `.vue`, `.svelte` o `.mdx`; exigen `--runExternalCode`",Cm,Content|mappers,1
+destino-es2026,`es2026` en `target` y `lib`,7.1,compilador,C,Beta,,ES2026,"`Array.fromAsync`, `Error.isError`, `Math.sumPrecise` y `Uint8Array` en Base64; pasa a ser el destino por defecto",E6,target es2026,1
+atributos-en-modulos-ambientales,Atributos de importación en módulos ambientales,7.1,modulos,T,Beta,,,"Una declaración de módulo puede depender de `with { type: 'css' }`",,,0
+import-source,Importaciones en fase de origen,7.1,modulos,S,Beta,,Stage 3,"`import source x from './m.wasm'`",Sr,import source,1
+esquemas-de-tsconfig,Esquemas JSON incluidos,7.1,compilador,H,Beta,,,"`typescript/schemas/tsconfig.schema.json` viaja en el paquete",,,0

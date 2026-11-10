@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 660" width="1600" height="660" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="lt ld">
+<title id="lt">El pulso de TypeScript: todas las versiones menores, de 2012 a 2026</title>
+<desc id="ld">Gráfico de puntos. El eje horizontal es el tiempo y el vertical el número de versión menor (.0 a .9). Cada trazo une las versiones menores de una versión mayor. Los datos están en la tabla maestra del capítulo 01.</desc>
+<rect width="1600" height="660" rx="16" fill="#0b1220"/>
+<text x="40" y="48" font-size="27" font-weight="700" fill="#f0efec">El pulso de TypeScript</text>
+<text x="40" y="76" font-size="15.5" fill="#c3c2b7">Cada punto es una versión menor en la fecha de su primer paquete estable en npm; cada trazo, una versión mayor.</text>
+<line x1="40" y1="103" x2="66" y2="103" stroke="#199e70" stroke-width="2" stroke-linecap="round"/>
+<circle cx="53" cy="103" r="5" fill="#199e70" stroke="#0b1220" stroke-width="2"/>
+<text x="76" y="108" font-size="14" fill="#c3c2b7">Compilador original (0.8–1.0)</text>
+<line x1="316.6" y1="103" x2="342.6" y2="103" stroke="#3987e5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="329.6" cy="103" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<text x="352.6" y="108" font-size="14" fill="#c3c2b7">Strada: escrito en TypeScript (1.1–6.0)</text>
+<line x1="667.2" y1="103" x2="693.2" y2="103" stroke="#d95926" stroke-width="2" stroke-linecap="round"/>
+<circle cx="680.2" cy="103" r="5" fill="#d95926" stroke="#0b1220" stroke-width="2"/>
+<text x="703.2" y="108" font-size="14" fill="#c3c2b7">Corsa: escrito en Go (7.x)</text>
+<circle cx="929.6" cy="103" r="5" fill="#0b1220" stroke="#d95926" stroke-width="2"/>
+<text x="943.6" y="108" font-size="14" fill="#c3c2b7">en beta</text>
+<text x="159.9" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Orígenes</text>
+<text x="159.9" y="156" font-size="11.5" fill="#898781" text-anchor="middle">JavaScript que escala</text>
+<line x1="243.8" y1="128" x2="243.8" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="368.7" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Fundación</text>
+<text x="368.7" y="156" font-size="11.5" fill="#898781" text-anchor="middle">Alcanzar a ES6</text>
+<line x1="493.6" y1="128" x2="493.6" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="587.0" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Solidez</text>
+<text x="587.0" y="156" font-size="11.5" fill="#898781" text-anchor="middle">null bajo control</text>
+<line x1="680.4" y1="128" x2="680.4" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="784.3" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Escala</text>
+<text x="784.3" y="156" font-size="11.5" fill="#898781" text-anchor="middle">Proyectos enormes</text>
+<line x1="888.2" y1="128" x2="888.2" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="1017.8" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Expresividad</text>
+<text x="1017.8" y="156" font-size="11.5" fill="#898781" text-anchor="middle">Tipos que calculan</text>
+<line x1="1147.4" y1="128" x2="1147.4" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="1299.8" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Estándares</text>
+<text x="1299.8" y="156" font-size="11.5" fill="#898781" text-anchor="middle">Converger con TC39</text>
+<line x1="1452.2" y1="128" x2="1452.2" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="1475.8" y="156" font-size="12" font-weight="600" fill="#c3c2b7" text-anchor="end">Transición</text>
+<line x1="1481.8" y1="128" x2="1481.8" y2="598" stroke="#1f2a44" stroke-width="1"/>
+<text x="1518.9" y="140" font-size="13" font-weight="600" fill="#c3c2b7" text-anchor="middle">Nativa</text>
+<line x1="76" y1="598.0" x2="1556" y2="598.0" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="602.5" font-size="12.5" fill="#898781" text-anchor="end">.0</text>
+<line x1="76" y1="550.2" x2="1556" y2="550.2" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="554.7" font-size="12.5" fill="#898781" text-anchor="end">.1</text>
+<line x1="76" y1="502.4" x2="1556" y2="502.4" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="506.9" font-size="12.5" fill="#898781" text-anchor="end">.2</text>
+<line x1="76" y1="454.7" x2="1556" y2="454.7" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="459.2" font-size="12.5" fill="#898781" text-anchor="end">.3</text>
+<line x1="76" y1="406.9" x2="1556" y2="406.9" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="411.4" font-size="12.5" fill="#898781" text-anchor="end">.4</text>
+<line x1="76" y1="359.1" x2="1556" y2="359.1" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="363.6" font-size="12.5" fill="#898781" text-anchor="end">.5</text>
+<line x1="76" y1="311.3" x2="1556" y2="311.3" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="315.8" font-size="12.5" fill="#898781" text-anchor="end">.6</text>
+<line x1="76" y1="263.6" x2="1556" y2="263.6" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="268.1" font-size="12.5" fill="#898781" text-anchor="end">.7</text>
+<line x1="76" y1="215.8" x2="1556" y2="215.8" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="220.3" font-size="12.5" fill="#898781" text-anchor="end">.8</text>
+<line x1="76" y1="168.0" x2="1556" y2="168.0" stroke="#1f2a44" stroke-width="1"/>
+<text x="64" y="172.5" font-size="12.5" fill="#898781" text-anchor="end">.9</text>
+<text x="64" y="152" font-size="11.5" fill="#898781" text-anchor="end">menor</text>
+<line x1="126.8" y1="598" x2="126.8" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="126.8" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2013</text>
+<line x1="227.7" y1="598" x2="227.7" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="227.7" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2014</text>
+<line x1="328.6" y1="598" x2="328.6" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="328.6" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2015</text>
+<line x1="429.4" y1="598" x2="429.4" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="429.4" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2016</text>
+<line x1="530.6" y1="598" x2="530.6" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="530.6" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2017</text>
+<line x1="631.4" y1="598" x2="631.4" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="631.4" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2018</text>
+<line x1="732.3" y1="598" x2="732.3" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="732.3" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2019</text>
+<line x1="833.1" y1="598" x2="833.1" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="833.1" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2020</text>
+<line x1="934.3" y1="598" x2="934.3" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="934.3" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2021</text>
+<line x1="1035.1" y1="598" x2="1035.1" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1035.1" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2022</text>
+<line x1="1136.0" y1="598" x2="1136.0" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1136.0" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2023</text>
+<line x1="1236.8" y1="598" x2="1236.8" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1236.8" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2024</text>
+<line x1="1338.0" y1="598" x2="1338.0" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1338.0" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2025</text>
+<line x1="1438.8" y1="598" x2="1438.8" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1438.8" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2026</text>
+<line x1="1539.7" y1="598" x2="1539.7" y2="604" stroke="#33405c" stroke-width="1"/>
+<text x="1539.7" y="622" font-size="12.5" fill="#898781" text-anchor="middle">2027</text>
+<line x1="76" y1="598" x2="1556" y2="598" stroke="#33405c" stroke-width="1"/>
+<line x1="1525.3" y1="162" x2="1525.3" y2="598" stroke="#898781" stroke-width="1"/>
+<text x="1518.3" y="176" font-size="11.5" fill="#898781" text-anchor="end">corte: 10-nov-2026</text>
+<polyline points="101.4,215.8 173.3,168.0" fill="none" stroke="#199e70" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="252.8,598.0 304.5,550.2 314.7,454.7 332.7,406.9 383.8,359.1 399.9,311.3 420.6,263.6 443.8,215.8" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="502.6,598.0 523.6,550.2 544.9,502.4 562.6,454.7 579.5,406.9 597.4,359.1 614.3,311.3 639.7,263.6 654.9,215.8 672.9,168.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="689.4,598.0 705.7,550.2 723.2,502.4 740.6,454.7 756.3,406.9 773.2,359.1 798.3,311.3 817.4,263.6 846.9,215.8 869.6,168.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="897.2,598.0 922.4,550.2 948.9,502.4 974.3,454.7 999.8,406.9 1022.7,359.1 1051.2,311.3 1074.6,263.6 1100.3,215.8 1123.0,168.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1156.4,598.0 1177.7,550.2 1200.9,502.4 1225.2,454.7 1254.8,406.9 1284.1,359.1 1306.5,311.3 1326.9,263.6 1354.0,215.8 1396.3,168.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="1490.8" y1="598.0" x2="1519.5" y2="550.2" stroke="#d95926" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+<circle cx="101.4" cy="215.8" r="5" fill="#199e70" stroke="#0b1220" stroke-width="2"/>
+<circle cx="173.3" cy="168.0" r="5" fill="#199e70" stroke="#0b1220" stroke-width="2"/>
+<circle cx="252.8" cy="598.0" r="5" fill="#199e70" stroke="#0b1220" stroke-width="2"/>
+<circle cx="304.5" cy="550.2" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="314.7" cy="454.7" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="332.7" cy="406.9" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="383.8" cy="359.1" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="399.9" cy="311.3" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="420.6" cy="263.6" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="443.8" cy="215.8" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="502.6" cy="598.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="523.6" cy="550.2" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="544.9" cy="502.4" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="562.6" cy="454.7" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="579.5" cy="406.9" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="597.4" cy="359.1" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="614.3" cy="311.3" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="639.7" cy="263.6" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="654.9" cy="215.8" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="672.9" cy="168.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="689.4" cy="598.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="705.7" cy="550.2" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="723.2" cy="502.4" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="740.6" cy="454.7" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="756.3" cy="406.9" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="773.2" cy="359.1" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="798.3" cy="311.3" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="817.4" cy="263.6" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="846.9" cy="215.8" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="869.6" cy="168.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="897.2" cy="598.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="922.4" cy="550.2" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="948.9" cy="502.4" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="974.3" cy="454.7" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="999.8" cy="406.9" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1022.7" cy="359.1" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1051.2" cy="311.3" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1074.6" cy="263.6" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1100.3" cy="215.8" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1123.0" cy="168.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1156.4" cy="598.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1177.7" cy="550.2" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1200.9" cy="502.4" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1225.2" cy="454.7" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1254.8" cy="406.9" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1284.1" cy="359.1" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1306.5" cy="311.3" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1326.9" cy="263.6" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1354.0" cy="215.8" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1396.3" cy="168.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1461.2" cy="598.0" r="5" fill="#3987e5" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1490.8" cy="598.0" r="5" fill="#d95926" stroke="#0b1220" stroke-width="2"/>
+<circle cx="1519.5" cy="550.2" r="5" fill="#0b1220" stroke="#d95926" stroke-width="2"/>
+<text x="92.4" y="205.8" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">0.8</text>
+<text x="243.8" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">1.0</text>
+<text x="493.6" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">2.0</text>
+<text x="680.4" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">3.0</text>
+<text x="888.2" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">4.0</text>
+<text x="1147.4" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">5.0</text>
+<text x="1452.2" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">6.0</text>
+<text x="1481.8" y="588.0" font-size="13.5" font-weight="700" fill="#f0efec" text-anchor="end">7.0</text>
+<text x="1529.5" y="554.7" font-size="13.5" font-weight="700" fill="#f0efec">7.1 beta</text>
+<path d="M1396.3 372.22222222222223V378.22222222222223H1461.2V372.22222222222223" fill="none" stroke="#898781" stroke-width="1"/>
+<text x="1428.8" y="396.22222222222223" font-size="12.5" font-weight="600" fill="#c3c2b7" text-anchor="middle">235 días sin versión menor</text>
+<text x="1428.8" y="412.22222222222223" font-size="12" fill="#898781" text-anchor="middle">de 5.9 a 6.0: la reescritura en Go</text>
+<text x="1556" y="646" font-size="12" fill="#898781" text-anchor="end">De 2.0 a 5.9: una versión menor cada 83 días de media · fuente: registro npm · TypeScript Atlas, noviembre 2026</text>
+</svg>
