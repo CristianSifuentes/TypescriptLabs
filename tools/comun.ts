@@ -136,7 +136,11 @@ export function opcionesDeComprobacion(version: string, extra: Opciones, lenguaj
   const o: Opciones = {};
   if (lt(version, '1.4')) o.target = 'ES5';
   else if (lt(version, '2.1')) o.target = 'ES6';
-  else o.target = 'ESNext';
+  else if (lt(version, '2.3')) {
+    // En la 2.1 y la 2.2, la biblioteca por defecto de los destinos ES2016+ no incluía el DOM (ni `console`).
+    o.target = 'ES2017';
+    o.lib = ['es2017', 'dom'];
+  } else o.target = 'ESNext';
 
   if (ge(version, '2.3')) o.strict = true;
   else if (ge(version, '1.0')) {
@@ -177,9 +181,9 @@ function conciliar(version: string, final: Opciones, extra: Opciones): void {
 export function opcionesDeEmision(version: string, extra: Opciones, esm: boolean): Opciones {
   const o: Opciones = {};
   // La 1.5 y la 1.6 no saben combinar destino ES6 con módulos CommonJS: para ejecutar, emiten ES5.
+  // Hasta la 3.7 se emite ES2015: el `for await` que la 2.3 genera para ES2017 no es JavaScript válido.
   if (lt(version, '1.7')) o.target = 'ES5';
-  else if (lt(version, '2.1')) o.target = 'ES6';
-  else if (lt(version, '3.8')) o.target = 'ES2017';
+  else if (lt(version, '3.8')) o.target = 'ES6';
   else if (lt(version, '4.6')) o.target = 'ES2020';
   else o.target = 'ES2022';
 
