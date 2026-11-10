@@ -10,14 +10,16 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { dirname } from 'node:path';
+import { aArgumentos } from './comun.ts';
+import type { Opciones } from './comun.ts';
 
 export interface Trabajo {
   id: string;
   archivos: { nombre: string; texto: string }[];
-  /** Opciones de comprobación, en forma de argumentos de línea de comandos. */
-  args: string[];
+  /** Opciones de comprobación, con los nombres de `tsconfig.json`. */
+  opciones: Opciones;
   /** Si está presente, se emite JavaScript con estas opciones. */
-  argsEmision?: string[];
+  opcionesEmision?: Opciones;
   /** Posiciones donde se consulta el tipo que mostraría el editor (`// ^?`). */
   consultas?: { archivo: string; posicion: number }[];
 }
@@ -51,11 +53,15 @@ function principal(): void {
   const leerReal = (f: string): string | undefined => (f.startsWith(dirLib) && existsSync(f) ? readFileSync(f, 'utf8') : undefined);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  function analizarOpciones(args: string[], errores: Diagnostico[]): any {
-    const r = ts.parseCommandLine(args);
+  function analizarOpciones(opciones: Opciones, errores: Diagnostico[]): any {
+    // Desde la 1.8 las opciones se leen como en tsconfig.json (algunas, como `incremental` en la 3.4,
+    // solo se admitían ahí); antes, como argumentos de línea de comandos.
+    const r = typeof ts.convertCompilerOptionsFromJson === 'function'
+      ? ts.convertCompilerOptionsFromJson(opciones, RAIZ_VIRTUAL)
+      : ts.parseCommandLine(aArgumentos(opciones));
     for (const d of r.errors ?? []) errores.push(aDiagnostico(d));
     const o = r.options;
-    if ('types' in ts.parseCommandLine(['--types', 'x']).options) o.types = []; // sin @types implícitos
+    if (parseFloat(ts.version) >= 2 && o.types === undefined) o.types = []; // sin @types implícitos
     return o;
   }
 
@@ -113,7 +119,9 @@ function principal(): void {
     const errores: Diagnostico[] = [];
     const archivos = new Map(t.archivos.map((a) => [`${RAIZ_VIRTUAL}/${a.nombre}`, a.texto]));
     const raices = [...archivos.keys()].filter((f) => !f.endsWith('.json'));
-    const opciones = analizarOpciones(t.args, errores);
+    const opciones = analizarOpciones(t.opciones, errores);
+    // Sin directorio de salida, un .json de entrada chocaría con su propia emisión.
+    if (!opciones.noEmit && !opciones.outDir && !opciones.outFile && !opciones.out) opciones.outDir = `${RAIZ_VIRTUAL}/salida`;
     const programa = ts.createProgram(raices, opciones, crearHost(archivos, opciones, new Map()));
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -131,9 +139,9 @@ function principal(): void {
 
     const resultado: Resultado = { id: t.id, errores };
 
-    if (t.argsEmision) {
+    if (t.opcionesEmision) {
       const salida = new Map<string, string>();
-      const opcionesEmision = analizarOpciones(t.argsEmision, []);
+      const opcionesEmision = analizarOpciones(t.opcionesEmision, []);
       opcionesEmision.outDir = `${RAIZ_VIRTUAL}/salida`;
       opcionesEmision.rootDir = RAIZ_VIRTUAL;
       ts.createProgram(raices, opcionesEmision, crearHost(archivos, opcionesEmision, salida)).emit();
@@ -143,7 +151,7 @@ function principal(): void {
     if (t.consultas?.length) {
       // El texto es el que muestra el editor al pasar el cursor: se obtiene del servicio de lenguaje.
       const opcionesServicio = { ...opciones };
-      if ('stableTypeOrdering' in ts.parseCommandLine(['--stableTypeOrdering']).options) opcionesServicio.stableTypeOrdering = true;
+      if (parseFloat(ts.version) >= 6) opcionesServicio.stableTypeOrdering = true;
       const servicio = ts.createLanguageService({
         getCompilationSettings: () => opcionesServicio,
         getScriptFileNames: () => raices,

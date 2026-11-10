@@ -154,7 +154,23 @@ export function opcionesDeComprobacion(version: string, extra: Opciones, lenguaj
   if (ge(version, '2.0')) o.skipLibCheck = true;
   if (lenguaje === 'tsx') o.jsx = 'preserve';
   if (lenguaje === 'js') { o.allowJs = true; o.checkJs = true; }
-  return { ...o, ...extra };
+  const final: Opciones = { ...o, ...extra };
+  conciliar(version, final, extra);
+  return final;
+}
+
+/**
+ * Ajusta combinaciones que cada época rechaza. Un ejemplo que pide `module: commonjs` o
+ * `target: es5` no debe fallar por una opción que el atlas añadió por su cuenta.
+ */
+function conciliar(version: string, final: Opciones, extra: Opciones): void {
+  const destinoAntiguo = typeof final.target === 'string' && /^es[35]$/i.test(final.target);
+  const moduloClasico = typeof extra.module === 'string' && /^(commonjs|amd|umd|system|none)$/i.test(extra.module);
+  // 1.5 y 1.6: con destino ES5 hace falta un formato de módulo explícito.
+  if (ge(version, '1.5') && lt(version, '1.7') && destinoAntiguo && extra.module === undefined) final.module = 'commonjs';
+  // De 1.7 a 2.3 el atlas ya usa commonjs; desde 2.4 usa ESNext, incompatible con un destino ES5 hasta la 2.0.
+  // `bundler` solo admite módulos ES hasta la 5.9; con la 6.0 también acepta commonjs.
+  if (moduloClasico && extra.moduleResolution === undefined && ge(version, '5.0') && lt(version, '6.0')) final.moduleResolution = 'node10';
 }
 
 /** Opciones con las que se emite JavaScript para ejecutarlo en Node. */
@@ -179,6 +195,7 @@ export function opcionesDeEmision(version: string, extra: Opciones, esm: boolean
   else resultado.target = o.target;
   delete resultado.noEmit;
   delete resultado.lib;
+  conciliar(version, resultado, extra);
   return resultado;
 }
 

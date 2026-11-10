@@ -14,10 +14,10 @@ tipo-any,Tipo `any`,0.8,tipos,T,GA,,,"La salida de emergencia del sistema de tip
 aserciones-de-tipo,Aserciones de tipo `<T>x`,0.8,tipos,T,GA,,,"El programador afirma un tipo; no hay comprobación en ejecución",,,0
 mapas-de-codigo,Mapas de código fuente,0.8,compilador,C,GA,,,"`--sourcemap` permite depurar el TypeScript original",,,0
 genericos,Genéricos,0.9,nivel,T,GA,,,"Tipos, funciones y clases parametrizados, con restricciones `extends`",Ge,Genéricos,1
-enums,Enums,0.9,tipos,E,GA,,,"Constantes con nombre; los numéricos tienen mapeo inverso",En,Enums,1
+enums,Enums,0.8,tipos,E,GA,,,"Constantes con nombre; los numéricos tienen mapeo inverso. Anunciados con la 0.9, el compilador 0.8.3 ya los acepta",,,0
 fusion-de-declaraciones,Fusión de declaraciones,0.9,tipos,T,GA,,,"Interfaces, módulos y clases con el mismo nombre se combinan",Fu,Fusión de|declaraciones,1
 export-asignacion,`export =`,0.9,modulos,E,GA,,,"Exportación única compatible con CommonJS y AMD",,,0
-consultas-typeof,`typeof` en posición de tipo,0.9,nivel,T,GA,,,"`let y: typeof x` copia el tipo de un valor",,,0
+consultas-typeof,`typeof` en posición de tipo,0.9,nivel,T,GA,,,"`let y: typeof x` copia el tipo de un valor",Tq,typeof x,1
 sobrecarga-por-constantes,Sobrecarga por constantes,0.9,tipos,T,GA,,,"Firmas especializadas por cadena literal: el antecedente de los tipos literales",,,0
 no-implicit-any,`--noImplicitAny`,0.9,flujo,C,GA,,,"Error cuando un tipo se infiere como `any` sin haberlo escrito (desde la 0.9.1)",Na,noImplicitAny,1
 version-1-0,TypeScript 1.0,1.0,compilador,H,GA,,,"Primera versión estable, con especificación del lenguaje y contribuciones externas",V1,Versión 1.0,1
@@ -137,7 +137,7 @@ condicionales-distributivos,Tipos condicionales distributivos,2.8,nivel,T,GA,,,"
 infer,`infer`,2.8,nivel,T,GA,,,"Captura una parte de un tipo dentro de una condición",Nf,infer,1
 utilidades-2-8,"`Exclude`, `Extract`, `NonNullable`, `ReturnType` e `InstanceType`",2.8,nivel,T,GA,,,"Tipos utilitarios construidos con condicionales",Ut,Utilidades|condicionales,1
 modificadores-mapeados,Modificadores `+` y `-` en tipos mapeados,2.8,nivel,T,GA,,,"`-readonly` y `-?` quitan modificadores; de ahí nace `Required<T>`",,,0
-emit-declaration-only,`--emitDeclarationOnly`,2.8,compilador,C,GA,,,"Emite solo los `.d.ts`",,,0
+emit-declaration-only,`--emitDeclarationOnly`,2.8,compilador,C,GA,,,"Emite solo los `.d.ts`. Anunciada con la 2.8; el parche 2.7.2 ya la incluía",,,0
 jsx-por-archivo,Fábricas JSX por archivo,2.8,editor,T,GA,,,"El pragma `/** @jsx h */` elige la función que construye los elementos",,,0
 organizar-importaciones,Organizar importaciones,2.8,editor,H,GA,,,"Ordena y limpia los `import` desde el editor",,,0
 keyof-number-symbol,`keyof` con claves numéricas y símbolos,2.9,nivel,T,GA,,,"`keyof T` es `string | number | symbol`",Kn,keyof|ampliado,1

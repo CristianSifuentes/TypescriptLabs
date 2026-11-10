@@ -17,6 +17,7 @@
  *   ```ts opts=a,b:valor       opciones extra del compilador (listas con `+`: lib:es2022+dom)
  *   ```ts esm                  se ejecuta como módulo ES (para `await` de nivel superior)
  *   ```ts script               el archivo es un script global, no un módulo
+ *   ```ts predeterminado       sin las opciones del atlas: solo los valores por defecto del compilador
  *   ```ts omitir               no se comprueba (fragmento ilustrativo)
  *   `// @filename: a.ts`       dentro de un bloque: empieza un archivo virtual nuevo
  *   `//    ^? const x: number` el editor debe mostrar exactamente ese tipo en la columna del ^
@@ -60,6 +61,7 @@ interface Bloque {
   run: boolean;
   esm: boolean;
   script: boolean;
+  predeterminado: boolean;
   omitir: boolean;
   err: string[][];
   opts: Opciones;
@@ -105,7 +107,7 @@ function leerBloques(ruta: string, porDefecto: string): Bloque[] {
     }
     const b: Bloque = {
       archivo: ruta, linea: inicio, lenguaje: lenguaje as Bloque['lenguaje'], codigo: cuerpo.join('\n'),
-      ts, luego: [], debut: false, run: false, esm: false, script: false, omitir: false, err: [], opts: {},
+      ts, luego: [], debut: false, run: false, esm: false, script: false, predeterminado: false, omitir: false, err: [], opts: {},
     };
     let verificarJs = false;
     for (const palabra of info.trim().split(/\s+/).filter(Boolean)) {
@@ -118,13 +120,15 @@ function leerBloques(ruta: string, porDefecto: string): Bloque[] {
       else if (k === 'opts' && v) {
         for (const par of v.split(',')) {
           const [nombre, valor] = par.includes(':') ? [par.slice(0, par.indexOf(':')), par.slice(par.indexOf(':') + 1)] : [par, 'true'];
-          b.opts[nombre] = valor === 'true' ? true : valor === 'false' ? false : valor.includes('+') ? valor.split('+') : valor;
+          const esLista = /^(lib|types|typeRoots|rootDirs|moduleSuffixes|customConditions)$/.test(nombre);
+          b.opts[nombre] = valor === 'true' ? true : valor === 'false' ? false : esLista || valor.includes('+') ? valor.split('+') : valor;
         }
       }
       else if (k === 'debut') b.debut = true;
       else if (k === 'run') b.run = true;
       else if (k === 'esm') b.esm = true;
       else if (k === 'script') b.script = true;
+      else if (k === 'predeterminado') b.predeterminado = true;
       else if (k === 'omitir') b.omitir = true;
       else if (k === 'verificar') verificarJs = true;
       else throw new Error(`${relative(RAIZ, ruta)}:${inicio}: marca desconocida «${palabra}»`);
@@ -203,22 +207,31 @@ function planificar(bloques: Bloque[], versiones: Version[], vigentes: string[])
   return plan;
 }
 
+/** Opciones de comprobación y de emisión de un bloque para una versión concreta. */
+function opcionesDe(b: Bloque, version: string): { comprobar: Opciones; emitir: Opciones } {
+  const opts = { ...b.opts };
+  if (b.script && ge(version, '4.7')) opts.moduleDetection = 'auto';
+  return {
+    comprobar: b.predeterminado ? opts : opcionesDeComprobacion(version, opts, b.lenguaje),
+    emitir: opcionesDeEmision(version, opts, b.esm),
+  };
+}
+
 function trabajoDe(c: Comprobacion, id: string): { trabajo: Trabajo; consultas: Consulta[] } {
   const b = c.bloque;
   const { archivos, consultas } = archivosDe(b);
   // Antes de `moduleDetection` (4.7), un archivo es módulo solo si importa o exporta algo.
-  const forzarModulo = !b.script && ge(c.version, '1.5') && lt(c.version, '4.7');
-  const opts = { ...b.opts };
-  if (b.script && ge(c.version, '4.7')) opts.moduleDetection = 'auto';
+  const forzarModulo = !b.script && !b.predeterminado && ge(c.version, '1.5') && lt(c.version, '4.7');
+  const opciones = opcionesDe(b, c.version);
   const trabajo: Trabajo = {
     id,
     archivos: archivos.map((a) => ({
       nombre: a.nombre,
       texto: forzarModulo && /\.tsx?$/.test(a.nombre) && !a.nombre.endsWith('.d.ts') ? `${a.texto}\nexport {};\n` : a.texto,
     })),
-    args: aArgumentos(opcionesDeComprobacion(c.version, opts, b.lenguaje)),
+    opciones: opciones.comprobar,
   };
-  if (c.ejecutar) trabajo.argsEmision = aArgumentos(opcionesDeEmision(c.version, opts, b.esm));
+  if (c.ejecutar) trabajo.opcionesEmision = opciones.emitir;
   if (c.consultar && consultas.length) trabajo.consultas = consultas.map((q) => ({ archivo: q.archivo, posicion: q.posicion }));
   return { trabajo, consultas };
 }
@@ -285,6 +298,9 @@ async function compilarPorCli(version: string, dirPaquete: string, t: Trabajo, o
     if (modo(version) === 'cli') {
       const r = await invocar([join(dirPaquete, 'bin', 'tsc.js'), ...nombres, ...aArgumentos(opciones)], dir);
       const errores = leerErrores(r.texto, dir);
+      // Los compiladores más antiguos avisan de una opción desconocida, pero terminan con código 0.
+      const desconocida = /Unknown (?:compiler )?option '?([\w-]+)'?/i.exec(r.texto);
+      if (desconocida) errores.push({ codigo: 'TS5023', mensaje: `Unknown option '${desconocida[1]}'`, archivo: '', linea: 0 });
       if (r.codigo !== 0 && errores.length === 0) errores.push({ codigo: 'TS0', mensaje: r.texto.trim().slice(0, 400), archivo: '', linea: 0 });
       return { id: t.id, errores, js: emision ? leerSalida(dir) : undefined };
     }
@@ -404,10 +420,8 @@ async function principal(): Promise<number> {
       resultados = await ejecutarObrero(dir, preparados.map((p) => p.trabajo));
     } else {
       resultados = await enParalelo(preparados, modo(v) === 'nativo' ? hilos : 2, (p) => {
-        const b = p.c.bloque;
-        const opts = { ...b.opts };
-        if (b.script && ge(v, '4.7')) opts.moduleDetection = 'auto';
-        return compilarPorCli(v, dir, p.trabajo, opcionesDeComprobacion(v, opts, b.lenguaje), p.c.ejecutar ? opcionesDeEmision(v, opts, b.esm) : undefined);
+        const opciones = opcionesDe(p.c.bloque, v);
+        return compilarPorCli(v, dir, p.trabajo, opciones.comprobar, p.c.ejecutar ? opciones.emitir : undefined);
       });
     }
     for (const [i, p] of preparados.entries()) {
