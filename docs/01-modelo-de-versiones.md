@@ -359,7 +359,7 @@ habla con el binario nativo por el protocolo LSP ([12 § El editor](12-typescrip
 
 Una biblioteca no elige el compilador de sus consumidores. Dos mecanismos ayudan:
 
-- [`typesVersions`](05-typescript-3.0-3.4-proyectos-y-tuplas.md#5-typescript-31-tipos-mapeados-sobre-tuplas-y-typesversions) (3.1) en `package.json` ofrece declaraciones distintas según la versión del compilador que las lee.
+- [`typesVersions`](05-typescript-3.0-3.4-proyectos-y-tuplas.md#4-typescript-31-tipos-mapeados-sobre-tuplas-y-typesversions) (3.1) en `package.json` ofrece declaraciones distintas según la versión del compilador que las lee.
 - [DefinitelyTyped](20-ecosistema-y-runtimes.md#4-definitelytyped-y-los-paquetes-types) prueba sus paquetes `@types` contra las versiones de TypeScript publicadas en los **dos últimos años**; las anteriores dejan de estar garantizadas.
 
 ---

@@ -44,14 +44,15 @@ const number: string = addNumbers(1, 1).toString();
 
  //function multiply(firstNumber: any, secondNumber: any, base: any): number
 function multiply(firstNumber: number, secondNumber?: number, base: number = 2){
-    return firstNumber * base;
+    // ?? uses base only when secondNumber was not provided
+    return firstNumber * (secondNumber ?? base);
 }
 
 //Type 'number' is not assignable to type 'string'.ts(2322)
 const multiplyResult: number = multiply(5)
  //Literal object
  //TypeScript infers everything
-// console.log({result: number, result2: number2, result3: multiplyResult});
+console.log({result: number, result2: number2, result3: multiplyResult});
 
 
 

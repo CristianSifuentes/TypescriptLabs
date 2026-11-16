@@ -20,7 +20,7 @@ hpPoints = 'Full';
 
 const isAlive: boolean = true;
 console.log({
-    name, hpPoints, isAlive
+    name, name_x, hpPoints, isAlive
 })
 
 

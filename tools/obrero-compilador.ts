@@ -135,6 +135,8 @@ function principal(): void {
       if (!sf) { errores.push({ codigo: 'TS6053', mensaje: `No se encontró ${f}`, archivo: f, linea: 0 }); continue; }
       anotar(programa.getSyntacticDiagnostics(sf));
       anotar(programa.getSemanticDiagnostics(sf));
+      // Como `tsc`: con `declaration`, los errores de generación de `.d.ts` (p. ej. `isolatedDeclarations`) también cuentan.
+      if (opciones.declaration || opciones.composite) anotar(programa.getDeclarationDiagnostics?.(sf));
     }
 
     const resultado: Resultado = { id: t.id, errores };
