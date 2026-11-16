@@ -33,6 +33,7 @@ const strider: Character = {
 strider.hometown = 'Rivendell';
 
 console.table(strider);
+console.log('skills:', skills);
 
 
 

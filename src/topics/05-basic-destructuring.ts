@@ -28,7 +28,7 @@ const song = "the Beatles - Sargento Pimienta";
  const { author } = details;
 
 console.log('Volume:', audioVolume);
-// console.log('Song:', anotherSong);   
+console.log('Another song:', anotherSong);
 console.log('Song:', song);     
 console.log('Duration:', songDuration);
 console.log('Author:', author);
@@ -46,7 +46,7 @@ const [,,trunks2] = dbz; //destructuring array
 const trunk = dbz[2]; //accessing array by index
 const [,,,pikolo = 'Pikolo Not Found'] = dbz; //destructuring array
 
-console.log("Goku:", goku);
+console.log("Goku:", goku, "Vegeta:", vegeta, "Trunks:", trunks);
 console.error("Vegeta:", dbz[3] || 'not found');
 console.log("Trunks:", trunk);
 console.log("Trunks2:", trunks2); 

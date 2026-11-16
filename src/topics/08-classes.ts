@@ -1,5 +1,3 @@
-import { Person } from './08-classes';
-
 //ECMAScript 5 is not supported claass -> functions
 //ECMAScript 6 is supported class -> class
 //ECMAScript 7 is supported class -> class
@@ -31,6 +29,11 @@ export class Person {
          //public age: number, 
          private address: string = 'Unknown' 
         ){
+    }
+
+    // A private property is only readable inside the class: expose it through a method
+    getAddress(): string {
+        return this.address;
     }
     
     //Dependency Injection in Angular 
@@ -74,5 +77,6 @@ const ironman = new Hero('Ironman', 45, 'Tony', person); //instance of the class
 console.log('Ironman:', ironman); 
 console.log('Ironman name:', ironman.person.name); 
 console.log('Ironman age:', ironman.age); 
+console.log('Ironman address:', ironman.person.getAddress());
 // console.log('Ironman address:', ironman.address); 
 //Property 'address' is private and only accessible within class 'Person'.ts(2341)

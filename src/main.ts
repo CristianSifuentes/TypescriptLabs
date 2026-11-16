@@ -14,7 +14,10 @@ import './topics/11-optional-chaining.ts';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
-app.innerHTML = 'Hola mundo';
+// querySelector returns null when the element does not exist
+if (app) {
+  app.innerHTML = 'Hola mundo';
+}
 
 // console.log("Hi");
 
