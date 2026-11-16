@@ -216,8 +216,8 @@ console.log(resultado, evaluaciones);   // → undefined 0
 
 > [!WARNING]
 > `?.` solo protege el eslabón que lo lleva. `a?.b.c` falla si `a` existe pero `b` no. Y abusar de él esconde errores: si un valor **no debería**
-> faltar, es mejor que el programa falle pronto. El laboratorio de este repositorio usa `passanger.children?.length || 0`: funciona, pero el `||`
-> convertiría en `0` cualquier valor falso; con `??` la intención queda exacta ([26 § Encadenamiento opcional](26-laboratorio-del-repositorio.md#11-encadenamiento-opcional)).
+> faltar, es mejor que el programa falle pronto. El laboratorio de este repositorio usaba `passanger.children?.length || 0`: funcionaba, pero el `||`
+> convertiría en `0` cualquier valor falso; ahora usa `??`, con el que la intención queda exacta ([26 § Encadenamiento opcional](26-laboratorio-del-repositorio.md#11-encadenamiento-opcional)).
 
 ---
 
