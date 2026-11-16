@@ -235,15 +235,18 @@ los errores de compilación que tenían y cómo se corrigieron: hoy `npm run bui
 
 ## Repositorio hermano: TypeSpaghetti
 
-> **[CristianSifuentes/TypeSpaghetti](https://github.com/CristianSifuentes/TypeSpaghetti)** desenreda el sistema de tipos nivel a nivel —de las
-> anotaciones básicas a los entresijos del compilador— con código ejecutable en cada etapa.
+> **[CristianSifuentes/TypeSpaghetti](https://github.com/CristianSifuentes/TypeSpaghetti)** desenreda el sistema de tipos nivel a nivel: seis
+> guías, 35 programas ejecutables verificados con TypeScript 7.0 y 99 afirmaciones de tipos comprobadas por el compilador. Si este atlas cuenta la
+> **historia** de cada característica, TypeSpaghetti enseña a **usarlas**.
 
 | Nivel | Contenido | En este atlas |
 |---|---|---|
-| Básico | Tipado estático, anotaciones, tipos primitivos, funciones e interfaces | [02](docs/02-origenes-y-typescript-1.md) · [26](docs/26-laboratorio-del-repositorio.md) |
-| Medio | Uniones, intersecciones, opcionales, genéricos, guardas de tipo | [14](docs/14-sistema-de-tipos-a-fondo.md) · [13 § Estrechamiento](docs/13-hilos-evolutivos.md#3-estrechamiento) |
-| Avanzado | Tipos mapeados y condicionales, uniones discriminadas, decoradores, utilitarios | [15](docs/15-programacion-a-nivel-de-tipos.md) · [09](docs/09-typescript-5.0-5.4-decoradores-y-using.md) |
-| Experto | `infer`, tipos recursivos, varianza, internos del compilador | [15 § `infer`](docs/15-programacion-a-nivel-de-tipos.md#5-infer) · [14 § Varianza](docs/14-sistema-de-tipos-a-fondo.md#7-varianza) · [18](docs/18-bajo-el-capo-y-rendimiento.md) |
+| 1 · Básico | Tipos, inferencia, funciones, interfaces, enums y clases | [02](docs/02-origenes-y-typescript-1.md) · [26](docs/26-laboratorio-del-repositorio.md) |
+| 2 · Medio | Uniones, estrechamiento, genéricos, `unknown`, `satisfies` | [14](docs/14-sistema-de-tipos-a-fondo.md) · [13 § Estrechamiento](docs/13-hilos-evolutivos.md#3-estrechamiento) |
+| 3 · Avanzado | Mapeados, condicionales, plantillas, utilitarios, decoradores estándar y `using` | [15](docs/15-programacion-a-nivel-de-tipos.md) · [09](docs/09-typescript-5.0-5.4-decoradores-y-using.md) |
+| 4 · Experto | Recursión, varianza, marcas nominales, pruebas de tipos | [15 § `infer`](docs/15-programacion-a-nivel-de-tipos.md#5-infer) · [14 § Varianza](docs/14-sistema-de-tipos-a-fondo.md#7-varianza) |
+| 5 · Arquitectura | Errores como valores, estados imposibles, eventos, DI, validación y contratos | [21](docs/21-guias-de-decision.md) · [17](docs/17-tsconfig-de-referencia.md) |
+| 6 · Arte | Tipos que se leen, mensajes de error propios, desenredar el espagueti | [14 § Solidez](docs/14-sistema-de-tipos-a-fondo.md#10-los-agujeros-deliberados-de-solidez) · [18](docs/18-bajo-el-capo-y-rendimiento.md) |
 
 ---
 
